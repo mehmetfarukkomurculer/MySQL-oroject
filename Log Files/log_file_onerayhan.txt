@@ -1,0 +1,107 @@
+16:32:26 [ERR][      Workbench]: Console redirection failed.
+16:32:26 [INF][      Workbench]: Starting up Workbench
+16:32:26 [INF][      Workbench]: Current environment:
+	Command line: "C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe" 
+	CurrentDirectory: C:\Program Files\MySQL\MySQL Workbench 8.0
+	HasShutdownStarted: False
+	OSVersion: Microsoft Windows NT 6.2.9200.0
+	SystemDirectory: C:\WINDOWS\system32
+	TickCount: 266145500
+	UserInteractive: True
+	Version: 4.0.30319.42000
+	WorkingSet: 42283008
+16:32:26 [INF][      Workbench]: Environment variables:
+	COMPUTERNAME = DESKTOP-832LU96
+	USERPROFILE = C:\Users\User
+	HOMEPATH = \Users\User
+	LOCALAPPDATA = C:\Users\User\AppData\Local
+	PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+	PROCESSOR_ARCHITECTURE = AMD64
+	Path = D:\Vmware\VmWareWorkstation\bin\;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MATRIKS;C:\MATRIKS\System32\;C:\Program Files\Git\cmd;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Users\User\flutter\bin;C:\Users\User\AppData\Local\Pub\Cache\bin;C:\Users\User\.dotnet\tools
+	CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+	ProgramFiles(x86) = C:\Program Files (x86)
+	PROCESSOR_LEVEL = 23
+	LOGONSERVER = \\DESKTOP-832LU96
+	PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	HOMEDRIVE = C:
+	SystemRoot = C:\WINDOWS
+	SESSIONNAME = Console
+	ALLUSERSPROFILE = C:\ProgramData
+	SystemDrive = C:
+	DriverData = C:\Windows\System32\Drivers\DriverData
+	FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+	APPDATA = C:\Users\User\AppData\Roaming
+	PROCESSOR_REVISION = 7100
+	USERNAME = User
+	CommonProgramW6432 = C:\Program Files\Common Files
+	TEMP = C:\Users\User\AppData\Local\Temp
+	OneDrive = C:\Users\User\OneDrive
+	CommonProgramFiles = C:\Program Files\Common Files
+	OS = Windows_NT
+	PROGF81DEF27053 = 1
+	USERDOMAIN_ROAMINGPROFILE = DESKTOP-832LU96
+	PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+	ComSpec = C:\WINDOWS\system32\cmd.exe
+	ProgramW6432 = C:\Program Files
+	FPS_BROWSER_USER_PROFILE_STRING = Default
+	ProgramFiles = C:\Program Files
+	NUMBER_OF_PROCESSORS = 16
+	TMP = C:\Users\User\AppData\Local\Temp
+	ProgramData = C:\ProgramData
+	ANDROID_HOME = C:\Users\User\AppData\Local\Android\Sdk
+	windir = C:\WINDOWS
+	USERDOMAIN = DESKTOP-832LU96
+	PUBLIC = C:\Users\Public
+16:32:26 [INF][      Workbench]: Current version given by meta info is: 8.0.32
+16:32:26 [INF][      Workbench]: Setting PATH to: C:\WINDOWS\system32;D:\Vmware\VmWareWorkstation\bin\;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MATRIKS;C:\MATRIKS\System32\;C:\Program Files\Git\cmd;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Users\User\flutter\bin;C:\Users\User\AppData\Local\Pub\Cache\bin;C:\Users\User\.dotnet\tools
+16:32:26 [INF][ mforms managed]: Initializing mforms wrapper
+16:32:26 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: C:\Program Files\MySQL\MySQL Workbench 8.0
+	plugin path: C:\Program Files\MySQL\MySQL Workbench 8.0
+	struct path: 
+	module path: C:\Program Files\MySQL\MySQL Workbench 8.0/modules
+	library path: C:\Program Files\MySQL\MySQL Workbench 8.0
+	user data dir: C:\Users\User\AppData\Roaming\MySQL\Workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+16:32:26 [INF][      WBContext]: WbContext::init
+16:32:27 [INF][            WBA]: Looking for extension modules for WBA...
+16:32:27 [INF][            WBA]: 0 extension modules found
+16:32:27 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+16:32:27 [WRN][            grt]: C:\Users\User\AppData\Roaming\MySQL\Workbench\connections.xml:15: link '{890F9399-B8FF-4B0E-B99B-8020C9A7E86B}' <object GrtObject> key=owner could not be resolved
+16:32:27 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+16:32:27 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Windows version 8.0.32 CE build 2612062 (64 bit)
+	Configuration Directory: C:\Users\User\AppData\Roaming\MySQL\Workbench
+	Data Directory: C:\Program Files\MySQL\MySQL Workbench 8.0
+	Cairo Version: 1.17.6
+	OS: Microsoft Windows 10 Home
+	CPU: 16x AMD Ryzen 7 3700X 8-Core Processor             , 31.9 GiB RAM
+	Active video adapter NVIDIA GeForce GT 730
+	Installed video RAM: -1 MB
+	Current video mode: 1920 x 1080 x 4294967296 renk
+	Used bit depth: 32
+	Driver version: 23.21.13.9135
+	Installed display drivers: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c1a085cc86772d3f\nvldumdx.dll,C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c1a085cc86772d3f\nvldumdx.dll,C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c1a085cc86772d3f\nvldumdx.dll,C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c1a085cc86772d3f\nvldumdx.dll
+	Current user language: Türkçe (Türkiye)
+
+16:32:27 [INF][      Workbench]: UI is up
+16:32:27 [INF][      Workbench]: Running the application
+16:32:29 [INF][SQL Editor Form]: Opened connection 'Local Sever' to MySQL Community Server - GPL version 8.0.32
+16:32:30 [INF][        WQE.net]: Launching SQL IDE
+16:32:30 [INF][        WQE.net]: SQL IDE UI is ready
+16:33:14 [ERR][  XML Functions]: LibXml: Entity: line 1: 
+16:33:14 [ERR][  XML Functions]: LibXml: parser 
+16:33:14 [ERR][  XML Functions]: LibXml: error : 
+16:33:14 [ERR][  XML Functions]: LibXml: Entity 'nbsp' not defined
+
+16:33:14 [ERR][  XML Functions]: LibXml: <ENTRY timestamp='16:20:01'>SET GLOBAL general_log =&nbsp;1</ENTRY>
+
+16:33:14 [ERR][  XML Functions]: LibXml:                                                           ^
+
+16:33:14 [ERR][ sqlide-history]: Can't parse <ENTRY timestamp='16:20:01'>SET GLOBAL general_log =&nbsp;1</ENTRY>, of file: C:\Users\User\AppData\Roaming\MySQL\Workbench\sql_history\2023-03-22
