@@ -1,4 +1,4 @@
-CREATE TABLE annual_consumption (
+CREATE TABLE annual_consumption1 (
 iso_code Varchar(10),
 annual_consumption_year INT,
 total_energy_consumption REAL,
