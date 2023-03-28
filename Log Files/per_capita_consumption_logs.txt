@@ -1,0 +1,36 @@
+CS306 LOGS
+
+18:24:16 [INF][         Wizard]: Execute 'Prepare Import'
+18:24:16 [INF][         Wizard]: Starting thread for 'Import data file'
+18:25:29 [INF][         Wizard]: Execute 'Prepare Import'
+18:25:30 [INF][         Wizard]: Starting thread for 'Import data file'
+
+countries_2.csv file import:
+
+Starting...
+Prepare Import...
+Prepare Import done
+Import data file....
+- Prepare Import
+- Begin Import
+- Data import (x237)
+- Import finished
+Import data file finished
+Finished performing tasks.
+
+237 records imported
+
+per_capita_consumption_updated.csv file import:
+
+Starting...
+Prepare Import...
+Prepare Import done
+Import data file....
+- Prepare Import
+Begin Import
+Data import (x4244)
+Import finished
+Import data file finished
+Finished performing tasks.
+
+4244 records imported
