@@ -1,0 +1,340 @@
+11:20:21 [ERR][      Workbench]: Console redirection failed.
+11:20:21 [INF][      Workbench]: Starting up Workbench
+11:20:21 [INF][      Workbench]: Current environment:
+	Command line: "C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe" 
+	CurrentDirectory: C:\Program Files\MySQL\MySQL Workbench 8.0
+	HasShutdownStarted: False
+	OSVersion: Microsoft Windows NT 6.2.9200.0
+	SystemDirectory: C:\WINDOWS\system32
+	TickCount: 1159829890
+	UserInteractive: True
+	Version: 4.0.30319.42000
+	WorkingSet: 41824256
+11:20:21 [INF][      Workbench]: Environment variables:
+	COMPUTERNAME = DESKTOP-832LU96
+	USERPROFILE = C:\Users\User
+	HOMEPATH = \Users\User
+	LOCALAPPDATA = C:\Users\User\AppData\Local
+	PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+	PROCESSOR_ARCHITECTURE = AMD64
+	Path = D:\Vmware\VmWareWorkstation\bin\;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MATRIKS;C:\MATRIKS\System32\;C:\Program Files\Git\cmd;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Users\User\flutter\bin;C:\Users\User\AppData\Local\Pub\Cache\bin;C:\Users\User\.dotnet\tools
+	CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+	ProgramFiles(x86) = C:\Program Files (x86)
+	PROCESSOR_LEVEL = 23
+	LOGONSERVER = \\DESKTOP-832LU96
+	PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	HOMEDRIVE = C:
+	SystemRoot = C:\WINDOWS
+	SESSIONNAME = Console
+	ALLUSERSPROFILE = C:\ProgramData
+	SystemDrive = C:
+	DriverData = C:\Windows\System32\Drivers\DriverData
+	FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+	APPDATA = C:\Users\User\AppData\Roaming
+	PROCESSOR_REVISION = 7100
+	USERNAME = User
+	CommonProgramW6432 = C:\Program Files\Common Files
+	TEMP = C:\Users\User\AppData\Local\Temp
+	OneDrive = C:\Users\User\OneDrive
+	CommonProgramFiles = C:\Program Files\Common Files
+	OS = Windows_NT
+	PROGF81DEF27053 = 1
+	USERDOMAIN_ROAMINGPROFILE = DESKTOP-832LU96
+	PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+	ComSpec = C:\WINDOWS\system32\cmd.exe
+	ProgramW6432 = C:\Program Files
+	FPS_BROWSER_USER_PROFILE_STRING = Default
+	ProgramFiles = C:\Program Files
+	NUMBER_OF_PROCESSORS = 16
+	TMP = C:\Users\User\AppData\Local\Temp
+	ProgramData = C:\ProgramData
+	ANDROID_HOME = C:\Users\User\AppData\Local\Android\Sdk
+	windir = C:\WINDOWS
+	USERDOMAIN = DESKTOP-832LU96
+	PUBLIC = C:\Users\Public
+11:20:21 [INF][      Workbench]: Current version given by meta info is: 8.0.32
+11:20:21 [INF][      Workbench]: Setting PATH to: C:\WINDOWS\system32;D:\Vmware\VmWareWorkstation\bin\;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MATRIKS;C:\MATRIKS\System32\;C:\Program Files\Git\cmd;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Users\User\flutter\bin;C:\Users\User\AppData\Local\Pub\Cache\bin;C:\Users\User\.dotnet\tools
+11:20:21 [INF][ mforms managed]: Initializing mforms wrapper
+11:20:21 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: C:\Program Files\MySQL\MySQL Workbench 8.0
+	plugin path: C:\Program Files\MySQL\MySQL Workbench 8.0
+	struct path: 
+	module path: C:\Program Files\MySQL\MySQL Workbench 8.0/modules
+	library path: C:\Program Files\MySQL\MySQL Workbench 8.0
+	user data dir: C:\Users\User\AppData\Roaming\MySQL\Workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+11:20:21 [INF][      WBContext]: WbContext::init
+11:20:21 [INF][            WBA]: Looking for extension modules for WBA...
+11:20:21 [INF][            WBA]: 0 extension modules found
+11:20:21 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+11:20:21 [WRN][            grt]: C:\Users\User\AppData\Roaming\MySQL\Workbench\connections.xml:15: link '{CDCE839C-5E93-4D77-B7AB-390533C4AD77}' <object GrtObject> key=owner could not be resolved
+11:20:21 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+11:20:21 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Windows version 8.0.32 CE build 2612062 (64 bit)
+	Configuration Directory: C:\Users\User\AppData\Roaming\MySQL\Workbench
+	Data Directory: C:\Program Files\MySQL\MySQL Workbench 8.0
+	Cairo Version: 1.17.6
+	OS: Microsoft Windows 10 Home
+	CPU: 16x AMD Ryzen 7 3700X 8-Core Processor             , 31.9 GiB RAM
+	Active video adapter NVIDIA GeForce GT 730
+	Installed video RAM: -1 MB
+	Current video mode: 1920 x 1080 x 4294967296 renk
+	Used bit depth: 32
+	Driver version: 23.21.13.9135
+	Installed display drivers: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c1a085cc86772d3f\nvldumdx.dll,C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c1a085cc86772d3f\nvldumdx.dll,C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c1a085cc86772d3f\nvldumdx.dll,C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c1a085cc86772d3f\nvldumdx.dll
+	Current user language: Türkçe (Türkiye)
+
+11:20:21 [WRN][    WQE backend]: Found incomplete auto-save workspace C:\Users\User\AppData\Roaming\MySQL\Workbench\sql_workspaces\unconnected-1.autosave
+11:20:21 [INF][      Workbench]: UI is up
+11:20:22 [INF][      Workbench]: Running the application
+11:20:23 [INF][SQL Editor Form]: Opened connection 'Local Sever' to MySQL Community Server - GPL version 8.0.32
+11:20:24 [INF][        WQE.net]: Launching SQL IDE
+11:20:24 [INF][        WQE.net]: SQL IDE UI is ready
+11:20:33 [ERR][ sqlide-history]: Can't parse <ENTRY timestamp='16:20:01'>SET GLOBAL general_log =&nbsp;1</ENTRY>, of file: C:\Users\User\AppData\Roaming\MySQL\Workbench\sql_history\2023-03-22
+11:20:33 [ERR][ sqlide-history]: Can't parse <ENTRY timestamp='17:07:19'>SET GLOBAL general_log =&nbsp;1</ENTRY>, of file: C:\Users\User\AppData\Roaming\MySQL\Workbench\sql_history\2023-03-22
+11:20:33 [ERR][  XML Functions]: LibXml: Entity: line 1: 
+11:20:33 [ERR][  XML Functions]: LibXml: parser 
+11:20:33 [ERR][  XML Functions]: LibXml: error : 
+11:20:33 [ERR][  XML Functions]: LibXml: Entity 'nbsp' not defined
+
+11:20:33 [ERR][  XML Functions]: LibXml: <ENTRY timestamp='16:20:01'>SET GLOBAL general_log =&nbsp;1</ENTRY>
+
+11:20:33 [ERR][  XML Functions]: LibXml:                                                           ^
+
+11:20:33 [ERR][ sqlide-history]: Can't parse <ENTRY timestamp='16:20:01'>SET GLOBAL general_log =&nbsp;1</ENTRY>, of file: C:\Users\User\AppData\Roaming\MySQL\Workbench\sql_history\2023-03-22
+11:20:33 [ERR][  XML Functions]: LibXml: Entity: line 1: 
+11:20:33 [ERR][  XML Functions]: LibXml: parser 
+11:20:33 [ERR][  XML Functions]: LibXml: error : 
+11:20:33 [ERR][  XML Functions]: LibXml: Entity 'nbsp' not defined
+
+11:20:33 [ERR][  XML Functions]: LibXml: <ENTRY timestamp='17:07:19'>SET GLOBAL general_log =&nbsp;1</ENTRY>
+
+11:20:33 [ERR][  XML Functions]: LibXml:                                                           ^
+
+11:20:33 [ERR][ sqlide-history]: Can't parse <ENTRY timestamp='17:07:19'>SET GLOBAL general_log =&nbsp;1</ENTRY>, of file: C:\Users\User\AppData\Roaming\MySQL\Workbench\sql_history\2023-03-22
+12:09:12 [ERR][SQL Editor Form]: Error Code: 1050. Table 'high_renewable_consumption_3' already exists
+12:24:07 [ERR][SQL Editor Form]: Error Code: 1050. Table 'share_of_consumption' already exists
+12:25:45 [ERR][SQL Editor Form]: Error Code: 1265. Data truncated for column 'gdp' at row 103
+12:26:19 [ERR][SQL Editor Form]: Error Code: 1265. Data truncated for column 'gdp' at row 103
+12:31:46 [ERR][SQL Editor Form]: Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`share_consumption_db`.`gdp`, CONSTRAINT `gdp_ibfk_1` FOREIGN KEY (`iso_code`) REFERENCES `countries` (`iso_code`) ON DELETE CASCADE)
+12:32:15 [ERR][SQL Editor Form]: Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`share_consumption_db`.`gdp`, CONSTRAINT `gdp_ibfk_1` FOREIGN KEY (`iso_code`) REFERENCES `countries` (`iso_code`) ON DELETE CASCADE)
+12:33:20 [ERR][SQL Editor Form]: Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`share_consumption_db`.`gdp`, CONSTRAINT `gdp_ibfk_1` FOREIGN KEY (`iso_code`) REFERENCES `countries` (`iso_code`) ON DELETE CASCADE)
+12:58:58 [ERR][SQL Editor Form]: Error Code: 1265. Data truncated for column 'gdp' at row 103
+13:10:00 [ERR][SQL Editor Form]: Error Code: 1050. Table 'high_gdp_avg' already exists
+13:10:08 [ERR][SQL Editor Form]: Error Code: 1050. Table 'high_renewable_consumption' already exists
+13:14:41 [ERR][SQL Editor Form]: Error Code: 1111. Invalid use of group function
+13:31:58 [ERR][SQL Editor Form]: Error Code: 1242. Subquery returns more than 1 row
+13:32:20 [ERR][SQL Editor Form]: Error Code: 1242. Subquery returns more than 1 row
+13:34:29 [ERR][SQL Editor Form]: Error Code: 1242. Subquery returns more than 1 row
+13:35:02 [ERR][SQL Editor Form]: Error Code: 1242. Subquery returns more than 1 row
+13:40:30 [ERR][SQL Editor Form]: Error Code: 1055. Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'share_consumption_db.G_temp.iso_code' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+13:41:06 [ERR][SQL Editor Form]: Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'share_consumption_db.G_temp.iso_code' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+13:42:51 [ERR][SQL Editor Form]: Error Code: 1055. Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'share_consumption_db.G.iso_code' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+13:49:37 [ERR][SQL Editor Form]: Error Code: 1140. In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'share_consumption_db.G_temp.year_of_data'; this is incompatible with sql_mode=only_full_group_by
+13:52:52 [ERR][SQL Editor Form]: Error Code: 1050. Table 'high_gdp_avg_2' already exists
+14:58:11 [INF][SQL Editor Form]: Opened connection 'Local Sever' to MySQL Community Server - GPL version 8.0.32
+14:58:12 [INF][        WQE.net]: Launching SQL IDE
+14:58:12 [ERR][ SqlEditorPanel]: Could not read file C:\Users\User\Desktop\CS306\annual_consumption.sql: Failed to open file “C:\Users\User\Desktop\CS306\annual_consumption.sql”: No such file or directory
+14:58:12 [INF][        WQE.net]: SQL IDE UI is ready
+15:49:20 [ERR][  XML Functions]: LibXml: Entity: line 1: 
+15:49:20 [ERR][  XML Functions]: LibXml: parser 
+15:49:20 [ERR][  XML Functions]: LibXml: error : 
+15:49:20 [ERR][  XML Functions]: LibXml: Entity 'nbsp' not defined
+
+15:49:20 [ERR][  XML Functions]: LibXml: <ENTRY timestamp='16:20:01'>SET GLOBAL general_log =&nbsp;1</ENTRY>
+
+15:49:20 [ERR][  XML Functions]: LibXml:                                                           ^
+
+15:49:20 [ERR][ sqlide-history]: Can't parse <ENTRY timestamp='16:20:01'>SET GLOBAL general_log =&nbsp;1</ENTRY>, of file: C:\Users\User\AppData\Roaming\MySQL\Workbench\sql_history\2023-03-22
+15:49:20 [ERR][  XML Functions]: LibXml: Entity: line 1: 
+15:49:20 [ERR][  XML Functions]: LibXml: parser 
+15:49:20 [ERR][  XML Functions]: LibXml: error : 
+15:49:20 [ERR][  XML Functions]: LibXml: Entity 'nbsp' not defined
+
+15:49:20 [ERR][  XML Functions]: LibXml: <ENTRY timestamp='17:07:19'>SET GLOBAL general_log =&nbsp;1</ENTRY>
+
+15:49:20 [ERR][  XML Functions]: LibXml:                                                           ^
+
+15:49:20 [ERR][ sqlide-history]: Can't parse <ENTRY timestamp='17:07:19'>SET GLOBAL general_log =&nbsp;1</ENTRY>, of file: C:\Users\User\AppData\Roaming\MySQL\Workbench\sql_history\2023-03-22
+16:03:32 [ERR][SQL Editor Form]: Error Code: 1111. Invalid use of group function
+16:06:05 [ERR][SQL Editor Form]: Error Code: 1111. Invalid use of group function
+16:08:10 [ERR][SQL Editor Form]: Error Code: 1050. Table 'high_gdp_avg_2' already exists
+16:17:42 [ERR][SQL Editor Form]: Error Code: 1050. Table 'high_renewable_consumption' already exists
+16:17:56 [ERR][SQL Editor Form]: Error Code: 1050. Table 'high_gdp_avg_2' already exists
+16:21:12 [ERR][SQL Editor Form]: Error Code: 1050. Table 'high_gdp_avg_2' already exists
+16:24:37 [ERR][SQL Editor Form]: Error Code: 1054. Unknown column 'S.fossil_percentage' in 'field list'
+18:55:54 [INF][        WQE.net]: Shutting down SQL editor (Local Sever (share_consumption_db))
+19:20:28 [ERR][SQL Editor Form]: Error Code: 1064
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER' at line 1
+19:21:04 [ERR][SQL Editor Form]: Error Code: 1304. PROCEDURE get_country_data already exists
+19:23:10 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+19:59:49 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:01:39 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:01:42 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:02:56 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:02:57 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:02:59 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:03 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:16 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:18 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:31 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:32 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:35 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:38 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:38 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:38 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:42 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:44 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:44 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:44 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:44 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:03:45 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:00 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:02 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:10 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:16 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:20 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:22 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:25 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:33 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:35 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:36 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:43 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:04:48 [ERR][      WBContext]: 
+20:07:05 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:07:32 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:07:39 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:07:39 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:07:39 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:07:41 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:07:48 [ERR][      WBContext]: 
+20:08:03 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:08:26 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:10:35 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+20:10:58 [ERR][SQL Editor Form]: Error Code: 1140. In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'share_consumption_db.c.country_name'; this is incompatible with sql_mode=only_full_group_by
+20:12:41 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+20:13:25 [ERR][SQL Editor Form]: Error Code: 2013. Lost connection to MySQL server during query
+20:15:42 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+20:16:16 [ERR][SQL Editor Form]: Error Code: 2013. Lost connection to MySQL server during query
+20:16:34 [INF][wb_admin_control.py:query_server_installation_info:860]: Currently connected to MySQL server version '8.0.32', conn status = True, active plugins = ['sha256_password', 'mysqlx_cache_cleaner', 'INNODB_TABLESPACES', 'INNODB_FT_CONFIG', 'INNODB_TRX', 'INNODB_CMPMEM_RESET', 'daemon_keyring_proxy_plugin', 'INNODB_TEMP_TABLE_INFO', 'INNODB_FT_DELETED', 'INNODB_CMP_PER_INDEX_RESET', 'binlog', 'INNODB_FT_INDEX_CACHE', 'PERFORMANCE_SCHEMA', 'INNODB_FT_INDEX_TABLE', 'INNODB_BUFFER_PAGE', 'sha2_cache_cleaner', 'INNODB_CACHED_INDEXES', 'MRG_MYISAM', 'INNODB_COLUMNS', 'caching_sha2_password', 'INNODB_FT_BEING_DELETED', 'INNODB_CMP_RESET', 'INNODB_CMPMEM', 'INNODB_BUFFER_POOL_STATS', 'INNODB_METRICS', 'TempTable', 'ngram', 'INNODB_CMP_PER_INDEX', 'ARCHIVE', 'INNODB_BUFFER_PAGE_LRU', 'MyISAM', 'BLACKHOLE', 'INNODB_CMP', 'INNODB_SESSION_TEMP_TABLESPACES', 'InnoDB', 'INNODB_VIRTUAL', 'INNODB_TABLES', 'mysqlx', 'INNODB_TABLESTATS', 'CSV', 'MEMORY', 'INNODB_INDEXES', 'mysql_native_password', 'INNODB_FT_DEFAULT_STOPWORD']
+20:17:44 [ERR][SQL Editor Form]: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+20:19:17 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:19:20 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:19:20 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:19:20 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:19:20 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:19:29 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:19:50 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+20:44:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:44:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:44:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:44:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:44:04 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:45:45 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:45:49 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:45:51 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:45:57 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:45:57 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:46:19 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:49:18 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:49:20 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:49:25 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:49:26 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:49:58 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:50:38 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:51:20 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:52:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:52:17 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:52:17 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:52:21 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:52:24 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:52:25 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:53:44 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:53:59 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:56:22 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:56:26 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:56:27 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:56:32 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:56:44 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:56:46 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:57:00 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:57:02 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:57:06 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:57:07 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:57:49 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:58:54 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:58:54 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:58:55 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:58:56 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:58:56 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+20:59:51 [ERR][SQL Editor Form]: Error Code: 1304. PROCEDURE get_country_data already exists
+20:59:56 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+21:00:05 [ERR][SQL Editor Form]: Error Code: 1241. Operand should contain 1 column(s)
+21:01:03 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+21:01:13 [ERR][SQL Editor Form]: Error Code: 1241. Operand should contain 1 column(s)
+21:03:28 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:03:32 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:03:34 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:03:38 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:05:15 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:05:59 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+21:09:41 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+21:09:47 [ERR][SQL Editor Form]: Error Code: 1064
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER' at line 1
+21:09:55 [ERR][SQL Editor Form]: Error Code: 1304. PROCEDURE get_country_data already exists
+21:09:59 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+21:10:47 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:11:09 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:13:39 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:13:47 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:22 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:28 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:34 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:34 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:37 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:40 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:45 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:49 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:52 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:55 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:55 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:14:59 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:16:27 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:16:28 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:20:32 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:20:32 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:20:32 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:20:32 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:20:39 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:20:41 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:20:45 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:20:50 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:20:57 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:21:23 [ERR][SQL Editor Form]: Error Code: 1054. Unknown column 'HR.iso_code' in 'field list'
+21:30:57 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:52:37 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:53:39 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:57:47 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:58:50 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:58:52 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:58:53 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:58:56 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:58:57 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:58:58 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:59:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:59:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:59:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+21:59:01 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+22:00:11 [ERR][SQL Editor Form]: Error Code: 1054. Unknown column 'HR.renewables_percentage' in 'having clause'
+22:01:08 [ERR][SQL Editor Form]: Error Code: 1054. Unknown column 'HR.renewables_percentage' in 'having clause'
+22:03:55 [ERR][SQL Editor Form]: Error Code: 1054. Unknown column 'HR.average_renewable_perc' in 'having clause'
+22:09:33 [ERR][SQL Editor Form]: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AVG(HR.average_renewable_perc)' at line 1
+22:15:10 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 
+22:16:58 [ERR][SqlEditorSchemaTree]: Exception retrieving node description : Type mismatch: expected type string, but got 

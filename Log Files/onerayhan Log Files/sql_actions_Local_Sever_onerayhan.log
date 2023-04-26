@@ -1,0 +1,3973 @@
+[1, 22:25:19] show databases: Running...
+[1, 22:25:19] show databases: Fetching...
+[1, 22:25:19] show databases: 4 row(s) returned
+[1, 19:26:02] show databases: Running...
+[1, 19:26:02] show databases: Fetching...
+[1, 19:26:02] show databases: 4 row(s) returned
+[2, 19:26:02] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Running...
+[2, 19:26:02] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[3, 19:26:12] show databases: Running...
+[3, 19:26:12] show databases: Fetching...
+[3, 19:26:12] show databases: 4 row(s) returned
+[4, 19:26:12] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Running...
+[4, 19:26:12] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[5, 19:31:49] show databases: Running...
+[5, 19:31:49] show databases: Fetching...
+[5, 19:31:49] show databases: 4 row(s) returned
+[6, 19:31:49] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Running...
+[6, 19:31:49] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[7, 19:32:25] show databases: Running...
+[7, 19:32:25] show databases: Fetching...
+[7, 19:32:25] show databases: 4 row(s) returned
+[8, 19:32:25] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Running...
+[8, 19:32:25] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[9, 19:33:27] show databases: Running...
+[9, 19:33:27] show databases: Fetching...
+[9, 19:33:27] show databases: 4 row(s) returned
+[10, 19:33:27] CREATE DATABASE Consumption: Running...
+[10, 19:33:27] CREATE DATABASE Consumption: 1 row(s) affected
+[11, 19:33:27] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Running...
+[11, 19:33:27] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[12, 19:33:50] show databases: Running...
+[12, 19:33:50] show databases: Fetching...
+[12, 19:33:50] show databases: 5 row(s) returned
+[13, 19:33:50] CREATE DATABASE Consumption: Running...
+[13, 19:33:50] CREATE DATABASE Consumption: Error Code: 1007. Can't create database 'consumption'; database exists
+[14, 19:33:53] show databases: Running...
+[14, 19:33:53] show databases: Fetching...
+[14, 19:33:53] show databases: 5 row(s) returned
+[15, 19:33:53] CREATE DATABASE Consumption: Running...
+[15, 19:33:53] CREATE DATABASE Consumption: Error Code: 1007. Can't create database 'consumption'; database exists
+[16, 19:34:01] show databases: Running...
+[16, 19:34:01] show databases: Fetching...
+[16, 19:34:01] show databases: 5 row(s) returned
+[17, 19:34:01] USE Consumption: Running...
+[17, 19:34:01] USE Consumption: 0 row(s) affected
+[18, 19:34:01] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): Running...
+[18, 19:34:01] CREATE TABLE Countries(
+isoCode VARCHAR(10), 
+countryName VARCHAR(50), 
+population INTEGER,
+medianAge REAL, 
+gdpPerCapita REAL, 
+PPP INTEGER, 
+PRIMARY KEY(isoCode)): 0 row(s) affected
+[19, 19:34:01] CREATE TABLE share_of_energy_consumption(
+isoCode VARCHAR(50) NOT NULL, 
+yearOfConsumption INTEGER, 
+renewablePercentage REAL, 
+fossilFuelPerCentage REAL,
+PRIMARY KEY(isoCode, yearOfConsumption),
+FOREIGN KEY(isoCode) REFERENCES Countries(isoCode) ON DELETE CASCADE
+): Running...
+[19, 19:34:01] CREATE TABLE share_of_energy_consumption(
+isoCode VARCHAR(50) NOT NULL, 
+yearOfConsumption INTEGER, 
+renewablePercentage REAL, 
+fossilFuelPerCentage REAL,
+PRIMARY KEY(isoCode, yearOfConsumption),
+FOREIGN KEY(isoCode) REFERENCES Countries(isoCode) ON DELETE CASCADE
+): 0 row(s) affected
+[20, 19:34:01] show databases: Running...
+[20, 19:34:01] show databases: Fetching...
+[20, 19:34:01] show databases: 5 row(s) returned
+[1, 23:02:36] DROP TABLE `consumption`.`countries`: Running...
+[1, 23:02:36] DROP TABLE `consumption`.`countries`: Error Code: 3730. Cannot drop table 'countries' referenced by a foreign key constraint 'share_of_energy_consumption_ibfk_1' on table 'share_of_energy_consumption'.
+[2, 23:02:43] DROP TABLE `consumption`.`share_of_energy_consumption`: Running...
+[2, 23:02:43] DROP TABLE `consumption`.`share_of_energy_consumption`: 0 row(s) affected
+[3, 23:02:48] DROP TABLE `consumption`.`countries`: Running...
+[3, 23:02:48] DROP TABLE `consumption`.`countries`: 0 row(s) affected
+[1, 23:11:13] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Running...
+[1, 23:11:13] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[2, 23:11:31] USE consumption: Running...
+[2, 23:11:31] USE consumption: 0 row(s) affected
+[3, 23:11:31] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Running...
+[3, 23:11:31] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[4, 23:11:31] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries ON DELETE CASCADE
+): Running...
+[4, 23:11:31] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries ON DELETE CASCADE
+): Error Code: 1239. Incorrect foreign key definition for 'foreign key without name': Key reference and table reference don't match
+[5, 23:12:01] USE consumption: Running...
+[5, 23:12:01] USE consumption: 0 row(s) affected
+[6, 23:12:01] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Running...
+[6, 23:12:01] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Error Code: 1050. Table 'countries' already exists
+[7, 23:13:14] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Running...
+[7, 23:13:14] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Error Code: 1050. Table 'countries' already exists
+[8, 23:13:48] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Running...
+[8, 23:13:48] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Error Code: 1050. Table 'countries' already exists
+[9, 23:13:55] DROP TABLE `consumption`.`countries`: Running...
+[9, 23:13:55] DROP TABLE `consumption`.`countries`: 0 row(s) affected
+[1, 23:14:48] USE consumption: Running...
+[1, 23:14:48] USE consumption: 0 row(s) affected
+[2, 23:14:48] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Running...
+[2, 23:14:48] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[3, 23:14:48] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[3, 23:14:48] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[1, 23:25:19] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[1, 23:25:19] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[2, 23:25:19] SHOW DATABASES: Executing 
+[2, 23:25:19] SHOW DATABASES: OK
+[3, 23:25:24] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[3, 23:25:24] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[4, 23:25:24] SHOW COLUMNS FROM `consumption`.`annual_consumption`: Executing 
+[4, 23:25:24] SHOW COLUMNS FROM `consumption`.`annual_consumption`: OK
+[5, 23:25:40] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[5, 23:25:40] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[6, 23:26:04] DEALLOCATE PREPARE stmt: Executing 
+[6, 23:26:04] DEALLOCATE PREPARE stmt: OK
+[7, 23:27:55] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 5000
+: Running...
+[7, 23:27:55] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 5000
+: Fetching...
+[7, 23:27:56] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 5000
+: 0 row(s) returned
+[8, 23:28:20] DELETE FROM annual_consumption: Running...
+[8, 23:28:20] DELETE FROM annual_consumption: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[9, 23:28:37] USE consumption: Running...
+[9, 23:28:37] USE consumption: 0 row(s) affected
+[10, 23:28:37] DELETE FROM annual_consumption: Running...
+[10, 23:28:37] DELETE FROM annual_consumption: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[11, 23:28:52] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 5000
+: Running...
+[11, 23:28:52] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 5000
+: Fetching...
+[11, 23:28:52] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 5000
+: 0 row(s) returned
+[12, 23:29:31] DROP TABLE `consumption`.`annual_consumption`: Running...
+[12, 23:29:31] DROP TABLE `consumption`.`annual_consumption`: 0 row(s) affected
+[13, 23:29:36] DROP TABLE `consumption`.`countries`: Running...
+[13, 23:29:36] DROP TABLE `consumption`.`countries`: 0 row(s) affected
+[14, 23:29:43] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Running...
+[14, 23:29:43] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[15, 23:29:43] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries ON DELETE CASCADE
+): Running...
+[15, 23:29:43] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries ON DELETE CASCADE
+): Error Code: 1239. Incorrect foreign key definition for 'foreign key without name': Key reference and table reference don't match
+[16, 23:30:01] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Running...
+[16, 23:30:01] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Error Code: 1050. Table 'countries' already exists
+[17, 23:30:12] DROP TABLE `consumption`.`countries`: Running...
+[17, 23:30:12] DROP TABLE `consumption`.`countries`: 0 row(s) affected
+[18, 23:30:15] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): Running...
+[18, 23:30:15] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+ppp INTEGER,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[19, 23:30:15] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[19, 23:30:15] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[20, 23:31:22] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[20, 23:31:22] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+PRIMARY KEY (iso_code)
+): Error Code: 1050. Table 'countries' already exists
+[21, 23:31:31] DROP TABLE `consumption`.`countries`: Running...
+[21, 23:31:31] DROP TABLE `consumption`.`countries`: Error Code: 3730. Cannot drop table 'countries' referenced by a foreign key constraint 'annual_consumption_ibfk_1' on table 'annual_consumption'.
+[22, 23:31:40] DROP TABLE `consumption`.`annual_consumption`: Running...
+[22, 23:31:40] DROP TABLE `consumption`.`annual_consumption`: 0 row(s) affected
+[23, 23:31:45] DROP TABLE `consumption`.`countries`: Running...
+[23, 23:31:45] DROP TABLE `consumption`.`countries`: 0 row(s) affected
+[24, 23:31:49] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[24, 23:31:49] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp_percapita REAL,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[25, 23:31:49] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[25, 23:31:49] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[26, 23:32:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[26, 23:32:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[27, 23:32:34] SHOW DATABASES: Executing 
+[27, 23:32:34] SHOW DATABASES: OK
+[28, 23:32:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[28, 23:32:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[29, 23:32:38] SHOW COLUMNS FROM `consumption`.`countries`: Executing 
+[29, 23:32:38] SHOW COLUMNS FROM `consumption`.`countries`: OK
+[30, 23:34:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[30, 23:34:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[31, 23:34:26] SHOW DATABASES: Executing 
+[31, 23:34:26] SHOW DATABASES: OK
+[32, 23:34:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[32, 23:34:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[33, 23:34:28] SHOW COLUMNS FROM `consumption`.`countries`: Executing 
+[33, 23:34:28] SHOW COLUMNS FROM `consumption`.`countries`: OK
+[34, 23:34:49] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`,`gdp_percapita`) VALUES(?,?,?,?,?)': Executing 
+[34, 23:34:49] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`,`gdp_percapita`) VALUES(?,?,?,?,?)': OK
+[35, 23:34:51] DEALLOCATE PREPARE stmt: Executing 
+[35, 23:34:51] DEALLOCATE PREPARE stmt: OK
+[36, 23:35:02] SELECT * FROM consumption.countries
+LIMIT 0, 5000
+: Running...
+[36, 23:35:02] SELECT * FROM consumption.countries
+LIMIT 0, 5000
+: Fetching...
+[36, 23:35:02] SELECT * FROM consumption.countries
+LIMIT 0, 5000
+: 4 row(s) returned
+[37, 00:00:10] DELETE FROM Countries: Running...
+[37, 00:00:10] DELETE FROM Countries: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[38, 00:00:45] DELETE FROM Countries WHERE NOT NULL: Running...
+[38, 00:00:45] DELETE FROM Countries WHERE NOT NULL: 0 row(s) affected
+[39, 00:00:53] DELETE FROM Countries WHERE NULL: Running...
+[39, 00:00:53] DELETE FROM Countries WHERE NULL: 0 row(s) affected
+[40, 00:01:05] DROP TABLE `consumption`.`countries`: Running...
+[40, 00:01:05] DROP TABLE `consumption`.`countries`: Error Code: 3730. Cannot drop table 'countries' referenced by a foreign key constraint 'annual_consumption_ibfk_1' on table 'annual_consumption'.
+[41, 00:01:12] DROP TABLE `consumption`.`annual_consumption`: Running...
+[41, 00:01:12] DROP TABLE `consumption`.`annual_consumption`: 0 row(s) affected
+[42, 00:01:16] DROP TABLE `consumption`.`countries`: Running...
+[42, 00:01:16] DROP TABLE `consumption`.`countries`: 0 row(s) affected
+[43, 00:01:48] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[43, 00:01:48] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population INTEGER,
+median_age REAL,
+gdp REAL,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[44, 00:01:48] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[44, 00:01:48] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[45, 00:03:17] SET GLOBAL general_log = 'ON': Running...
+[45, 00:03:17] SET GLOBAL general_log = 'ON': 0 row(s) affected
+[46, 00:04:11] SELECT * FROM consumption.countries
+LIMIT 0, 10000
+: Running...
+[46, 00:04:11] SELECT * FROM consumption.countries
+LIMIT 0, 10000
+: Fetching...
+[46, 00:04:11] SELECT * FROM consumption.countries
+LIMIT 0, 10000
+: 0 row(s) returned
+[47, 00:04:23] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[47, 00:04:23] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[48, 00:04:23] SHOW DATABASES: Executing 
+[48, 00:04:23] SHOW DATABASES: OK
+[49, 00:04:47] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[49, 00:04:47] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[50, 00:04:47] SHOW COLUMNS FROM `consumption`.`countries`: Executing 
+[50, 00:04:47] SHOW COLUMNS FROM `consumption`.`countries`: OK
+[51, 00:06:25] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`,`gdp`) VALUES(?,?,?,?,?)': Executing 
+[51, 00:06:25] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`,`gdp`) VALUES(?,?,?,?,?)': OK
+[52, 00:06:27] DEALLOCATE PREPARE stmt: Executing 
+[52, 00:06:27] DEALLOCATE PREPARE stmt: OK
+[53, 00:09:49] SELECT * FROM consumption.countries
+LIMIT 0, 10000
+: Running...
+[53, 00:09:49] SELECT * FROM consumption.countries
+LIMIT 0, 10000
+: Fetching...
+[53, 00:09:49] SELECT * FROM consumption.countries
+LIMIT 0, 10000
+: 4 row(s) returned
+[54, 00:11:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[54, 00:11:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[55, 00:11:31] SHOW DATABASES: Executing 
+[55, 00:11:31] SHOW DATABASES: OK
+[56, 00:11:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[56, 00:11:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[57, 00:11:34] SHOW COLUMNS FROM `consumption`.`countries`: Executing 
+[57, 00:11:34] SHOW COLUMNS FROM `consumption`.`countries`: OK
+[58, 00:12:21] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`,`gdp`) VALUES(?,?,?,?,?)': Executing 
+[58, 00:12:21] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`,`gdp`) VALUES(?,?,?,?,?)': OK
+[59, 00:12:22] DEALLOCATE PREPARE stmt: Executing 
+[59, 00:12:22] DEALLOCATE PREPARE stmt: OK
+[60, 00:16:10] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[60, 00:16:10] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[61, 00:16:10] SHOW DATABASES: Executing 
+[61, 00:16:10] SHOW DATABASES: OK
+[62, 00:16:12] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[62, 00:16:12] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[63, 00:16:12] SHOW COLUMNS FROM `consumption`.`annual_consumption`: Executing 
+[63, 00:16:12] SHOW COLUMNS FROM `consumption`.`annual_consumption`: OK
+[64, 00:16:24] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[64, 00:16:24] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[65, 00:17:09] DEALLOCATE PREPARE stmt: Executing 
+[65, 00:17:09] DEALLOCATE PREPARE stmt: OK
+[1, 00:36:15] SELECT * FROM consumption.countries
+LIMIT 0, 10000
+: Running...
+[1, 00:36:15] SELECT * FROM consumption.countries
+LIMIT 0, 10000
+: Fetching...
+[1, 00:36:15] SELECT * FROM consumption.countries
+LIMIT 0, 10000
+: 4 row(s) returned
+[2, 00:36:58] EXPLAIN SELECT * FROM consumption.countries: Executing 
+[2, 00:36:58] EXPLAIN SELECT * FROM consumption.countries: OK
+[3, 00:36:58] EXPLAIN FORMAT=JSON SELECT * FROM consumption.countries: Executing 
+[3, 00:36:58] EXPLAIN FORMAT=JSON SELECT * FROM consumption.countries: OK
+[4, 00:37:20] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[4, 00:37:20] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[5, 00:37:20] SHOW DATABASES: Executing 
+[5, 00:37:20] SHOW DATABASES: OK
+[6, 00:37:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[6, 00:37:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[7, 00:37:32] SHOW COLUMNS FROM `consumption`.`countries`: Executing 
+[7, 00:37:32] SHOW COLUMNS FROM `consumption`.`countries`: OK
+[8, 00:37:37] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[8, 00:37:37] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[9, 00:37:37] SHOW TABLES FROM `consumption` like 'countries1': Executing 
+[9, 00:37:37] SHOW TABLES FROM `consumption` like 'countries1': OK
+[10, 00:38:00]  CREATE TABLE `consumption`.`countries1` (`Entity` text, `Code` text, `Population` int, `Median age` text, `GDP` text): Executing 
+[10, 00:38:00]  CREATE TABLE `consumption`.`countries1` (`Entity` text, `Code` text, `Population` int, `Median age` text, `GDP` text): OK
+[11, 00:38:00] TRUNCATE TABLE `consumption`.`countries1`: Executing 
+[11, 00:38:00] TRUNCATE TABLE `consumption`.`countries1`: OK
+[12, 00:38:00] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries1` (`Entity`,`Code`,`Population`,`Median age`,`GDP`) VALUES(?,?,?,?,?)': Executing 
+[12, 00:38:00] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries1` (`Entity`,`Code`,`Population`,`Median age`,`GDP`) VALUES(?,?,?,?,?)': OK
+[13, 00:38:02] DEALLOCATE PREPARE stmt: Executing 
+[13, 00:38:02] DEALLOCATE PREPARE stmt: OK
+[14, 00:38:13] SELECT * FROM consumption.countries1
+LIMIT 0, 10000
+: Running...
+[14, 00:38:13] SELECT * FROM consumption.countries1
+LIMIT 0, 10000
+: Fetching...
+[14, 00:38:13] SELECT * FROM consumption.countries1
+LIMIT 0, 10000
+: 236 row(s) returned
+[15, 00:39:51] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[15, 00:39:51] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[16, 00:39:51] SHOW DATABASES: Executing 
+[16, 00:39:51] SHOW DATABASES: OK
+[17, 00:39:54] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[17, 00:39:54] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[18, 00:39:54] SHOW TABLES FROM `consumption` like 'countries2': Executing 
+[18, 00:39:54] SHOW TABLES FROM `consumption` like 'countries2': OK
+[19, 00:40:36]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` int, `Median age` double, `GDP` bigint): Executing 
+[19, 00:40:36]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` int, `Median age` double, `GDP` bigint): OK
+[20, 00:40:36] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries2` (`Entity`,`Code`,`Population`,`Median age`,`GDP`) VALUES(?,?,?,?,?)': Executing 
+[20, 00:40:36] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries2` (`Entity`,`Code`,`Population`,`Median age`,`GDP`) VALUES(?,?,?,?,?)': OK
+[21, 00:40:37] DEALLOCATE PREPARE stmt: Executing 
+[21, 00:40:37] DEALLOCATE PREPARE stmt: OK
+[22, 00:41:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[22, 00:41:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[23, 00:41:38] SHOW DATABASES: Executing 
+[23, 00:41:38] SHOW DATABASES: OK
+[24, 00:41:40] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[24, 00:41:40] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[25, 00:42:12]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` int, `Median age` double, `GDP` double): Executing 
+[25, 00:42:12]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` int, `Median age` double, `GDP` double): Error Code: 1050
+Table 'countries2' already exists
+[26, 00:42:12]  DROP TABLE `consumption`.`countries2`: Executing 
+[26, 00:42:12]  DROP TABLE `consumption`.`countries2`: OK
+[27, 00:42:12]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` int, `Median age` double, `GDP` double): Executing 
+[27, 00:42:12]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` int, `Median age` double, `GDP` double): OK
+[28, 00:42:12] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries2` (`Entity`,`Code`,`Population`,`Median age`,`GDP`) VALUES(?,?,?,?,?)': Executing 
+[28, 00:42:12] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries2` (`Entity`,`Code`,`Population`,`Median age`,`GDP`) VALUES(?,?,?,?,?)': OK
+[29, 00:42:13] DEALLOCATE PREPARE stmt: Executing 
+[29, 00:42:13] DEALLOCATE PREPARE stmt: OK
+[30, 00:43:08] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[30, 00:43:08] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[31, 00:43:08] SHOW DATABASES: Executing 
+[31, 00:43:08] SHOW DATABASES: OK
+[32, 00:43:10] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[32, 00:43:10] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[33, 00:43:10] SHOW COLUMNS FROM `consumption`.`countries`: Executing 
+[33, 00:43:10] SHOW COLUMNS FROM `consumption`.`countries`: OK
+[34, 00:43:36] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`iso_code`,`country_name`,`population`,`median_age`,`gdp`) VALUES(?,?,?,?,?)': Executing 
+[34, 00:43:36] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`iso_code`,`country_name`,`population`,`median_age`,`gdp`) VALUES(?,?,?,?,?)': OK
+[35, 00:43:37] DEALLOCATE PREPARE stmt: Executing 
+[35, 00:43:37] DEALLOCATE PREPARE stmt: OK
+[36, 00:51:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[36, 00:51:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[37, 00:51:04] SHOW DATABASES: Executing 
+[37, 00:51:04] SHOW DATABASES: OK
+[38, 00:51:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[38, 00:51:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[39, 00:51:17] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[39, 00:51:17] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[40, 00:51:49]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` bigint, `Median age` double, `GDP` bigint): Executing 
+[40, 00:51:49]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` bigint, `Median age` double, `GDP` bigint): Error Code: 1050
+Table 'countries2' already exists
+[41, 00:51:49]  DROP TABLE `consumption`.`countries2`: Executing 
+[41, 00:51:49]  DROP TABLE `consumption`.`countries2`: OK
+[42, 00:51:49]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` bigint, `Median age` double, `GDP` bigint): Executing 
+[42, 00:51:49]  CREATE TABLE `consumption`.`countries2` (`Entity` text, `Code` text, `Population` bigint, `Median age` double, `GDP` bigint): OK
+[43, 00:51:49] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries2` (`Entity`,`Code`,`Population`,`Median age`,`GDP`) VALUES(?,?,?,?,?)': Executing 
+[43, 00:51:49] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries2` (`Entity`,`Code`,`Population`,`Median age`,`GDP`) VALUES(?,?,?,?,?)': OK
+[44, 00:51:51] DEALLOCATE PREPARE stmt: Executing 
+[44, 00:51:51] DEALLOCATE PREPARE stmt: OK
+[45, 00:55:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[45, 00:55:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[46, 00:55:04] SHOW DATABASES: Executing 
+[46, 00:55:04] SHOW DATABASES: OK
+[47, 00:55:05] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[47, 00:55:05] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[48, 00:55:05] SHOW COLUMNS FROM `consumption`.`countries`: Executing 
+[48, 00:55:05] SHOW COLUMNS FROM `consumption`.`countries`: OK
+[49, 00:55:22] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`) VALUES(?,?,?,?)': Executing 
+[49, 00:55:22] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`) VALUES(?,?,?,?)': OK
+[50, 00:55:23] DEALLOCATE PREPARE stmt: Executing 
+[50, 00:55:23] DEALLOCATE PREPARE stmt: OK
+[51, 01:03:42] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`) VALUES(?,?,?,?)': Executing 
+[51, 01:03:42] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`) VALUES(?,?,?,?)': OK
+[52, 01:03:44] DEALLOCATE PREPARE stmt: Executing 
+[52, 01:03:44] DEALLOCATE PREPARE stmt: OK
+[53, 01:07:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[53, 01:07:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[54, 01:07:25] SHOW DATABASES: Executing 
+[54, 01:07:25] SHOW DATABASES: OK
+[55, 01:07:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[55, 01:07:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[56, 01:07:27] SHOW COLUMNS FROM `consumption`.`countries`: Executing 
+[56, 01:07:27] SHOW COLUMNS FROM `consumption`.`countries`: OK
+[57, 01:07:40] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`) VALUES(?,?,?,?)': Executing 
+[57, 01:07:40] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries` (`country_name`,`iso_code`,`population`,`median_age`) VALUES(?,?,?,?)': OK
+[58, 01:07:41] DEALLOCATE PREPARE stmt: Executing 
+[58, 01:07:41] DEALLOCATE PREPARE stmt: OK
+[59, 01:07:54] DROP TABLE `consumption`.`countries1`: Running...
+[59, 01:07:54] DROP TABLE `consumption`.`countries1`: 0 row(s) affected
+[60, 01:08:12] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Running...
+[60, 01:08:12] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Fetching...
+[60, 01:08:12] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: 34 row(s) returned
+[61, 01:08:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[61, 01:08:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[62, 01:08:33] SHOW DATABASES: Executing 
+[62, 01:08:33] SHOW DATABASES: OK
+[63, 01:09:51] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[63, 01:09:51] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[64, 01:09:51] SHOW DATABASES: Executing 
+[64, 01:09:51] SHOW DATABASES: OK
+[65, 01:09:53] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[65, 01:09:53] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[66, 01:09:53] SHOW COLUMNS FROM `consumption`.`annual_consumption`: Executing 
+[66, 01:09:53] SHOW COLUMNS FROM `consumption`.`annual_consumption`: OK
+[67, 01:10:00] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[67, 01:10:00] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[68, 01:10:24] DEALLOCATE PREPARE stmt: Executing 
+[68, 01:10:24] DEALLOCATE PREPARE stmt: OK
+[69, 01:10:43] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Running...
+[69, 01:10:43] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Fetching...
+[69, 01:10:43] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: 4187 row(s) returned
+[70, 09:44:15] DROP TABLE `consumption`.`countries2`: Running...
+[70, 09:44:15] DROP TABLE `consumption`.`countries2`: 0 row(s) affected
+[71, 09:44:36] CREATE TABLE Annual_Consumption_1(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[71, 09:44:36] CREATE TABLE Annual_Consumption_1(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[72, 09:45:04] USE consumption: Running...
+[72, 09:45:04] USE consumption: 0 row(s) affected
+[73, 09:45:04] CREATE TABLE Annual_Consumption_1(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[73, 09:45:04] CREATE TABLE Annual_Consumption_1(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[74, 09:47:17] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[74, 09:47:17] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[75, 09:47:17] SHOW DATABASES: Executing 
+[75, 09:47:17] SHOW DATABASES: OK
+[76, 09:47:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[76, 09:47:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[77, 09:47:22] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption': Executing 
+[77, 09:47:22] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption': OK
+[78, 09:47:35] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[78, 09:47:35] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[79, 09:47:35] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: Executing 
+[79, 09:47:35] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: OK
+[80, 09:47:45] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[80, 09:47:45] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[81, 09:47:45] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption': Executing 
+[81, 09:47:45] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption': OK
+[82, 09:47:56] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[82, 09:47:56] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[83, 09:47:56] SHOW COLUMNS FROM `consumption`.`share_of_energy_consumption`: Executing 
+[83, 09:47:56] SHOW COLUMNS FROM `consumption`.`share_of_energy_consumption`: Error Code: 1146
+Table 'consumption.share_of_energy_consumption' doesn't exist
+[84, 09:48:04] PREPARE stmt FROM 'INSERT INTO `consumption`.`share_of_energy_consumption` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[84, 09:48:04] PREPARE stmt FROM 'INSERT INTO `consumption`.`share_of_energy_consumption` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Error Code: 1146
+Table 'consumption.share_of_energy_consumption' doesn't exist
+[1, 09:50:01] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[1, 09:50:01] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[2, 09:50:01] SHOW DATABASES: Executing 
+[2, 09:50:01] SHOW DATABASES: OK
+[3, 09:50:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[3, 09:50:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[4, 09:50:03] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: Executing 
+[4, 09:50:03] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: OK
+[5, 09:50:10] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[5, 09:50:10] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[6, 09:50:44] DEALLOCATE PREPARE stmt: Executing 
+[6, 09:50:44] DEALLOCATE PREPARE stmt: OK
+[7, 09:51:08] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Running...
+[7, 09:51:08] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Fetching...
+[7, 09:51:08] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: 4187 row(s) returned
+[8, 09:53:14] DROP TABLE `consumption`.`annual_consumption_1`: Running...
+[8, 09:53:14] DROP TABLE `consumption`.`annual_consumption_1`: 0 row(s) affected
+[9, 09:53:21] USE consumption: Running...
+[9, 09:53:21] USE consumption: 0 row(s) affected
+[10, 09:53:21] CREATE TABLE Annual_Consumption_1(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[10, 09:53:21] CREATE TABLE Annual_Consumption_1(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[11, 09:53:29] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[11, 09:53:29] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[12, 09:53:29] SHOW DATABASES: Executing 
+[12, 09:53:29] SHOW DATABASES: OK
+[13, 09:53:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[13, 09:53:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[14, 09:53:31] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: Executing 
+[14, 09:53:31] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: OK
+[15, 09:53:42] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[15, 09:53:42] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[16, 09:54:11] DEALLOCATE PREPARE stmt: Executing 
+[16, 09:54:11] DEALLOCATE PREPARE stmt: OK
+[17, 09:56:27] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[17, 09:56:27] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[18, 09:56:37] DEALLOCATE PREPARE stmt: Executing 
+[18, 09:56:37] DEALLOCATE PREPARE stmt: OK
+[19, 09:59:29] CREATE TABLE Countries_1 (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+gdp REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[19, 09:59:29] CREATE TABLE Countries_1 (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+gdp REAL,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[20, 09:59:43] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[20, 09:59:43] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[21, 09:59:43] SHOW DATABASES: Executing 
+[21, 09:59:43] SHOW DATABASES: OK
+[22, 09:59:44] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[22, 09:59:44] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[23, 09:59:44] SHOW COLUMNS FROM `consumption`.`countries_1`: Executing 
+[23, 09:59:44] SHOW COLUMNS FROM `consumption`.`countries_1`: OK
+[24, 09:59:53] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries_1` (`country_name`,`iso_code`,`population`,`median_age`) VALUES(?,?,?,?)': Executing 
+[24, 09:59:53] PREPARE stmt FROM 'INSERT INTO `consumption`.`countries_1` (`country_name`,`iso_code`,`population`,`median_age`) VALUES(?,?,?,?)': OK
+[25, 10:02:04] DEALLOCATE PREPARE stmt: Executing 
+[25, 10:02:04] DEALLOCATE PREPARE stmt: OK
+[26, 10:02:49] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: Executing 
+[26, 10:02:49] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: OK
+[27, 10:04:39] SELECT `iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage` FROM `consumption`.`annual_consumption_1` : Executing 
+[27, 10:04:39] SELECT `iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage` FROM `consumption`.`annual_consumption_1` : OK
+[28, 10:09:07] DROP TABLE `consumption`.`annual_consumption_1`: Running...
+[28, 10:09:07] DROP TABLE `consumption`.`annual_consumption_1`: 0 row(s) affected
+[29, 10:09:11] USE consumption: Running...
+[29, 10:09:11] USE consumption: 0 row(s) affected
+[30, 10:09:11] CREATE TABLE Annual_Consumption_1(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[30, 10:09:11] CREATE TABLE Annual_Consumption_1(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[31, 10:09:19] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[31, 10:09:19] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[32, 10:09:19] SHOW DATABASES: Executing 
+[32, 10:09:19] SHOW DATABASES: OK
+[33, 10:09:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[33, 10:09:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[34, 10:09:28] SHOW TABLES FROM `consumption` like 'countries2': Executing 
+[34, 10:09:28] SHOW TABLES FROM `consumption` like 'countries2': OK
+[35, 10:09:54] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[35, 10:09:54] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[36, 10:09:54] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: Executing 
+[36, 10:09:54] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: OK
+[37, 10:10:19] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[37, 10:10:19] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[38, 10:10:19] SHOW DATABASES: Executing 
+[38, 10:10:19] SHOW DATABASES: OK
+[39, 10:10:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[39, 10:10:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[40, 10:10:22] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption_2': Executing 
+[40, 10:10:22] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption_2': OK
+[41, 10:10:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[41, 10:10:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[42, 10:10:31] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: Executing 
+[42, 10:10:31] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: OK
+[43, 10:11:02] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[43, 10:11:02] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[44, 10:11:02] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: Executing 
+[44, 10:11:02] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: OK
+[45, 10:11:16] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[45, 10:11:16] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[46, 10:50:04] DEALLOCATE PREPARE stmt: Executing 
+[46, 10:50:04] DEALLOCATE PREPARE stmt: OK
+[47, 16:51:58] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[47, 16:51:58] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[48, 16:51:58] SHOW DATABASES: Executing 
+[48, 16:51:58] SHOW DATABASES: OK
+[49, 16:52:00] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[49, 16:52:00] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[50, 16:52:00] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption_2': Executing 
+[50, 16:52:00] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption_2': OK
+[51, 16:52:15]  CREATE TABLE `consumption`.`share_of_energy_consumption_2` (`ï»¿iso_code` text, `year_of_data` int, `renewables_percentage` double, `fossil_fuels_percentage` double): Executing 
+[51, 16:52:15]  CREATE TABLE `consumption`.`share_of_energy_consumption_2` (`ï»¿iso_code` text, `year_of_data` int, `renewables_percentage` double, `fossil_fuels_percentage` double): OK
+[52, 16:52:16] PREPARE stmt FROM 'INSERT INTO `consumption`.`share_of_energy_consumption_2` (`ï»¿iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[52, 16:52:16] PREPARE stmt FROM 'INSERT INTO `consumption`.`share_of_energy_consumption_2` (`ï»¿iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[53, 17:11:45] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Running...
+[53, 17:11:45] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Fetching...
+[53, 17:11:45] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: 4187 row(s) returned
+[54, 17:16:06] DEALLOCATE PREPARE stmt: Executing 
+[54, 17:16:06] DEALLOCATE PREPARE stmt: OK
+[1, 17:17:43] DROP TABLE `consumption`.`share_of_energy_consumption_2`: Running...
+[1, 17:17:43] DROP TABLE `consumption`.`share_of_energy_consumption_2`: 0 row(s) affected
+[2, 17:17:50] TRUNCATE `consumption`.`annual_consumption_1`: Executing 
+[2, 17:17:50] TRUNCATE `consumption`.`annual_consumption_1`: OK
+[3, 17:17:53] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Running...
+[3, 17:17:53] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Fetching...
+[3, 17:17:53] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: 0 row(s) returned
+[4, 17:18:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[4, 17:18:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[5, 17:18:25] SHOW DATABASES: Executing 
+[5, 17:18:25] SHOW DATABASES: OK
+[6, 17:18:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[6, 17:18:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[7, 17:18:27] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: Executing 
+[7, 17:18:27] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: OK
+[8, 17:18:36] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[8, 17:18:36] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[9, 17:19:01] DEALLOCATE PREPARE stmt: Executing 
+[9, 17:19:01] DEALLOCATE PREPARE stmt: OK
+[10, 17:22:43] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[10, 17:22:43] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[11, 17:22:49] DEALLOCATE PREPARE stmt: Executing 
+[11, 17:22:49] DEALLOCATE PREPARE stmt: OK
+[12, 17:23:44] TRUNCATE `consumption`.`annual_consumption_1`: Executing 
+[12, 17:23:44] TRUNCATE `consumption`.`annual_consumption_1`: OK
+[13, 17:23:52] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[13, 17:23:52] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[14, 17:23:52] SHOW DATABASES: Executing 
+[14, 17:23:52] SHOW DATABASES: OK
+[15, 17:23:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[15, 17:23:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[16, 17:23:55] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption_3': Executing 
+[16, 17:23:55] SHOW TABLES FROM `consumption` like 'share_of_energy_consumption_3': OK
+[17, 17:24:02]  CREATE TABLE `consumption`.`share_of_energy_consumption_3` (`ï»¿iso_code` text, `year_of_data` int, `renewables_percentage` double, `fossil_fuels_percentage` text): Executing 
+[17, 17:24:02]  CREATE TABLE `consumption`.`share_of_energy_consumption_3` (`ï»¿iso_code` text, `year_of_data` int, `renewables_percentage` double, `fossil_fuels_percentage` text): OK
+[18, 17:24:03] PREPARE stmt FROM 'INSERT INTO `consumption`.`share_of_energy_consumption_3` (`ï»¿iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[18, 17:24:03] PREPARE stmt FROM 'INSERT INTO `consumption`.`share_of_energy_consumption_3` (`ï»¿iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[19, 17:28:05] DEALLOCATE PREPARE stmt: Executing 
+[19, 17:28:05] DEALLOCATE PREPARE stmt: OK
+[20, 17:28:14] TRUNCATE `consumption`.`annual_consumption_1`: Executing 
+[20, 17:28:14] TRUNCATE `consumption`.`annual_consumption_1`: OK
+[21, 17:28:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[21, 17:28:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[22, 17:28:22] SHOW DATABASES: Executing 
+[22, 17:28:22] SHOW DATABASES: OK
+[23, 17:28:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[23, 17:28:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[24, 17:28:25] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: Executing 
+[24, 17:28:25] SHOW COLUMNS FROM `consumption`.`annual_consumption_1`: OK
+[25, 17:28:37] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': Executing 
+[25, 17:28:37] PREPARE stmt FROM 'INSERT INTO `consumption`.`annual_consumption_1` (`iso_code`,`year_of_data`,`renewables_percentage`,`fossil_fuels_percentage`) VALUES(?,?,?,?)': OK
+[26, 18:07:24] DEALLOCATE PREPARE stmt: Executing 
+[26, 18:07:24] DEALLOCATE PREPARE stmt: OK
+[27, 14:07:11] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Running...
+[27, 14:07:11] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Fetching...
+[27, 14:07:11] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: 4187 row(s) returned
+[28, 15:53:49] TRUNCATE `consumption`.`annual_consumption_1`: Executing 
+[28, 15:53:49] TRUNCATE `consumption`.`annual_consumption_1`: OK
+[29, 15:54:13] LOAD DATA INFILE 'C:\Users\User\Desktop\CS306\shre_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Running...
+[29, 15:54:13] LOAD DATA INFILE 'C:\Users\User\Desktop\CS306\shre_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[30, 15:54:30] USE consumption: Running...
+[30, 15:54:30] USE consumption: 0 row(s) affected
+[31, 15:54:30] LOAD DATA INFILE 'C:\Users\User\Desktop\CS306\shre_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Running...
+[31, 15:54:30] LOAD DATA INFILE 'C:\Users\User\Desktop\CS306\shre_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+[32, 15:56:18] SHOW VARIABLES LIKE "secure_file_priv": Running...
+[32, 15:56:18] SHOW VARIABLES LIKE "secure_file_priv": Fetching...
+[32, 15:56:18] SHOW VARIABLES LIKE "secure_file_priv": 1 row(s) returned
+[33, 15:57:58] USE consumption: Running...
+[33, 15:57:58] USE consumption: 0 row(s) affected
+[34, 15:57:58] LOAD DATA LOCAL INFILE 'C:\Users\User\Desktop\CS306\shre_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Running...
+[34, 15:57:58] LOAD DATA LOCAL INFILE 'C:\Users\User\Desktop\CS306\shre_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Error Code: 3948. Loading local data is disabled; this must be enabled on both the client and server sides
+[35, 16:47:57] USE consumption: Running...
+[35, 16:47:57] USE consumption: 0 row(s) affected
+[36, 16:47:57] LOAD DATA INFILE 'C:\Users\User\Desktop\CS306\shre_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Running...
+[36, 16:47:57] LOAD DATA INFILE 'C:\Users\User\Desktop\CS306\shre_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+[37, 16:51:42] USE consumption: Running...
+[37, 16:51:42] USE consumption: 0 row(s) affected
+[38, 16:51:42] LOAD DATA INFILE 'share_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Running...
+[38, 16:51:42] LOAD DATA INFILE 'share_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+[39, 16:52:14] USE consumption: Running...
+[39, 16:52:14] USE consumption: 0 row(s) affected
+[40, 16:52:14] LOAD DATA INFILE 'C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\share_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Running...
+[40, 16:52:14] LOAD DATA INFILE 'C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\share_of_energy_consumption_3' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+[41, 16:53:22] USE consumption: Running...
+[41, 16:53:22] USE consumption: 0 row(s) affected
+[42, 16:53:22] LOAD DATA INFILE 'C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\share_of_energy_consumption_3.csv' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Running...
+[42, 16:53:22] LOAD DATA INFILE 'C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\share_of_energy_consumption_3.csv' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+[43, 16:54:24] USE consumption: Running...
+[43, 16:54:24] USE consumption: 0 row(s) affected
+[44, 16:54:24] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_3.csv' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Running...
+[44, 16:54:24] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_3.csv' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n': Error Code: 1366. Incorrect integer value: 'year_of_data' for column 'year_of_data' at row 1
+[45, 16:56:17] USE consumption: Running...
+[45, 16:56:17] USE consumption: 0 row(s) affected
+[46, 16:56:17] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_3.csv' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[46, 16:56:17] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_3.csv' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1265. Data truncated for column 'fossil_fuels_percentage' at row 1504
+[47, 16:59:09] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Running...
+[47, 16:59:09] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Fetching...
+[47, 16:59:09] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: 0 row(s) returned
+[48, 17:10:37] USE consumption: Running...
+[48, 17:10:37] USE consumption: 0 row(s) affected
+[49, 17:10:37] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[49, 17:10:38] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption_1 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 4215 row(s) affected
+Records: 4215  Deleted: 0  Skipped: 0  Warnings: 0
+[50, 17:11:05] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Running...
+[50, 17:11:05] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: Fetching...
+[50, 17:11:05] SELECT * FROM consumption.annual_consumption_1
+LIMIT 0, 10000
+: 4215 row(s) returned
+[51, 17:13:55] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Running...
+[51, 17:13:56] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Fetching...
+[51, 17:13:56] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: 4187 row(s) returned
+[52, 17:14:03] TRUNCATE `consumption`.`annual_consumption`: Executing 
+[52, 17:14:03] TRUNCATE `consumption`.`annual_consumption`: OK
+[53, 17:14:07] DROP TABLE `consumption`.`annual_consumption_1`: Running...
+[53, 17:14:07] DROP TABLE `consumption`.`annual_consumption_1`: 0 row(s) affected
+[54, 17:14:12] DROP TABLE `consumption`.`countries_1`: Running...
+[54, 17:14:12] DROP TABLE `consumption`.`countries_1`: 0 row(s) affected
+[55, 17:15:28] DROP TABLE `consumption`.`annual_consumption`: Running...
+[55, 17:15:28] DROP TABLE `consumption`.`annual_consumption`: 0 row(s) affected
+[56, 17:15:44] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[56, 17:15:44] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[57, 17:15:54] DROP TABLE `consumption`.`share_of_energy_consumption_3`: Running...
+[57, 17:15:55] DROP TABLE `consumption`.`share_of_energy_consumption_3`: 0 row(s) affected
+[58, 17:16:05] USE consumption: Running...
+[58, 17:16:05] USE consumption: 0 row(s) affected
+[59, 17:16:05] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[59, 17:16:06] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 4215 row(s) affected
+Records: 4215  Deleted: 0  Skipped: 0  Warnings: 0
+[60, 17:16:10] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Running...
+[60, 17:16:10] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: Fetching...
+[60, 17:16:10] SELECT * FROM consumption.annual_consumption
+LIMIT 0, 10000
+: 4215 row(s) returned
+[61, 16:13:38] CREATE DATABASE consumption_db: Running...
+[61, 16:13:38] CREATE DATABASE consumption_db: 1 row(s) affected
+[62, 16:13:38] USE consumption_db: Running...
+[62, 16:13:38] USE consumption_db: 0 row(s) affected
+[63, 16:13:38] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[63, 16:13:38] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1146. Table 'consumption_db.annual_consumption' doesn't exist
+[64, 16:20:01] SET GLOBAL general_log = 1: Running...
+[64, 16:20:01] SET GLOBAL general_log = 1: Error Code: 1231. Variable 'general_log' can't be set to the value of ' 1'
+[65, 16:20:10] CREATE DATABASE consumption_db: Running...
+[65, 16:20:10] CREATE DATABASE consumption_db: Error Code: 1007. Can't create database 'consumption_db'; database exists
+[66, 16:20:31] USE consumption_db: Running...
+[66, 16:20:31] USE consumption_db: 0 row(s) affected
+[67, 16:20:31] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+gdp REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[67, 16:20:31] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+gdp REAL,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[68, 16:20:31] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[68, 16:20:31] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[69, 16:20:40] DROP DATABASE `consumption_db`: Running...
+[69, 16:20:40] DROP DATABASE `consumption_db`: 2 row(s) affected
+[70, 16:20:44] CREATE DATABASE consumption_db: Running...
+[70, 16:20:44] CREATE DATABASE consumption_db: 1 row(s) affected
+[71, 16:20:44] USE consumption_db: Running...
+[71, 16:20:44] USE consumption_db: 0 row(s) affected
+[72, 16:20:44] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+gdp REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[72, 16:20:44] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+gdp REAL,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[73, 16:20:44] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[73, 16:20:44] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[74, 16:20:58] USE consumption: Running...
+[74, 16:20:58] USE consumption: 0 row(s) affected
+[75, 16:20:58] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[75, 16:20:58] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 29. File 'C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\countries_2.csv' not found (OS errno 2 - No such file or directory)
+[76, 16:21:17] TRUNCATE `consumption_db`.`annual_consumption`: Executing 
+[76, 16:21:17] TRUNCATE `consumption_db`.`annual_consumption`: OK
+[77, 16:21:22] TRUNCATE `consumption_db`.`countries`: Executing 
+[77, 16:21:22] TRUNCATE `consumption_db`.`countries`: Error Code: 1701
+Cannot truncate a table referenced in a foreign key constraint (`consumption_db`.`annual_consumption`, CONSTRAINT `annual_consumption_ibfk_1`)
+[78, 16:21:30] SELECT * FROM consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[78, 16:21:30] SELECT * FROM consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[78, 16:21:30] SELECT * FROM consumption_db.countries
+LIMIT 0, 10000
+: 0 row(s) returned
+[79, 16:21:37] USE consumption: Running...
+[79, 16:21:37] USE consumption: 0 row(s) affected
+[80, 16:21:37] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[80, 16:21:37] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1406. Data too long for column 'iso_code' at row 1
+[81, 16:26:53] DROP TABLE `consumption_db`.`countries`: Running...
+[81, 16:26:53] DROP TABLE `consumption_db`.`countries`: Error Code: 3730. Cannot drop table 'countries' referenced by a foreign key constraint 'annual_consumption_ibfk_1' on table 'annual_consumption'.
+[82, 16:26:56] DROP TABLE `consumption_db`.`annual_consumption`: Running...
+[82, 16:26:56] DROP TABLE `consumption_db`.`annual_consumption`: 0 row(s) affected
+[83, 16:27:00] DROP TABLE `consumption_db`.`countries`: Running...
+[83, 16:27:00] DROP TABLE `consumption_db`.`countries`: 0 row(s) affected
+[84, 16:27:02] CREATE DATABASE consumption_db: Running...
+[84, 16:27:02] CREATE DATABASE consumption_db: Error Code: 1007. Can't create database 'consumption_db'; database exists
+[85, 16:27:04] CREATE DATABASE consumption_db: Running...
+[85, 16:27:04] CREATE DATABASE consumption_db: Error Code: 1007. Can't create database 'consumption_db'; database exists
+[86, 16:27:09] USE consumption_db: Running...
+[86, 16:27:09] USE consumption_db: 0 row(s) affected
+[87, 16:27:09] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[87, 16:27:09] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[88, 16:27:09] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[88, 16:27:09] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[89, 16:28:12] USE consumption: Running...
+[89, 16:28:12] USE consumption: 0 row(s) affected
+[90, 16:28:12] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: Running...
+[90, 16:28:12] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: Error Code: 1062. Duplicate entry 'AFG' for key 'countries.PRIMARY'
+[91, 16:29:16] SELECT * FROM consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[91, 16:29:16] SELECT * FROM consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[91, 16:29:16] SELECT * FROM consumption_db.countries
+LIMIT 0, 10000
+: 0 row(s) returned
+[92, 16:29:23] USE consumption: Running...
+[92, 16:29:23] USE consumption: 0 row(s) affected
+[93, 16:29:23] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: Running...
+[93, 16:29:23] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: Error Code: 1062. Duplicate entry 'AFG' for key 'countries.PRIMARY'
+[94, 16:31:38] SELECT * FROM consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[94, 16:31:38] SELECT * FROM consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[94, 16:31:38] SELECT * FROM consumption_db.countries
+LIMIT 0, 10000
+: 0 row(s) returned
+[95, 16:31:53] USE consumption_db: Running...
+[95, 16:31:53] USE consumption_db: 0 row(s) affected
+[96, 16:31:53] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: Running...
+[96, 16:31:53] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: 237 row(s) affected
+Records: 237  Deleted: 0  Skipped: 0  Warnings: 0
+[97, 16:31:53] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[97, 16:31:54] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 4215 row(s) affected
+Records: 4215  Deleted: 0  Skipped: 0  Warnings: 0
+[1, 16:33:14] DROP DATABASE `consumption_db`: Running...
+[1, 16:33:14] DROP DATABASE `consumption_db`: 2 row(s) affected
+[2, 16:33:29] CREATE DATABASE consumption_db: Running...
+[2, 16:33:29] CREATE DATABASE consumption_db: 1 row(s) affected
+[3, 16:33:29] USE consumption_db: Running...
+[3, 16:33:29] USE consumption_db: 0 row(s) affected
+[4, 16:33:29] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[4, 16:33:29] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[5, 16:33:29] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[5, 16:33:29] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[6, 16:33:42] USE consumption_db: Running...
+[6, 16:33:42] USE consumption_db: 0 row(s) affected
+[7, 16:33:42] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: Running...
+[7, 16:33:42] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: 237 row(s) affected
+Records: 237  Deleted: 0  Skipped: 0  Warnings: 0
+[8, 16:33:42] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[8, 16:33:42] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 4215 row(s) affected
+Records: 4215  Deleted: 0  Skipped: 0  Warnings: 0
+[9, 17:07:19] SET GLOBAL general_log = 1: Running...
+[9, 17:07:19] SET GLOBAL general_log = 1: Error Code: 1231. Variable 'general_log' can't be set to the value of ' 1'
+[10, 17:08:25] SET GLOBAL general_log = 'ON': Running...
+[10, 17:08:25] SET GLOBAL general_log = 'ON': 0 row(s) affected
+[11, 17:08:31] CREATE DATABASE consumption_db: Running...
+[11, 17:08:31] CREATE DATABASE consumption_db: Error Code: 1007. Can't create database 'consumption_db'; database exists
+[12, 17:08:40] DROP DATABASE `consumption_db`: Running...
+[12, 17:08:40] DROP DATABASE `consumption_db`: 2 row(s) affected
+[13, 17:08:42] CREATE DATABASE consumption_db: Running...
+[13, 17:08:42] CREATE DATABASE consumption_db: 1 row(s) affected
+[14, 17:08:42] USE consumption_db: Running...
+[14, 17:08:42] USE consumption_db: 0 row(s) affected
+[15, 17:08:42] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[15, 17:08:42] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[16, 17:08:42] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[16, 17:08:42] CREATE TABLE Annual_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[17, 17:08:47] USE consumption_db: Running...
+[17, 17:08:47] USE consumption_db: 0 row(s) affected
+[18, 17:08:47] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: Running...
+[18, 17:08:47] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: 237 row(s) affected
+Records: 237  Deleted: 0  Skipped: 0  Warnings: 0
+[19, 17:08:47] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[19, 17:08:47] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE annual_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 4215 row(s) affected
+Records: 4215  Deleted: 0  Skipped: 0  Warnings: 0
+[1, 18:07:02] SET GLOBAL general_log = 'ON': Running...
+[1, 18:07:02] SET GLOBAL general_log = 'ON': 0 row(s) affected
+[2, 18:07:26] CREATE DATABASE share_consumption_db: Running...
+[2, 18:07:26] CREATE DATABASE share_consumption_db: 1 row(s) affected
+[3, 18:07:26] USE share_consumption_db: Running...
+[3, 18:07:26] USE share_consumption_db: 0 row(s) affected
+[4, 18:07:26] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+PRIMARY KEY (iso_code)
+): Running...
+[4, 18:07:26] CREATE TABLE Countries (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+median_age REAL,
+PRIMARY KEY (iso_code)
+): 0 row(s) affected
+[5, 18:07:26] CREATE TABLE Share_of_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[5, 18:07:26] CREATE TABLE Share_of_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[6, 18:07:30] USE share_consumption_db: Running...
+[6, 18:07:30] USE share_consumption_db: 0 row(s) affected
+[7, 18:07:30] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: Running...
+[7, 18:07:30] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_2.csv' INTO TABLE countries 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@country_name, @iso_code, @population, @median_age) 
+SET country_name = @country_name, iso_code = @iso_code, population = @population, median_age = @median_age: 237 row(s) affected
+Records: 237  Deleted: 0  Skipped: 0  Warnings: 0
+[8, 18:07:30] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE Share_of_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[8, 18:07:30] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/share_of_energy_consumption_5.csv' INTO TABLE Share_of_consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 4215 row(s) affected
+Records: 4215  Deleted: 0  Skipped: 0  Warnings: 0
+[1, 19:31:04] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Running...
+[1, 19:31:04] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Fetching...
+[1, 19:31:04] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: 4215 row(s) returned
+[2, 19:33:45] ANALYZE TABLE `share_consumption_db`.`share_of_consumption`: Executing 
+[2, 19:33:45] ANALYZE TABLE `share_consumption_db`.`share_of_consumption`: OK
+[1, 11:20:33] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[1, 11:20:33] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[1, 11:20:33] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[2, 11:20:47] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Running...
+[2, 11:20:47] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Fetching...
+[2, 11:20:47] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: 4215 row(s) returned
+[3, 11:58:52] USE share_consumption_db: Running...
+[3, 11:58:52] USE share_consumption_db: 0 row(s) affected
+[4, 11:58:52] CREATE VIEW high_renewable_consumption (country_name, iso_code, avg_renewable_perc)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: Running...
+[4, 11:58:52] CREATE VIEW high_renewable_consumption (country_name, iso_code, avg_renewable_perc)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: 0 row(s) affected
+[5, 11:59:05] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Running...
+[5, 11:59:05] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Fetching...
+[5, 11:59:05] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: 79 row(s) returned
+[6, 12:03:37] USE share_consumption_db: Running...
+[6, 12:03:37] USE share_consumption_db: 0 row(s) affected
+[7, 12:03:37] CREATE VIEW high_renewable_consumption_1 (country_name, iso_code, avg_renewable_perc)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code AND S.year_of_data > 2000
+GROUP BY S.iso_code: Running...
+[7, 12:03:37] CREATE VIEW high_renewable_consumption_1 (country_name, iso_code, avg_renewable_perc)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code AND S.year_of_data > 2000
+GROUP BY S.iso_code: 0 row(s) affected
+[8, 12:03:46] SELECT * FROM share_consumption_db.high_renewable_consumption_1
+LIMIT 0, 10000
+: Running...
+[8, 12:03:46] SELECT * FROM share_consumption_db.high_renewable_consumption_1
+LIMIT 0, 10000
+: Fetching...
+[8, 12:03:46] SELECT * FROM share_consumption_db.high_renewable_consumption_1
+LIMIT 0, 10000
+: 79 row(s) returned
+[9, 12:04:39] USE share_consumption_db: Running...
+[9, 12:04:39] USE share_consumption_db: 0 row(s) affected
+[10, 12:04:39] CREATE VIEW high_renewable_consumption_2 (country_name, iso_code, avg_renewable_perc)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code AND S.year_of_data > 2010
+GROUP BY S.iso_code: Running...
+[10, 12:04:39] CREATE VIEW high_renewable_consumption_2 (country_name, iso_code, avg_renewable_perc)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code AND S.year_of_data > 2010
+GROUP BY S.iso_code: 0 row(s) affected
+[11, 12:08:30] USE share_consumption_db: Running...
+[11, 12:08:30] USE share_consumption_db: 0 row(s) affected
+[12, 12:08:30] CREATE VIEW high_renewable_consumption_3 (country_name, iso_code, avg_renewable_perc, change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: Running...
+[12, 12:08:30] CREATE VIEW high_renewable_consumption_3 (country_name, iso_code, avg_renewable_perc, change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: 0 row(s) affected
+[13, 12:08:40] SELECT * FROM share_consumption_db.high_renewable_consumption_3
+LIMIT 0, 10000
+: Running...
+[13, 12:08:40] SELECT * FROM share_consumption_db.high_renewable_consumption_3
+LIMIT 0, 10000
+: Fetching...
+[13, 12:08:40] SELECT * FROM share_consumption_db.high_renewable_consumption_3
+LIMIT 0, 10000
+: 79 row(s) returned
+[14, 12:09:12] USE share_consumption_db: Running...
+[14, 12:09:12] USE share_consumption_db: 0 row(s) affected
+[15, 12:09:12] CREATE VIEW high_renewable_consumption_3 (country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: Running...
+[15, 12:09:12] CREATE VIEW high_renewable_consumption_3 (country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: Error Code: 1050. Table 'high_renewable_consumption_3' already exists
+[16, 12:09:18] DROP VIEW `share_consumption_db`.`high_renewable_consumption_3`: Running...
+[16, 12:09:18] DROP VIEW `share_consumption_db`.`high_renewable_consumption_3`: 0 row(s) affected
+[17, 12:09:20] USE share_consumption_db: Running...
+[17, 12:09:20] USE share_consumption_db: 0 row(s) affected
+[18, 12:09:20] CREATE VIEW high_renewable_consumption_3 (country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: Running...
+[18, 12:09:20] CREATE VIEW high_renewable_consumption_3 (country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: 0 row(s) affected
+[19, 12:24:06] USE share_consumption_db: Running...
+[19, 12:24:06] USE share_consumption_db: 0 row(s) affected
+[20, 12:24:06] CREATE TABLE gdp (
+iso_code VARCHAR(10) NOT NULL,
+year_of_data INTEGER NOT NULL,
+gdp BIGINT UNSIGNED,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[20, 12:24:07] CREATE TABLE gdp (
+iso_code VARCHAR(10) NOT NULL,
+year_of_data INTEGER NOT NULL,
+gdp BIGINT UNSIGNED,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): 0 row(s) affected
+[21, 12:24:07] CREATE TABLE Share_of_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Running...
+[21, 12:24:07] CREATE TABLE Share_of_Consumption(
+iso_code VARCHAR(10),
+year_of_data INTEGER NOT NULL,
+renewables_percentage REAL,
+fossil_fuels_percentage REAL,
+PRIMARY KEY (iso_code, year_of_data),
+FOREIGN KEY(iso_code) REFERENCES Countries(iso_code) ON DELETE CASCADE
+): Error Code: 1050. Table 'share_of_consumption' already exists
+[22, 12:25:45] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[22, 12:25:45] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1265. Data truncated for column 'gdp' at row 103
+[23, 12:26:19] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[23, 12:26:19] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1265. Data truncated for column 'gdp' at row 103
+[24, 12:31:46] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[24, 12:31:46] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`share_consumption_db`.`gdp`, CONSTRAINT `gdp_ibfk_1` FOREIGN KEY (`iso_code`) REFERENCES `countries` (`iso_code`) ON DELETE CASCADE)
+[25, 12:32:15] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[25, 12:32:15] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`share_consumption_db`.`gdp`, CONSTRAINT `gdp_ibfk_1` FOREIGN KEY (`iso_code`) REFERENCES `countries` (`iso_code`) ON DELETE CASCADE)
+[26, 12:32:26] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Running...
+[26, 12:32:26] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Fetching...
+[26, 12:32:26] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: 0 row(s) returned
+[27, 12:33:20] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[27, 12:33:20] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`share_consumption_db`.`gdp`, CONSTRAINT `gdp_ibfk_1` FOREIGN KEY (`iso_code`) REFERENCES `countries` (`iso_code`) ON DELETE CASCADE)
+[28, 12:36:48] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Running...
+[28, 12:36:48] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Fetching...
+[28, 12:36:48] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: 4215 row(s) returned
+[29, 12:36:52] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[29, 12:36:52] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[29, 12:36:52] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[30, 12:54:45] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[30, 12:54:45] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[30, 12:54:45] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[31, 12:58:58] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[31, 12:58:58] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1265. Data truncated for column 'gdp' at row 103
+[32, 13:00:01] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[32, 13:00:01] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/gdp_1.csv' INTO TABLE gdp 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 9658 row(s) affected
+Records: 9658  Deleted: 0  Skipped: 0  Warnings: 0
+[33, 13:01:36] DROP VIEW `share_consumption_db`.`high_renewable_consumption_2`: Running...
+[33, 13:01:36] DROP VIEW `share_consumption_db`.`high_renewable_consumption_2`: 0 row(s) affected
+[34, 13:01:36] DROP VIEW `share_consumption_db`.`high_renewable_consumption_1`: Running...
+[34, 13:01:36] DROP VIEW `share_consumption_db`.`high_renewable_consumption_1`: 0 row(s) affected
+[35, 13:01:36] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: Running...
+[35, 13:01:36] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: 0 row(s) affected
+[36, 13:09:16] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code
+GROUP BY G.iso_code: Running...
+[36, 13:09:17] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code
+GROUP BY G.iso_code: 0 row(s) affected
+[37, 13:10:00] USE share_consumption_db: Running...
+[37, 13:10:00] USE share_consumption_db: 0 row(s) affected
+[38, 13:10:00] CREATE VIEW high_renewable_consumption (country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: Running...
+[38, 13:10:00] CREATE VIEW high_renewable_consumption (country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: 0 row(s) affected
+[39, 13:10:00] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code
+GROUP BY G.iso_code: Running...
+[39, 13:10:00] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code
+GROUP BY G.iso_code: Error Code: 1050. Table 'high_gdp_avg' already exists
+[40, 13:10:08] USE share_consumption_db: Running...
+[40, 13:10:08] USE share_consumption_db: 0 row(s) affected
+[41, 13:10:08] CREATE VIEW high_renewable_consumption (country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: Running...
+[41, 13:10:08] CREATE VIEW high_renewable_consumption (country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: Error Code: 1050. Table 'high_renewable_consumption' already exists
+[42, 13:10:18] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Running...
+[42, 13:10:18] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Fetching...
+[42, 13:10:18] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: 210 row(s) returned
+[43, 13:14:41] USE share_consumption_db: Running...
+[43, 13:14:41] USE share_consumption_db: 0 row(s) affected
+[44, 13:14:41] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code AND G.gdp > AVG(G.gdp)
+GROUP BY G.iso_code: Running...
+[44, 13:14:41] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code AND G.gdp > AVG(G.gdp)
+GROUP BY G.iso_code: Error Code: 1111. Invalid use of group function
+[45, 13:31:50] USE share_consumption_db: Running...
+[45, 13:31:50] USE share_consumption_db: 0 row(s) affected
+[46, 13:31:50] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp > (
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Running...
+[46, 13:31:50] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp > (
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: 0 row(s) affected
+[47, 13:31:58] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[47, 13:31:58] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[47, 13:31:58] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Error Code: 1242. Subquery returns more than 1 row
+[48, 13:32:03] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Running...
+[48, 13:32:03] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Fetching...
+[48, 13:32:03] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: 210 row(s) returned
+[49, 13:32:20] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[49, 13:32:20] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[49, 13:32:20] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Error Code: 1242. Subquery returns more than 1 row
+[50, 13:34:29] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[50, 13:34:29] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[50, 13:34:29] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Error Code: 1242. Subquery returns more than 1 row
+[51, 13:34:33] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: Running...
+[51, 13:34:33] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: 0 row(s) affected
+[52, 13:34:55] USE share_consumption_db: Running...
+[52, 13:34:55] USE share_consumption_db: 0 row(s) affected
+[53, 13:34:55] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp > (
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Running...
+[53, 13:34:55] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp > (
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: 0 row(s) affected
+[54, 13:35:02] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[54, 13:35:02] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[54, 13:35:02] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Error Code: 1242. Subquery returns more than 1 row
+[55, 13:40:08] SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[55, 13:40:08] SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Fetching...
+[55, 13:40:08] SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: 61 row(s) returned
+[56, 13:40:30] SELECT AVG(G_temp.gdp), G_temp.iso_code 
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[56, 13:40:30] SELECT AVG(G_temp.gdp), G_temp.iso_code 
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Error Code: 1055. Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'share_consumption_db.G_temp.iso_code' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[57, 13:41:06] SELECT  G_temp.iso_code 
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[57, 13:41:06] SELECT  G_temp.iso_code 
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'share_consumption_db.G_temp.iso_code' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[58, 13:42:51] SELECT AVG(G_temp.gdp), G.iso_code 
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[58, 13:42:51] SELECT AVG(G_temp.gdp), G.iso_code 
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Error Code: 1055. Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'share_consumption_db.G.iso_code' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[59, 13:43:22] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[59, 13:43:22] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Fetching...
+[59, 13:43:22] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: 61 row(s) returned
+[60, 13:44:21] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[60, 13:44:50] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Fetching...
+[60, 13:44:50] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: 61 row(s) returned
+[61, 13:46:48] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[61, 13:46:49] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Fetching...
+[61, 13:46:49] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: 61 row(s) returned
+[62, 13:47:34] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[62, 13:47:34] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Fetching...
+[62, 13:47:34] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: 61 row(s) returned
+[63, 13:49:37] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    #GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[63, 13:49:37] SELECT AVG(G_temp.gdp), G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    #GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Error Code: 1140. In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'share_consumption_db.G_temp.year_of_data'; this is incompatible with sql_mode=only_full_group_by
+[64, 13:50:02] SELECT AVG(G_temp.gdp)##, G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    #GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Running...
+[64, 13:50:02] SELECT AVG(G_temp.gdp)##, G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    #GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: Fetching...
+[64, 13:50:02] SELECT AVG(G_temp.gdp)##, G_temp.year_of_data
+	FROM gdp G_temp, gdp G
+    WHERE G.iso_code = G_temp.iso_code
+    #GROUP BY G_temp.year_of_data
+LIMIT 0, 10000
+: 1 row(s) returned
+[65, 13:52:52] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Running...
+[65, 13:52:52] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Error Code: 1050. Table 'high_gdp_avg_2' already exists
+[66, 13:53:01] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: Running...
+[66, 13:53:01] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: 0 row(s) affected
+[67, 13:53:02] USE share_consumption_db: Running...
+[67, 13:53:02] USE share_consumption_db: 0 row(s) affected
+[68, 13:53:02] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Running...
+[68, 13:53:02] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: 0 row(s) affected
+[69, 13:53:12] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[69, 13:53:13] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[69, 13:53:13] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: 210 row(s) returned
+[70, 13:54:24] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: Running...
+[70, 13:54:24] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: 0 row(s) affected
+[71, 13:54:26] USE share_consumption_db: Running...
+[71, 13:54:26] USE share_consumption_db: 0 row(s) affected
+[72, 13:54:26] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    #WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Running...
+[72, 13:54:26] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    #WHERE G.iso_code = G_temp.iso_code
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: 0 row(s) affected
+[73, 13:54:30] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[73, 13:54:30] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[73, 13:54:30] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: 19 row(s) returned
+[74, 13:54:50] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Running...
+[74, 13:54:50] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Fetching...
+[74, 13:54:50] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: 9658 row(s) returned
+[75, 13:57:49] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[75, 13:57:49] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[75, 13:57:49] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: 19 row(s) returned
+[76, 14:03:45] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[76, 14:03:45] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[76, 14:03:45] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: 19 row(s) returned
+[77, 14:30:30] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Running...
+[77, 14:30:30] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Fetching...
+[77, 14:30:30] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: 9658 row(s) returned
+[78, 14:53:27] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[78, 14:53:27] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[78, 14:53:27] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: 19 row(s) returned
+[79, 14:53:48] SELECT * FROM share_consumption_db.high_renewable_consumption_3
+LIMIT 0, 10000
+: Running...
+[79, 14:53:48] SELECT * FROM share_consumption_db.high_renewable_consumption_3
+LIMIT 0, 10000
+: Fetching...
+[79, 14:53:48] SELECT * FROM share_consumption_db.high_renewable_consumption_3
+LIMIT 0, 10000
+: 79 row(s) returned
+[80, 14:55:49] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[80, 14:55:49] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[80, 14:55:49] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: 19 row(s) returned
+[1, 15:49:19] DROP VIEW `share_consumption_db`.`high_renewable_consumption_3`: Running...
+[1, 15:49:19] DROP VIEW `share_consumption_db`.`high_renewable_consumption_3`: 0 row(s) affected
+[2, 15:49:20] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: Running...
+[2, 15:49:20] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: 0 row(s) affected
+[3, 15:49:20] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: Running...
+[3, 15:49:20] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: 0 row(s) affected
+[4, 15:49:20] DROP VIEW `share_consumption_db`.`high_gdp_avg`: Running...
+[4, 15:49:20] DROP VIEW `share_consumption_db`.`high_gdp_avg`: 0 row(s) affected
+[5, 15:54:48] USE share_consumption_db: Running...
+[5, 15:54:48] USE share_consumption_db: 0 row(s) affected
+[6, 15:54:48] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: Running...
+[6, 15:54:48] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code
+GROUP BY S.iso_code: 0 row(s) affected
+[7, 15:54:48] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Running...
+[7, 15:54:48] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: 0 row(s) affected
+[8, 15:54:59] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Running...
+[8, 15:54:59] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: Fetching...
+[8, 15:54:59] SELECT * FROM share_consumption_db.high_gdp_avg_2
+LIMIT 0, 10000
+: 19 row(s) returned
+[9, 15:55:00] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Running...
+[9, 15:55:00] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Fetching...
+[9, 15:55:00] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: 79 row(s) returned
+[10, 15:56:52] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[10, 15:56:52] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[10, 15:56:52] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[11, 15:58:15] SELECT DISTINCT iso_code FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Running...
+[11, 15:58:15] SELECT DISTINCT iso_code FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Fetching...
+[11, 15:58:15] SELECT DISTINCT iso_code FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: 79 row(s) returned
+[12, 16:03:30] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: Running...
+[12, 16:03:30] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: 0 row(s) affected
+[13, 16:03:32] USE share_consumption_db: Running...
+[13, 16:03:32] USE share_consumption_db: 0 row(s) affected
+[14, 16:03:32] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+AND AVG(S.renewables_percentage) < ALL(
+	SELECT AVG(S_temp)
+    FROM share_of_consumption S_temp
+    WHERE S_temp.iso_code = S.iso_code
+)
+GROUP BY S.iso_code: Running...
+[14, 16:03:32] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+AND AVG(S.renewables_percentage) < ALL(
+	SELECT AVG(S_temp)
+    FROM share_of_consumption S_temp
+    WHERE S_temp.iso_code = S.iso_code
+)
+GROUP BY S.iso_code: Error Code: 1111. Invalid use of group function
+[15, 16:06:05] USE share_consumption_db: Running...
+[15, 16:06:05] USE share_consumption_db: 0 row(s) affected
+[16, 16:06:05] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+AND AVG(S.renewables_percentage) < ALL(
+	SELECT AVG(S_temp.renewables_percentage)
+    FROM share_of_consumption S_temp
+    WHERE S_temp.iso_code = S.iso_code
+)
+GROUP BY S.iso_code: Running...
+[16, 16:06:05] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+AND AVG(S.renewables_percentage) < ALL(
+	SELECT AVG(S_temp.renewables_percentage)
+    FROM share_of_consumption S_temp
+    WHERE S_temp.iso_code = S.iso_code
+)
+GROUP BY S.iso_code: Error Code: 1111. Invalid use of group function
+[17, 16:08:10] USE share_consumption_db: Running...
+[17, 16:08:10] USE share_consumption_db: 0 row(s) affected
+[18, 16:08:10] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) < ALL(
+	SELECT AVG(S_temp.renewables_percentage)
+    FROM share_of_consumption S_temp
+    WHERE S_temp.iso_code = S.iso_code): Running...
+[18, 16:08:10] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) < ALL(
+	SELECT AVG(S_temp.renewables_percentage)
+    FROM share_of_consumption S_temp
+    WHERE S_temp.iso_code = S.iso_code): 0 row(s) affected
+[19, 16:08:10] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Running...
+[19, 16:08:10] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Error Code: 1050. Table 'high_gdp_avg_2' already exists
+[20, 16:08:45] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Running...
+[20, 16:08:45] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Fetching...
+[20, 16:08:45] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: 0 row(s) returned
+[21, 16:17:42] USE share_consumption_db: Running...
+[21, 16:17:42] USE share_consumption_db: 0 row(s) affected
+[22, 16:17:42] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) < (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): Running...
+[22, 16:17:42] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) < (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): Error Code: 1050. Table 'high_renewable_consumption' already exists
+[23, 16:17:54] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: Running...
+[23, 16:17:54] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: 0 row(s) affected
+[24, 16:17:56] USE share_consumption_db: Running...
+[24, 16:17:56] USE share_consumption_db: 0 row(s) affected
+[25, 16:17:56] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) < (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): Running...
+[25, 16:17:56] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) < (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): 0 row(s) affected
+[26, 16:17:56] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Running...
+[26, 16:17:56] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Error Code: 1050. Table 'high_gdp_avg_2' already exists
+[27, 16:18:03] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Running...
+[27, 16:18:03] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Fetching...
+[27, 16:18:03] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: 54 row(s) returned
+[28, 16:20:11] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: Running...
+[28, 16:20:11] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: 0 row(s) affected
+[29, 16:21:12] USE share_consumption_db: Running...
+[29, 16:21:12] USE share_consumption_db: 0 row(s) affected
+[30, 16:21:12] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) > (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): Running...
+[30, 16:21:12] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) > (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): 0 row(s) affected
+[31, 16:21:12] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Running...
+[31, 16:21:12] CREATE VIEW high_gdp_avg_2(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+AND G.gdp >= All(
+/*change threshold*/
+	SELECT AVG(G_temp.gdp) 
+	FROM gdp G_temp
+    GROUP BY G_temp.year_of_data
+	)
+GROUP BY G.iso_code: Error Code: 1050. Table 'high_gdp_avg_2' already exists
+[32, 16:21:17] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Running...
+[32, 16:21:17] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Fetching...
+[32, 16:21:17] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: 25 row(s) returned
+[33, 16:24:37] USE share_consumption_db: Running...
+[33, 16:24:37] USE share_consumption_db: 0 row(s) affected
+[34, 16:24:37] CREATE VIEW high_fossil_consumption(country_name, iso_code, avg_fossil_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.fossil_percentage), MAX(S.fossil_percentage) - MIN(S.fossil_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.fossil_percentage) > (SELECT 
+	AVG(S_temp.fossil_percentage)
+	FROM share_of_consumption S_temp
+): Running...
+[34, 16:24:37] CREATE VIEW high_fossil_consumption(country_name, iso_code, avg_fossil_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.fossil_percentage), MAX(S.fossil_percentage) - MIN(S.fossil_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.fossil_percentage) > (SELECT 
+	AVG(S_temp.fossil_percentage)
+	FROM share_of_consumption S_temp
+): Error Code: 1054. Unknown column 'S.fossil_percentage' in 'field list'
+[35, 16:24:52] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Running...
+[35, 16:24:52] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Fetching...
+[35, 16:24:52] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: 4215 row(s) returned
+[36, 16:25:34] USE share_consumption_db: Running...
+[36, 16:25:34] USE share_consumption_db: 0 row(s) affected
+[37, 16:25:34] CREATE VIEW high_fossil_consumption(country_name, iso_code, avg_fossil_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.fossil_fuels_percentage), MAX(S.fossil_fuels_percentage) - MIN(S.fossil_fuels_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.fossil_fuels_percentage) > (SELECT 
+	AVG(S_temp.fossil_fuels_percentage)
+	FROM share_of_consumption S_temp
+): Running...
+[37, 16:25:34] CREATE VIEW high_fossil_consumption(country_name, iso_code, avg_fossil_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.fossil_fuels_percentage), MAX(S.fossil_fuels_percentage) - MIN(S.fossil_fuels_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.fossil_fuels_percentage) > (SELECT 
+	AVG(S_temp.fossil_fuels_percentage)
+	FROM share_of_consumption S_temp
+): 0 row(s) affected
+[38, 16:25:43] SELECT * FROM share_consumption_db.high_fossil_consumption
+LIMIT 0, 10000
+: Running...
+[38, 16:25:43] SELECT * FROM share_consumption_db.high_fossil_consumption
+LIMIT 0, 10000
+: Fetching...
+[38, 16:25:43] SELECT * FROM share_consumption_db.high_fossil_consumption
+LIMIT 0, 10000
+: 52 row(s) returned
+[39, 16:31:19] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: Running...
+[39, 16:31:19] DROP VIEW `share_consumption_db`.`high_gdp_avg_2`: 0 row(s) affected
+[40, 16:31:21] USE share_consumption_db: Running...
+[40, 16:31:21] USE share_consumption_db: 0 row(s) affected
+[41, 16:31:21] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+GROUP BY G.iso_code
+HAVING AVG(G.gdp) > (SELECT
+	AVG(G_temp.gdp) 
+	FROM gdp G_temp
+): Running...
+[41, 16:31:21] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+GROUP BY G.iso_code
+HAVING AVG(G.gdp) > (SELECT
+	AVG(G_temp.gdp) 
+	FROM gdp G_temp
+): 0 row(s) affected
+[42, 16:31:30] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Running...
+[42, 16:31:30] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Fetching...
+[42, 16:31:30] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: 17 row(s) returned
+[43, 16:31:45] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[43, 16:31:45] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[43, 16:31:45] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[44, 18:56:02] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Running...
+[44, 18:56:02] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Fetching...
+[44, 18:56:02] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: 9658 row(s) returned
+[45, 19:08:30] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[45, 19:08:30] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[45, 19:08:30] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[46, 19:20:28] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+	SELECT C.country_name
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve;
+    
+END;
+
+DELIMITER;: Running...
+[46, 19:20:28] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+	SELECT C.country_name
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve;
+    
+END;
+
+DELIMITER;: 0 row(s) affected
+[47, 19:20:28] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+	SELECT C.country_name
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve;
+    
+END;
+
+DELIMITER;: Error Code: 1064
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER' at line 1
+[48, 19:21:04] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+	SELECT C.country_name
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve;
+END;
+
+#DELIMITER;: Running...
+[48, 19:21:04] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+	SELECT C.country_name
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve;
+END;
+
+#DELIMITER;: Error Code: 1304. PROCEDURE get_country_data already exists
+[49, 19:21:23] set @iso_code_to_retrieve = '0': Running...
+[49, 19:21:23] set @iso_code_to_retrieve = '0': 0 row(s) affected
+[50, 19:21:23] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[50, 19:21:23] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Fetching...
+[50, 19:21:23] call share_consumption_db.get_country_data(@iso_code_to_retrieve): 0 row(s) returned
+[51, 19:21:23] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: Running...
+[51, 19:21:23] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: Fetching...
+[51, 19:21:23] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: 1 row(s) returned
+[52, 19:22:03] set @iso_code_to_retrieve = 'GBR': Running...
+[52, 19:22:03] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[53, 19:22:03] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[53, 19:22:03] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Fetching...
+[53, 19:22:03] call share_consumption_db.get_country_data(@iso_code_to_retrieve): 1 row(s) returned
+[54, 19:22:03] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: Running...
+[54, 19:22:03] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: Fetching...
+[54, 19:22:03] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: 1 row(s) returned
+[55, 19:23:15] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[55, 19:23:15] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[56, 19:23:21] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+	SELECT *
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve;
+END;
+
+#DELIMITER;: Running...
+[56, 19:23:21] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+	SELECT *
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve;
+END;
+
+#DELIMITER;: 0 row(s) affected
+[57, 19:23:26] set @iso_code_to_retrieve = 'GBR': Running...
+[57, 19:23:26] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[58, 19:23:26] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[58, 19:23:26] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Fetching...
+[58, 19:23:26] call share_consumption_db.get_country_data(@iso_code_to_retrieve): 1 row(s) returned
+[59, 19:23:26] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: Running...
+[59, 19:23:26] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: Fetching...
+[59, 19:23:26] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: 1 row(s) returned
+[60, 19:23:34] set @iso_code_to_retrieve = 'GBR': Running...
+[60, 19:23:34] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[61, 19:23:34] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[61, 19:23:34] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Fetching...
+[61, 19:23:34] call share_consumption_db.get_country_data(@iso_code_to_retrieve): 1 row(s) returned
+[62, 20:10:38] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[62, 20:10:38] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[63, 20:10:52] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT C.country_name , AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries c, share_of_consumption S, gdp G
+    WHERE C.iso_code = S.iso_code = g.iso_code = iso_code_to_retrieve; 
+END;
+
+#DELIMITER;: Running...
+[63, 20:10:52] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT C.country_name , AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries c, share_of_consumption S, gdp G
+    WHERE C.iso_code = S.iso_code = g.iso_code = iso_code_to_retrieve; 
+END;
+
+#DELIMITER;: 0 row(s) affected
+[64, 20:10:58] set @iso_code_to_retrieve = 'GBR': Running...
+[64, 20:10:58] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[65, 20:10:58] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[65, 20:10:58] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Error Code: 1140. In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'share_consumption_db.c.country_name'; this is incompatible with sql_mode=only_full_group_by
+[66, 20:12:45] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[66, 20:12:45] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[67, 20:12:50] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = S.iso_code = G.iso_code = iso_code_to_retrieve; 
+END;
+
+#DELIMITER;: Running...
+[67, 20:12:50] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = S.iso_code = G.iso_code = iso_code_to_retrieve; 
+END;
+
+#DELIMITER;: 0 row(s) affected
+[68, 20:12:55] set @iso_code_to_retrieve = 'GBR': Running...
+[68, 20:12:55] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[69, 20:12:55] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[69, 20:13:25] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Error Code: 2013. Lost connection to MySQL server during query
+[70, 20:15:46] set @iso_code_to_retrieve = 'GBR': Running...
+[70, 20:15:46] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[71, 20:15:46] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[71, 20:16:16] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Error Code: 2013. Lost connection to MySQL server during query
+[72, 20:17:44] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = S.iso_code = G.iso_code = iso_code_to_retrieve: Running...
+[72, 20:17:44] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = S.iso_code = G.iso_code = iso_code_to_retrieve: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+[73, 20:17:59] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[73, 20:17:59] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[74, 20:18:00] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = S.iso_code = G.iso_code = iso_code_to_retrieve; 
+END;
+
+#DELIMITER;: Running...
+[74, 20:18:00] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = S.iso_code = G.iso_code = iso_code_to_retrieve; 
+END;
+
+#DELIMITER;: 0 row(s) affected
+[75, 20:19:52] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[75, 20:19:52] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[76, 20:19:54] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve; 
+END;
+
+#DELIMITER;: Running...
+[76, 20:19:54] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve; 
+END;
+
+#DELIMITER;: 0 row(s) affected
+[77, 20:20:03] set @iso_code_to_retrieve = 'GBR': Running...
+[77, 20:20:03] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[78, 20:20:03] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[78, 20:20:03] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Fetching...
+[78, 20:20:03] call share_consumption_db.get_country_data(@iso_code_to_retrieve): 1 row(s) returned
+[79, 20:59:51] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT AVG(S.renewables_percentage), MAX(S.renewables_percentage), AVG(G.gdp)
+    FROM  share_of_consumption S, gdp G
+    WHERE S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables, max_percentage_of_consumption_from_renewables, avg_gdp,
+    (SELECT DISTINCT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name;
+END;
+
+#DELIMITER;
+/*
+SELECT
+    (SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS s() )
+  */  
+  
+  /*
+
+  */  
+  
+  /*SELECT
+    (SELECT AVG(S.renewables_percentage) AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) as average_percentage_of_consumption_from_renewables
+    (SELECT  MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve
+    )
+    ; */: Running...
+[79, 20:59:51] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT AVG(S.renewables_percentage), MAX(S.renewables_percentage), AVG(G.gdp)
+    FROM  share_of_consumption S, gdp G
+    WHERE S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables, max_percentage_of_consumption_from_renewables, avg_gdp,
+    (SELECT DISTINCT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name;
+END;
+
+#DELIMITER;
+/*
+SELECT
+    (SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS s() )
+  */  
+  
+  /*
+
+  */  
+  
+  /*SELECT
+    (SELECT AVG(S.renewables_percentage) AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) as average_percentage_of_consumption_from_renewables
+    (SELECT  MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve
+    )
+    ; */: Error Code: 1304. PROCEDURE get_country_data already exists
+[80, 20:59:58] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[80, 20:59:58] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[81, 21:00:00] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT AVG(S.renewables_percentage), MAX(S.renewables_percentage), AVG(G.gdp)
+    FROM  share_of_consumption S, gdp G
+    WHERE S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables, max_percentage_of_consumption_from_renewables, avg_gdp,
+    (SELECT DISTINCT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name;
+END;
+
+#DELIMITER;
+/*
+SELECT
+    (SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS s() )
+  */  
+  
+  /*
+
+  */  
+  
+  /*SELECT
+    (SELECT AVG(S.renewables_percentage) AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) as average_percentage_of_consumption_from_renewables
+    (SELECT  MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve
+    )
+    ; */: Running...
+[81, 21:00:00] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT AVG(S.renewables_percentage), MAX(S.renewables_percentage), AVG(G.gdp)
+    FROM  share_of_consumption S, gdp G
+    WHERE S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables, max_percentage_of_consumption_from_renewables, avg_gdp,
+    (SELECT DISTINCT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name;
+END;
+
+#DELIMITER;
+/*
+SELECT
+    (SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS s() )
+  */  
+  
+  /*
+
+  */  
+  
+  /*SELECT
+    (SELECT AVG(S.renewables_percentage) AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) as average_percentage_of_consumption_from_renewables
+    (SELECT  MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve
+    )
+    ; */: 0 row(s) affected
+[82, 21:00:05] set @iso_code_to_retrieve = 'GBR': Running...
+[82, 21:00:05] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[83, 21:00:05] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[83, 21:00:05] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Error Code: 1241. Operand should contain 1 column(s)
+[84, 21:01:05] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[84, 21:01:05] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[85, 21:01:06] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT AVG(S.renewables_percentage), MAX(S.renewables_percentage), AVG(G.gdp)
+    FROM  share_of_consumption S, gdp G
+    WHERE S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables, max_percentage_of_consumption_from_renewables, avg_gdp,
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name;
+END;
+
+#DELIMITER;
+/*
+SELECT
+    (SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS s() )
+  */  
+  
+  /*
+
+  */  
+  
+  /*SELECT
+    (SELECT AVG(S.renewables_percentage) AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) as average_percentage_of_consumption_from_renewables
+    (SELECT  MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve
+    )
+    ; */: Running...
+[85, 21:01:06] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT AVG(S.renewables_percentage), MAX(S.renewables_percentage), AVG(G.gdp)
+    FROM  share_of_consumption S, gdp G
+    WHERE S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables, max_percentage_of_consumption_from_renewables, avg_gdp,
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name;
+END;
+
+#DELIMITER;
+/*
+SELECT
+    (SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS s() )
+  */  
+  
+  /*
+
+  */  
+  
+  /*SELECT
+    (SELECT AVG(S.renewables_percentage) AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) as average_percentage_of_consumption_from_renewables
+    (SELECT  MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve
+    )
+    ; */: 0 row(s) affected
+[86, 21:01:13] set @iso_code_to_retrieve = 'GBR': Running...
+[86, 21:01:13] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[87, 21:01:13] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[87, 21:01:13] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Error Code: 1241. Operand should contain 1 column(s)
+[88, 21:06:02] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[88, 21:06:02] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[89, 21:06:05] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables
+    
+    ;
+END;
+
+#DELIMITER;
+/*
+SELECT
+    (SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS s() )
+  */  
+  
+  /*
+
+  */  
+  
+  /*SELECT
+    (SELECT AVG(S.renewables_percentage) AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) as average_percentage_of_consumption_from_renewables
+    (SELECT  MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve
+    )
+    ; */: Running...
+[89, 21:06:05] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables
+    
+    ;
+END;
+
+#DELIMITER;
+/*
+SELECT
+    (SELECT AVG(S.renewables_percentage) AS average_percentage_of_consumption_from_renewables , MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables, AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND S.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) AS s() )
+  */  
+  
+  /*
+
+  */  
+  
+  /*SELECT
+    (SELECT AVG(S.renewables_percentage) AVG(G.gdp) AS avg_gdp
+    FROM countries C, share_of_consumption S, gdp G
+    WHERE C.iso_code = iso_code_to_retrieve
+    AND G.iso_code = iso_code_to_retrieve) as average_percentage_of_consumption_from_renewables
+    (SELECT  MAX(S.renewables_percentage) AS max_percentage_of_consumption_from_renewables
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve
+    )
+    ; */: 0 row(s) affected
+[90, 21:06:11] set @iso_code_to_retrieve = 'GBR': Running...
+[90, 21:06:11] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[91, 21:06:11] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[91, 21:06:11] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Fetching...
+[91, 21:06:11] call share_consumption_db.get_country_data(@iso_code_to_retrieve): 1 row(s) returned
+[92, 21:09:43] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[92, 21:09:43] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[93, 21:09:47] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;
+
+DELIMITER;: Running...
+[93, 21:09:47] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;
+
+DELIMITER;: 0 row(s) affected
+[94, 21:09:47] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;
+
+DELIMITER;: Error Code: 1064
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER' at line 1
+[95, 21:09:55] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;: Running...
+[95, 21:09:55] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;: Error Code: 1304. PROCEDURE get_country_data already exists
+[96, 21:10:01] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[96, 21:10:01] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[97, 21:10:02] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;: Running...
+[97, 21:10:02] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;: 0 row(s) affected
+[98, 21:11:15] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Running...
+[98, 21:11:15] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Fetching...
+[98, 21:11:15] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: 17 row(s) returned
+[99, 21:17:54] SELECT HG.iso_code
+FROM high_gdp_avg HG
+/*EXCEPT
+(SELECT HR.iso_code
+FROM high_renewable_consumption)*/
+LIMIT 0, 10000
+: Running...
+[99, 21:17:54] SELECT HG.iso_code
+FROM high_gdp_avg HG
+/*EXCEPT
+(SELECT HR.iso_code
+FROM high_renewable_consumption)*/
+LIMIT 0, 10000
+: Fetching...
+[99, 21:17:54] SELECT HG.iso_code
+FROM high_gdp_avg HG
+/*EXCEPT
+(SELECT HR.iso_code
+FROM high_renewable_consumption)*/
+LIMIT 0, 10000
+: 17 row(s) returned
+[100, 21:21:23] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption)
+LIMIT 0, 10000
+: Running...
+[100, 21:21:23] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption)
+LIMIT 0, 10000
+: Error Code: 1054. Unknown column 'HR.iso_code' in 'field list'
+[101, 21:21:39] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: Running...
+[101, 21:21:39] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: Fetching...
+[101, 21:21:39] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: 13 row(s) returned
+[102, 21:30:05] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: Running...
+[102, 21:30:05] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: Fetching...
+[102, 21:30:05] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: 13 row(s) returned
+[103, 21:30:05] SELECT HG.iso_code
+FROM high_gdp_avg HG
+LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code
+WHERE HR.iso_code IS NULL
+LIMIT 0, 10000
+: Running...
+[103, 21:30:05] SELECT HG.iso_code
+FROM high_gdp_avg HG
+LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code
+WHERE HR.iso_code IS NULL
+LIMIT 0, 10000
+: Fetching...
+[103, 21:30:05] SELECT HG.iso_code
+FROM high_gdp_avg HG
+LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code
+WHERE HR.iso_code IS NULL
+LIMIT 0, 10000
+: 13 row(s) returned
+[104, 21:52:46] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Running...
+[104, 21:52:46] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Fetching...
+[104, 21:52:46] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: 4215 row(s) returned
+[105, 22:00:11] SELECT HG.country_name 
+FROM high_gdp_avg HG
+WHERE HG.iso_code IN (
+    SELECT HR.iso_code 
+    FROM  high_renewable_consumption HR
+    GROUP BY HR.iso_code 
+    HAVING AVG(HR.renewables_percentage) < (
+        SELECT AVG(HR_temp) 
+        FROM high_renewable_consumption HR_temp
+    )
+)
+LIMIT 0, 10000
+: Running...
+[105, 22:00:11] SELECT HG.country_name 
+FROM high_gdp_avg HG
+WHERE HG.iso_code IN (
+    SELECT HR.iso_code 
+    FROM  high_renewable_consumption HR
+    GROUP BY HR.iso_code 
+    HAVING AVG(HR.renewables_percentage) < (
+        SELECT AVG(HR_temp) 
+        FROM high_renewable_consumption HR_temp
+    )
+)
+LIMIT 0, 10000
+: Error Code: 1054. Unknown column 'HR.renewables_percentage' in 'having clause'
+[106, 22:01:08] SELECT HG.country_name 
+FROM high_gdp_avg HG
+WHERE HG.iso_code IN (
+    SELECT HR.iso_code 
+    FROM  high_renewable_consumption HR
+    GROUP BY HR.iso_code 
+    HAVING AVG(HR.renewables_percentage) < (
+        SELECT AVG(HR_temp.renewables_percentage) 
+        FROM high_renewable_consumption HR_temp
+    )
+)
+LIMIT 0, 10000
+: Running...
+[106, 22:01:08] SELECT HG.country_name 
+FROM high_gdp_avg HG
+WHERE HG.iso_code IN (
+    SELECT HR.iso_code 
+    FROM  high_renewable_consumption HR
+    GROUP BY HR.iso_code 
+    HAVING AVG(HR.renewables_percentage) < (
+        SELECT AVG(HR_temp.renewables_percentage) 
+        FROM high_renewable_consumption HR_temp
+    )
+)
+LIMIT 0, 10000
+: Error Code: 1054. Unknown column 'HR.renewables_percentage' in 'having clause'
+[107, 22:03:04] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Running...
+[107, 22:03:04] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Fetching...
+[107, 22:03:04] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: 25 row(s) returned
+[108, 22:03:55] SELECT HG.country_name 
+FROM high_gdp_avg HG
+WHERE HG.iso_code IN (
+    SELECT HR.iso_code 
+    FROM  high_renewable_consumption HR
+    GROUP BY HR.iso_code 
+    HAVING AVG(HR.average_renewable_perc) < (
+        SELECT AVG(HR_temp.average_renewable_perc) 
+        FROM high_renewable_consumption HR_temp
+    )
+)
+LIMIT 0, 10000
+: Running...
+[108, 22:03:55] SELECT HG.country_name 
+FROM high_gdp_avg HG
+WHERE HG.iso_code IN (
+    SELECT HR.iso_code 
+    FROM  high_renewable_consumption HR
+    GROUP BY HR.iso_code 
+    HAVING AVG(HR.average_renewable_perc) < (
+        SELECT AVG(HR_temp.average_renewable_perc) 
+        FROM high_renewable_consumption HR_temp
+    )
+)
+LIMIT 0, 10000
+: Error Code: 1054. Unknown column 'HR.average_renewable_perc' in 'having clause'
+[109, 22:09:33] AVG(HR.average_renewable_perc): Running...
+[109, 22:09:33] AVG(HR.average_renewable_perc): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AVG(HR.average_renewable_perc)' at line 1
+[110, 22:13:14] DROP VIEW `share_consumption_db`.`high_fossil_consumption`: Running...
+[110, 22:13:14] DROP VIEW `share_consumption_db`.`high_fossil_consumption`: 0 row(s) affected
+[111, 22:13:14] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: Running...
+[111, 22:13:14] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: 0 row(s) affected
+[112, 22:13:14] DROP VIEW `share_consumption_db`.`high_gdp_avg`: Running...
+[112, 22:13:14] DROP VIEW `share_consumption_db`.`high_gdp_avg`: 0 row(s) affected
+[1, 22:13:24] USE share_consumption_db: Running...
+[1, 22:13:24] USE share_consumption_db: 0 row(s) affected
+[2, 22:13:24] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) > (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): Running...
+[2, 22:13:24] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) > (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): 0 row(s) affected
+[3, 22:13:24] CREATE VIEW high_fossil_consumption(country_name, iso_code, avg_fossil_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.fossil_fuels_percentage), MAX(S.fossil_fuels_percentage) - MIN(S.fossil_fuels_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.fossil_fuels_percentage) > (SELECT 
+	AVG(S_temp.fossil_fuels_percentage)
+	FROM share_of_consumption S_temp
+): Running...
+[3, 22:13:24] CREATE VIEW high_fossil_consumption(country_name, iso_code, avg_fossil_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.fossil_fuels_percentage), MAX(S.fossil_fuels_percentage) - MIN(S.fossil_fuels_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.fossil_fuels_percentage) > (SELECT 
+	AVG(S_temp.fossil_fuels_percentage)
+	FROM share_of_consumption S_temp
+): 0 row(s) affected
+[4, 22:13:24] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+GROUP BY G.iso_code
+HAVING AVG(G.gdp) > (SELECT
+	AVG(G_temp.gdp) 
+	FROM gdp G_temp
+): Running...
+[4, 22:13:24] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+GROUP BY G.iso_code
+HAVING AVG(G.gdp) > (SELECT
+	AVG(G_temp.gdp) 
+	FROM gdp G_temp
+): 0 row(s) affected
+[5, 22:14:07] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Running...
+[5, 22:14:07] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: Fetching...
+[5, 22:14:07] SELECT * FROM share_consumption_db.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[6, 22:14:09] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Running...
+[6, 22:14:09] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: Fetching...
+[6, 22:14:09] SELECT * FROM share_consumption_db.gdp
+LIMIT 0, 10000
+: 9658 row(s) returned
+[7, 22:14:11] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Running...
+[7, 22:14:11] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: Fetching...
+[7, 22:14:11] SELECT * FROM share_consumption_db.share_of_consumption
+LIMIT 0, 10000
+: 4215 row(s) returned
+[8, 22:14:17] SELECT * FROM share_consumption_db.high_fossil_consumption
+LIMIT 0, 10000
+: Running...
+[8, 22:14:17] SELECT * FROM share_consumption_db.high_fossil_consumption
+LIMIT 0, 10000
+: Fetching...
+[8, 22:14:17] SELECT * FROM share_consumption_db.high_fossil_consumption
+LIMIT 0, 10000
+: 52 row(s) returned
+[9, 22:14:18] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Running...
+[9, 22:14:18] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Fetching...
+[9, 22:14:18] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: 17 row(s) returned
+[10, 22:14:20] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Running...
+[10, 22:14:20] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Fetching...
+[10, 22:14:20] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: 25 row(s) returned
+[11, 22:14:39] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: Running...
+[11, 22:14:39] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: Fetching...
+[11, 22:14:39] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: 13 row(s) returned
+[12, 22:14:39] SELECT HG.iso_code
+FROM high_gdp_avg HG
+LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code
+WHERE HR.iso_code IS NULL
+LIMIT 0, 10000
+: Running...
+[12, 22:14:39] SELECT HG.iso_code
+FROM high_gdp_avg HG
+LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code
+WHERE HR.iso_code IS NULL
+LIMIT 0, 10000
+: Fetching...
+[12, 22:14:39] SELECT HG.iso_code
+FROM high_gdp_avg HG
+LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code
+WHERE HR.iso_code IS NULL
+LIMIT 0, 10000
+: 13 row(s) returned
+[13, 22:15:17] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[13, 22:15:17] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[14, 22:15:32] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;: Running...
+[14, 22:15:32] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;: 0 row(s) affected
+[15, 22:16:21] set @iso_code_to_retrieve = '0': Running...
+[15, 22:16:21] set @iso_code_to_retrieve = '0': 0 row(s) affected
+[16, 22:16:21] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[16, 22:16:21] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Fetching...
+[16, 22:16:21] call share_consumption_db.get_country_data(@iso_code_to_retrieve): 1 row(s) returned
+[17, 22:16:21] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: Running...
+[17, 22:16:21] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: Fetching...
+[17, 22:16:21] select @iso_code_to_retrieve
+LIMIT 0, 10000
+: 1 row(s) returned
+[1, 22:16:57] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: Running...
+[1, 22:16:57] DROP VIEW `share_consumption_db`.`high_renewable_consumption`: 0 row(s) affected
+[2, 22:16:57] DROP VIEW `share_consumption_db`.`high_gdp_avg`: Running...
+[2, 22:16:57] DROP VIEW `share_consumption_db`.`high_gdp_avg`: 0 row(s) affected
+[3, 22:16:58] DROP VIEW `share_consumption_db`.`high_fossil_consumption`: Running...
+[3, 22:16:58] DROP VIEW `share_consumption_db`.`high_fossil_consumption`: 0 row(s) affected
+[4, 22:17:02] DROP PROCEDURE `share_consumption_db`.`get_country_data`: Running...
+[4, 22:17:02] DROP PROCEDURE `share_consumption_db`.`get_country_data`: 0 row(s) affected
+[5, 22:17:06] USE share_consumption_db: Running...
+[5, 22:17:06] USE share_consumption_db: 0 row(s) affected
+[6, 22:17:06] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) > (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): Running...
+[6, 22:17:06] CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.renewables_percentage) > (SELECT 
+	AVG(S_temp.renewables_percentage)
+	FROM share_of_consumption S_temp
+): 0 row(s) affected
+[7, 22:17:06] CREATE VIEW high_fossil_consumption(country_name, iso_code, avg_fossil_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.fossil_fuels_percentage), MAX(S.fossil_fuels_percentage) - MIN(S.fossil_fuels_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.fossil_fuels_percentage) > (SELECT 
+	AVG(S_temp.fossil_fuels_percentage)
+	FROM share_of_consumption S_temp
+): Running...
+[7, 22:17:06] CREATE VIEW high_fossil_consumption(country_name, iso_code, avg_fossil_perc, range_of_change_in_consumption)
+AS SELECT C.country_name , S.iso_code, AVG(S.fossil_fuels_percentage), MAX(S.fossil_fuels_percentage) - MIN(S.fossil_fuels_percentage) 
+FROM share_of_consumption S, countries C
+WHERE S.iso_code = C.iso_code 
+GROUP BY S.iso_code
+HAVING AVG(S.fossil_fuels_percentage) > (SELECT 
+	AVG(S_temp.fossil_fuels_percentage)
+	FROM share_of_consumption S_temp
+): 0 row(s) affected
+[8, 22:17:06] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+GROUP BY G.iso_code
+HAVING AVG(G.gdp) > (SELECT
+	AVG(G_temp.gdp) 
+	FROM gdp G_temp
+): Running...
+[8, 22:17:06] CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp)
+AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp)
+FROM gdp G, countries C
+WHERE G.iso_code = C.iso_code 
+GROUP BY G.iso_code
+HAVING AVG(G.gdp) > (SELECT
+	AVG(G_temp.gdp) 
+	FROM gdp G_temp
+): 0 row(s) affected
+[9, 22:17:16] SELECT * FROM share_consumption_db.high_fossil_consumption
+LIMIT 0, 10000
+: Running...
+[9, 22:17:16] SELECT * FROM share_consumption_db.high_fossil_consumption
+LIMIT 0, 10000
+: Fetching...
+[9, 22:17:16] SELECT * FROM share_consumption_db.high_fossil_consumption
+LIMIT 0, 10000
+: 52 row(s) returned
+[10, 22:17:17] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Running...
+[10, 22:17:17] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: Fetching...
+[10, 22:17:17] SELECT * FROM share_consumption_db.high_gdp_avg
+LIMIT 0, 10000
+: 17 row(s) returned
+[11, 22:17:18] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Running...
+[11, 22:17:18] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: Fetching...
+[11, 22:17:18] SELECT * FROM share_consumption_db.high_renewable_consumption
+LIMIT 0, 10000
+: 25 row(s) returned
+[12, 22:17:32] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: Running...
+[12, 22:17:32] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: Fetching...
+[12, 22:17:32] SELECT HG.iso_code
+FROM high_gdp_avg HG
+WHERE HG.iso_code NOT IN(SELECT HR.iso_code
+	FROM high_renewable_consumption HR)
+LIMIT 0, 10000
+: 13 row(s) returned
+[13, 22:17:32] SELECT HG.iso_code
+FROM high_gdp_avg HG
+LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code
+WHERE HR.iso_code IS NULL
+LIMIT 0, 10000
+: Running...
+[13, 22:17:32] SELECT HG.iso_code
+FROM high_gdp_avg HG
+LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code
+WHERE HR.iso_code IS NULL
+LIMIT 0, 10000
+: Fetching...
+[13, 22:17:32] SELECT HG.iso_code
+FROM high_gdp_avg HG
+LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code
+WHERE HR.iso_code IS NULL
+LIMIT 0, 10000
+: 13 row(s) returned
+[14, 22:17:49] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;: Running...
+[14, 22:17:49] CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10))
+BEGIN
+    ##get the countries details
+    SELECT
+    (SELECT C.country_name 
+    FROM countries C
+    WHERE C.iso_code = iso_code_to_retrieve) AS country_name,
+    (SELECT AVG(G.gdp)
+    FROM gdp G
+    WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,
+    (SELECT AVG(S.renewables_percentage) 
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,
+    (SELECT MAX(S.renewables_percentage)
+    FROM share_of_consumption S
+    WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables;
+END;: 0 row(s) affected
+[15, 22:18:05] set @iso_code_to_retrieve = 'GBR': Running...
+[15, 22:18:05] set @iso_code_to_retrieve = 'GBR': 0 row(s) affected
+[16, 22:18:05] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[16, 22:18:05] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Fetching...
+[16, 22:18:05] call share_consumption_db.get_country_data(@iso_code_to_retrieve): 1 row(s) returned
+[17, 22:19:41] set @iso_code_to_retrieve = 'DZA': Running...
+[17, 22:19:41] set @iso_code_to_retrieve = 'DZA': 0 row(s) affected
+[18, 22:19:41] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Running...
+[18, 22:19:41] call share_consumption_db.get_country_data(@iso_code_to_retrieve): Fetching...
+[18, 22:19:41] call share_consumption_db.get_country_data(@iso_code_to_retrieve): 1 row(s) returned

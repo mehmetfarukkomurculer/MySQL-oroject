@@ -1,0 +1,35 @@
+22:16:57	DROP VIEW `share_consumption_db`.`high_renewable_consumption`	0 row(s) affected	0.015 sec
+
+22:16:57	DROP VIEW `share_consumption_db`.`high_gdp_avg`	0 row(s) affected	0.000 sec
+
+22:16:58	DROP VIEW `share_consumption_db`.`high_fossil_consumption`	0 row(s) affected	0.000 sec
+
+22:17:02	DROP PROCEDURE `share_consumption_db`.`get_country_data`	0 row(s) affected	0.000 sec
+
+22:17:06	USE share_consumption_db	0 row(s) affected	0.000 sec
+
+22:17:06	CREATE VIEW high_renewable_consumption(country_name, iso_code, avg_renewable_perc, range_of_change_in_consumption) AS SELECT C.country_name , S.iso_code, AVG(S.renewables_percentage), MAX(S.renewables_percentage) - MIN(S.renewables_percentage)  FROM share_of_consumption S, countries C WHERE S.iso_code = C.iso_code  GROUP BY S.iso_code HAVING AVG(S.renewables_percentage) > (SELECT   AVG(S_temp.renewables_percentage)  FROM share_of_consumption S_temp )	0 row(s) affected	0.000 sec
+
+22:17:06	CREATE VIEW high_fossil_consumption(country_name, iso_code, avg_fossil_perc, range_of_change_in_consumption) AS SELECT C.country_name , S.iso_code, AVG(S.fossil_fuels_percentage), MAX(S.fossil_fuels_percentage) - MIN(S.fossil_fuels_percentage)  FROM share_of_consumption S, countries C WHERE S.iso_code = C.iso_code  GROUP BY S.iso_code HAVING AVG(S.fossil_fuels_percentage) > (SELECT   AVG(S_temp.fossil_fuels_percentage)  FROM share_of_consumption S_temp )	0 row(s) affected	0.016 sec
+
+22:17:06	CREATE VIEW high_gdp_avg(country_name, iso_code, avg_gdp, range_of_change_in_gdp , max_gdp) AS SELECT C.country_name, G.iso_code, AVG(G.gdp),  MAX(G.gdp) - MIN(G.gdp), MAX(G.gdp) FROM gdp G, countries C WHERE G.iso_code = C.iso_code  GROUP BY G.iso_code HAVING AVG(G.gdp) > (SELECT  AVG(G_temp.gdp)   FROM gdp G_temp )	0 row(s) affected	0.000 sec
+
+22:17:16	SELECT * FROM share_consumption_db.high_fossil_consumption LIMIT 0, 10000	52 row(s) returned	0.015 sec / 0.000 sec
+
+22:17:17	SELECT * FROM share_consumption_db.high_gdp_avg LIMIT 0, 10000	17 row(s) returned	0.016 sec / 0.000 sec
+
+22:17:18	SELECT * FROM share_consumption_db.high_renewable_consumption LIMIT 0, 10000	25 row(s) returned	0.000 sec / 0.000 sec
+
+22:17:32	SELECT HG.iso_code FROM high_gdp_avg HG WHERE HG.iso_code NOT IN(SELECT HR.iso_code  FROM high_renewable_consumption HR) LIMIT 0, 10000	13 row(s) returned	0.031 sec / 0.000 sec
+
+22:17:32	SELECT HG.iso_code FROM high_gdp_avg HG LEFT JOIN high_renewable_consumption HR ON HG.iso_code = HR.iso_code WHERE HR.iso_code IS NULL LIMIT 0, 10000	13 row(s) returned	0.031 sec / 0.000 sec
+
+22:17:49	CREATE PROCEDURE get_country_data(iso_code_to_retrieve VARCHAR(10)) BEGIN     ##get the countries details     SELECT     (SELECT C.country_name      FROM countries C     WHERE C.iso_code = iso_code_to_retrieve) AS country_name,     (SELECT AVG(G.gdp)     FROM gdp G     WHERE G.iso_code = iso_code_to_retrieve) AS avg_gdp,     (SELECT AVG(S.renewables_percentage)      FROM share_of_consumption S     WHERE S.iso_code = iso_code_to_retrieve) AS average_percentage_of_consumption_from_renewables,     (SELECT MAX(S.renewables_percentage)     FROM share_of_consumption S     WHERE S.iso_code = iso_code_to_retrieve) AS max_percentage_of_consumption_from_renewables; END;	0 row(s) affected	0.000 sec
+
+22:18:05	set @iso_code_to_retrieve = 'GBR'	0 row(s) affected	0.000 sec
+
+22:18:05	call share_consumption_db.get_country_data(@iso_code_to_retrieve)	1 row(s) returned	0.000 sec / 0.000 sec
+
+22:19:41	set @iso_code_to_retrieve = 'DZA'	0 row(s) affected	0.000 sec
+
+22:19:41	call share_consumption_db.get_country_data(@iso_code_to_retrieve)	1 row(s) returned	0.000 sec / 0.000 sec
