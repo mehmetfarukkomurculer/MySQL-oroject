@@ -17,6 +17,7 @@ WHERE S.iso_code = C.iso_code
 GROUP BY S.iso_code
 HAVING AVG(S.fossil_fuels_percentage) > (SELECT 
 	AVG(S_temp.fossil_fuels_percentage)
+	AND COUNT(*) > 5					 
 	FROM share_of_consumption S_temp
 );
 
