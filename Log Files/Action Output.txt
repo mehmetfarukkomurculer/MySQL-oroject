@@ -1,0 +1,110 @@
+	#	Time	Action	Message	Duration / Fetch
+3	1	22:13:22	CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+  AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+  FROM has_annual_generation H, countries C
+     WHERE C.iso_code = H.iso_code
+     GROUP BY C.iso_code, H.date_y
+     HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H.date_y)	0 row(s) affected	0.000 sec
+3	2	22:13:22	SELECT * FROM CWHRG
+ LIMIT 0, 50000	544 row(s) returned	8.062 sec / 0.000 sec
+3	3	22:13:30	DROP VIEW CWHRG	0 row(s) affected	0.000 sec
+3	4	22:14:40	SELECT C.country_name
+ FROM countries C
+ WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+ LIMIT 0, 50000	13 row(s) returned	0.015 sec / 0.000 sec
+3	5	22:14:40	SELECT C.country_name
+ FROM countries C
+ WHERE EXISTS (SELECT * 
+ FROM has_annual_generation H
+ WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+ LIMIT 0, 50000	13 row(s) returned	0.000 sec / 0.000 sec
+0	6	22:18:39	SELECT MIN(H.has_annual_generation)
+ FROM has_annual_generation H
+ LIMIT 0, 50000	Error Code: 1054. Unknown column 'H.has_annual_generation' in 'field list'	0.000 sec
+3	7	22:19:35	SELECT * FROM generation.has_annual_generation
+ LIMIT 0, 50000	5972 row(s) returned	0.000 sec / 0.000 sec
+3	8	22:20:23	SELECT MIN(H.date_y)
+ FROM has_annual_generation H
+ LIMIT 0, 50000	1 row(s) returned	0.000 sec / 0.000 sec
+3	9	22:20:23	SELECT MAX(H.date_y)
+ FROM has_annual_generation H
+ LIMIT 0, 50000	1 row(s) returned	0.016 sec / 0.000 sec
+0	10	22:21:03	ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_mmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985))	Error Code: 3822. Duplicate check constraint name 'mmax_mmin_value_check'.	0.000 sec
+3	11	22:21:20	ALTER TABLE has_annual_generation ADD CONSTRAINT mmmax_mmmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985))	5972 row(s) affected
+ Records: 5972  Duplicates: 0  Warnings: 0	0.094 sec
+0	12	22:21:38	INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNK', 1964, 2326667,56062226, 4593339)	Error Code: 1062. Duplicate entry 'DNK-1985' for key 'has_annual_generation.PRIMARY'	0.000 sec
+0	13	22:22:21	INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNC', 1962, 2326617,54062226, 4599339)	Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`generation`.`has_annual_generation`, CONSTRAINT `has_annual_generation_ibfk_1` FOREIGN KEY (`iso_code`) REFERENCES `countries` (`iso_code`) ON DELETE CASCADE)	0.000 sec
+0	14	22:27:10	CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation
+ FOR EACH ROW
+ BEGIN
+  IF NEW.date_y > 2022 THEN
+         SET NEW.date_y = 2022;
+  ELSEIF NEW.date_y < 1985 THEN
+         SET NEW.date_y = 1985;
+ END IF;
+ END
+ #DELIMITER;
+ 
+ /*
+ Before update trigger where the date_y value is modified as specified before it is updated on the table.
+ */
+ /*
+ DELIMITER //
+ CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+ FOR EACH ROW
+ BEGIN
+  IF NEW.date_y > 2022 THEN
+         SET NEW.date_y = 2022;
+  ELSEIF NEW.date_y < 1985 THEN
+         SET NEW.date_y = 1985;
+ END IF;
+ END
+ #DELIMITER
+ */	Error Code: 1359. Trigger already exists	0.000 sec
+3	15	22:27:28	CREATE TRIGGER triggered_1 BEFORE INSERT ON has_annual_generation
+ FOR EACH ROW
+ BEGIN
+  IF NEW.date_y > 2022 THEN
+         SET NEW.date_y = 2022;
+  ELSEIF NEW.date_y < 1985 THEN
+         SET NEW.date_y = 1985;
+ END IF;
+ END
+ #DELIMITER;
+ 
+ /*
+ Before update trigger where the date_y value is modified as specified before it is updated on the table.
+ */
+ /*
+ DELIMITER //
+ CREATE TRIGGER triggered_3 BEFORE UPDATE ON has_annual_generation
+ FOR EACH ROW
+ BEGIN
+  IF NEW.date_y > 2022 THEN
+         SET NEW.date_y = 2022;
+  ELSEIF NEW.date_y < 1985 THEN
+         SET NEW.date_y = 1985;
+ END IF;
+ END
+ #DELIMITER
+ */	0 row(s) affected	0.000 sec
+3	16	22:27:48	CREATE TRIGGER triggered_3 BEFORE UPDATE ON has_annual_generation
+ FOR EACH ROW
+ BEGIN
+  IF NEW.date_y > 2022 THEN
+         SET NEW.date_y = 2022;
+  ELSEIF NEW.date_y < 1985 THEN
+         SET NEW.date_y = 1985;
+ END IF;
+ END
+ #DELIMITER	0 row(s) affected	0.000 sec
+3	17	22:27:57	CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+ FOR EACH ROW
+ BEGIN
+  IF NEW.date_y > 2022 THEN
+         SET NEW.date_y = 2022;
+  ELSEIF NEW.date_y < 1985 THEN
+         SET NEW.date_y = 1985;
+ END IF;
+ END
+ #DELIMITER	0 row(s) affected	0.016 sec

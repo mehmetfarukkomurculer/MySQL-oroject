@@ -1,0 +1,2211 @@
+[1, 18:28:44] DROP TABLE `generation`.`countries`: Running...
+[1, 18:28:44] DROP TABLE `generation`.`countries`: Error Code: 3730. Cannot drop table 'countries' referenced by a foreign key constraint 'has_annual generation_ibfk_1' on table 'has_annual generation'.
+[2, 18:29:17] DROP DATABASE `generation`: Running...
+[2, 18:29:17] DROP DATABASE `generation`: 2 row(s) affected
+[3, 18:29:33] Apply changes to generation: Applying object changes ...
+[3, 18:29:38] Applying changes to generation...: 
+[3, 18:29:38] : Changes applied to generation
+[3, 18:29:39] Apply changes to generation: Changes applied
+[4, 18:30:33] Apply changes to countries: Applying object changes ...
+[4, 18:31:28] Applying changes to countries...: 
+[4, 18:31:44] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(iso_code)
+)' at line 6
+SQL Statement:
+CREATE TABLE `generation`.`countries` (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+mean_age REAL,
+PRIMARY KEY (iso_code)
+)
+
+
+[5, 18:31:46] Apply changes to countries: Applying object changes ...
+[5, 18:32:36] Applying changes to countries...: 
+[5, 18:32:39] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(iso_code)
+)' at line 6
+SQL Statement:
+CREATE TABLE `generation`.`countries` (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+mean_age REAL,
+PRIMARY KEY (iso_code)
+)
+
+
+[6, 18:32:42] Apply changes to countries: Applying object changes ...
+[6, 18:32:50] Applying changes to countries...: 
+[6, 18:32:55] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(iso_code)
+)' at line 7
+SQL Statement:
+CREATE TABLE `generation`.`countries` (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+mean_age REAL,
+gdp REAL,
+PRIMARY KEY (iso_code)
+)
+
+
+[7, 18:32:56] Apply changes to countries: Applying object changes ...
+[7, 18:34:02] Applying changes to countries...: 
+[7, 18:34:31] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(iso_code)
+)' at line 6
+SQL Statement:
+CREATE TABLE `generation`.`countries` (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+mean_age REAL,
+PRIMARY KEY (iso_code)
+)
+
+
+[8, 18:34:41] Apply changes to countries: Applying object changes ...
+[8, 18:36:52] Applying changes to countries...: 
+[8, 18:37:03] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+SQL Statement:
+CREATE TABLE `generation`.`countries` (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+mean_age REAL,
+PRIMARY KEY (iso
+
+
+[9, 18:37:05] Apply changes to countries: Applying object changes ...
+[9, 18:37:41] Applying changes to countries...: 
+[9, 18:37:43] Apply changes to countries: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+SQL Statement:
+CREATE TABLE `generation`.`countries` (
+iso_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50),
+population BIGINT UNSIGNED,
+mean_age REAL,
+PRIMARY KEY (iso
+
+
+[10, 18:37:45] Apply changes to countries: Applying object changes ...
+[10, 18:38:23] Applying changes to countries...: 
+[10, 18:38:23] : Changes applied to countries
+[10, 18:38:27] Apply changes to countries: Changes applied
+[11, 18:40:11] Apply changes to has_annual generation: Applying object changes ...
+[11, 18:45:03] Applying changes to has_annual generation...: 
+[11, 18:45:15] Apply changes to has_annual generation: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'fossil REAL,
+generation renewables REAL,
+generation total REAL,
+PRIMARY KEY (iso' at line 4
+SQL Statement:
+CREATE TABLE `generation`.`has_annual generation` (
+iso_code VARCHAR(10),
+date_y INTEGER NOT NULL,
+generation fossil REAL,
+generation renewables REAL,
+generation total REAL,
+PRIMARY KEY (iso_code, date_y),
+FOREIGN KEY (iso_code) REFERENCES countries(iso_code) ON DELETE CASCADE
+)
+
+
+[12, 18:45:17] Apply changes to has_annual generation: Applying object changes ...
+[12, 18:46:34] Applying changes to has_annual generation...: 
+[12, 18:47:19] Apply changes to has_annual generation: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'fossil REAL,
+generation renewables REAL,
+generation total REAL,
+PRIMARY KEY (iso' at line 4
+SQL Statement:
+CREATE TABLE `generation`.`has_annual generation` (
+iso_code VARCHAR(10),
+date_y INTEGER NOT NULL,
+generation fossil REAL,
+generation renewables REAL,
+generation total REAL,
+PRIMARY KEY (iso_code, date_y),
+FOREIGN KEY (iso_code) REFERENCES countries(iso_code) ON DELETE CASCADE
+)
+
+
+[13, 18:47:20] Apply changes to has_annual generation: Applying object changes ...
+[13, 18:48:09] Applying changes to has_annual generation...: 
+[13, 18:48:09] : Changes applied to has_annual generation
+[13, 18:48:11] Apply changes to has_annual generation: Changes applied
+[14, 18:51:12] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[14, 18:51:12] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[15, 18:51:12] SHOW DATABASES: Executing 
+[15, 18:51:12] SHOW DATABASES: OK
+[16, 18:51:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[16, 18:51:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[17, 18:51:39] SHOW COLUMNS FROM `generation`.`countries`: Executing 
+[17, 18:51:39] SHOW COLUMNS FROM `generation`.`countries`: OK
+[18, 18:52:59] PREPARE stmt FROM 'INSERT INTO `generation`.`countries` (`country_name`,`iso_code`,`population`,`mean_age`) VALUES(?,?,?,?)': Executing 
+[18, 18:52:59] PREPARE stmt FROM 'INSERT INTO `generation`.`countries` (`country_name`,`iso_code`,`population`,`mean_age`) VALUES(?,?,?,?)': OK
+[19, 18:53:00] DEALLOCATE PREPARE stmt: Executing 
+[19, 18:53:00] DEALLOCATE PREPARE stmt: OK
+[20, 18:54:59] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[20, 18:54:59] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[21, 18:54:59] SHOW DATABASES: Executing 
+[21, 18:54:59] SHOW DATABASES: OK
+[22, 18:55:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[22, 18:55:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[23, 18:55:03] SHOW COLUMNS FROM `generation`.`has_annual generation`: Executing 
+[23, 18:55:03] SHOW COLUMNS FROM `generation`.`has_annual generation`: OK
+[24, 18:56:01] PREPARE stmt FROM 'INSERT INTO `generation`.`has_annual generation` (`iso_code`,`date_y`,`generation_renewables`,`generation_fossil`,`generation_total`) VALUES(?,?,?,?,?)': Executing 
+[24, 18:56:01] PREPARE stmt FROM 'INSERT INTO `generation`.`has_annual generation` (`iso_code`,`date_y`,`generation_renewables`,`generation_fossil`,`generation_total`) VALUES(?,?,?,?,?)': OK
+[25, 18:56:21] DEALLOCATE PREPARE stmt: Executing 
+[25, 18:56:21] DEALLOCATE PREPARE stmt: OK
+[26, 19:01:07] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Running...
+[26, 19:01:07] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Fetching...
+[26, 19:01:07] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: 147 row(s) returned
+[27, 19:02:57] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Running...
+[27, 19:02:57] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Fetching...
+[27, 19:02:57] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: 147 row(s) returned
+[28, 19:02:57] DELETE FROM generation.`has_annual generation`: Running...
+[28, 19:02:57] DELETE FROM generation.`has_annual generation`: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[29, 19:03:36] DELETE FROM generation.`has_annual generation`: Running...
+[29, 19:03:36] DELETE FROM generation.`has_annual generation`: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[30, 19:03:57] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Running...
+[30, 19:03:57] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Fetching...
+[30, 19:03:57] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: 147 row(s) returned
+[31, 19:05:16] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Running...
+[31, 19:05:16] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Fetching...
+[31, 19:05:16] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: 147 row(s) returned
+[32, 19:05:16] DELETE FROM generation.`has_annual generation`: Running...
+[32, 19:05:16] DELETE FROM generation.`has_annual generation`: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[33, 19:05:56] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Running...
+[33, 19:05:56] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Fetching...
+[33, 19:05:56] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: 147 row(s) returned
+[34, 19:05:57] DELETE FROM generation.`has_annual generation` WHERE date_y: Running...
+[34, 19:05:57] DELETE FROM generation.`has_annual generation` WHERE date_y: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[35, 19:07:20] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Running...
+[35, 19:07:20] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Fetching...
+[35, 19:07:20] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: 147 row(s) returned
+[36, 19:07:20] DELETE FROM generation.`has_annual generation` WHERE date_y: Running...
+[36, 19:07:20] DELETE FROM generation.`has_annual generation` WHERE date_y: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[37, 19:08:39] TRUNCATE `generation`.`has_annual generation`: Executing 
+[37, 19:08:39] TRUNCATE `generation`.`has_annual generation`: OK
+[38, 19:09:00] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Running...
+[38, 19:09:00] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: Fetching...
+[38, 19:09:00] SELECT * FROM generation.`has_annual generation`
+LIMIT 0, 1000
+: 0 row(s) returned
+[39, 19:13:09] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[39, 19:13:09] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[40, 19:13:09] SHOW DATABASES: Executing 
+[40, 19:13:09] SHOW DATABASES: OK
+[41, 19:13:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[41, 19:13:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[42, 19:13:16] SHOW COLUMNS FROM `generation`.`has_annual generation`: Executing 
+[42, 19:13:16] SHOW COLUMNS FROM `generation`.`has_annual generation`: OK
+[43, 19:13:48] PREPARE stmt FROM 'INSERT INTO `generation`.`has_annual generation` (`iso_code`,`date_y`,`generation_renewables`,`generation_fossil`,`generation_total`) VALUES(?,?,?,?,?)': Executing 
+[43, 19:13:48] PREPARE stmt FROM 'INSERT INTO `generation`.`has_annual generation` (`iso_code`,`date_y`,`generation_renewables`,`generation_fossil`,`generation_total`) VALUES(?,?,?,?,?)': OK
+[44, 19:14:21] DEALLOCATE PREPARE stmt: Executing 
+[44, 19:14:21] DEALLOCATE PREPARE stmt: OK
+[45, 19:15:41] TRUNCATE `generation`.`has_annual generation`: Executing 
+[45, 19:15:41] TRUNCATE `generation`.`has_annual generation`: OK
+[46, 19:18:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[46, 19:18:28] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[47, 19:18:28] SHOW DATABASES: Executing 
+[47, 19:18:28] SHOW DATABASES: OK
+[48, 19:18:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[48, 19:18:38] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[49, 19:18:38] SHOW COLUMNS FROM `generation`.`has_annual generation`: Executing 
+[49, 19:18:38] SHOW COLUMNS FROM `generation`.`has_annual generation`: OK
+[50, 19:18:52] PREPARE stmt FROM 'INSERT INTO `generation`.`has_annual generation` (`iso_code`,`date_y`,`generation_renewables`,`generation_fossil`,`generation_total`) VALUES(?,?,?,?,?)': Executing 
+[50, 19:18:52] PREPARE stmt FROM 'INSERT INTO `generation`.`has_annual generation` (`iso_code`,`date_y`,`generation_renewables`,`generation_fossil`,`generation_total`) VALUES(?,?,?,?,?)': OK
+[51, 19:19:15] DEALLOCATE PREPARE stmt: Executing 
+[51, 19:19:15] DEALLOCATE PREPARE stmt: OK
+[52, 19:20:27] TRUNCATE `generation`.`has_annual generation`: Executing 
+[52, 19:20:27] TRUNCATE `generation`.`has_annual generation`: OK
+[53, 19:20:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[53, 19:20:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[54, 19:20:33] SHOW DATABASES: Executing 
+[54, 19:20:33] SHOW DATABASES: OK
+[55, 19:26:13] TRUNCATE `generation`.`has_annual generation`: Executing 
+[55, 19:26:13] TRUNCATE `generation`.`has_annual generation`: OK
+[56, 19:28:32] USE generation: Running...
+[56, 19:28:32] USE generation: 0 row(s) affected
+[57, 19:28:32] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE Share_of_Consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[57, 19:28:32] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE Share_of_Consumption 
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Error Code: 1146. Table 'generation.share_of_consumption' doesn't exist
+[58, 19:29:22] Apply changes to has_annual_generation: Applying object changes ...
+[58, 19:29:25] Applying changes to has_annual_generation...: 
+[58, 19:29:25] : Changes applied to has_annual_generation
+[58, 19:29:26] Apply changes to has_annual_generation: Changes applied
+[59, 19:29:35] USE generation: Running...
+[59, 19:29:35] USE generation: 0 row(s) affected
+[60, 19:29:35] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE has_annual_generation
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[60, 19:29:35] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE has_annual_generation
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 5972 row(s) affected
+Records: 5972  Deleted: 0  Skipped: 0  Warnings: 0
+[61, 19:29:41] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 1000
+: Running...
+[61, 19:29:41] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 1000
+: Fetching...
+[61, 19:29:41] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 1000
+: 1000 row(s) returned
+[62, 19:31:03] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 1000
+: Running...
+[62, 19:31:03] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 1000
+: Fetching...
+[62, 19:31:03] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 1000
+: 1000 row(s) returned
+[63, 19:32:04] TRUNCATE `generation`.`has_annual_generation`: Executing 
+[63, 19:32:04] TRUNCATE `generation`.`has_annual_generation`: OK
+[64, 19:32:30] TRUNCATE `generation`.`has_annual_generation`: Executing 
+[64, 19:32:30] TRUNCATE `generation`.`has_annual_generation`: OK
+[65, 19:32:32] USE generation: Running...
+[65, 19:32:32] USE generation: 0 row(s) affected
+[66, 19:32:32] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE has_annual_generation
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[66, 19:32:33] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE has_annual_generation
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 5972 row(s) affected
+Records: 5972  Deleted: 0  Skipped: 0  Warnings: 0
+[67, 19:32:38] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Running...
+[67, 19:32:38] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Fetching...
+[67, 19:32:38] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: 5972 row(s) returned
+[68, 19:34:04] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Running...
+[68, 19:34:04] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Fetching...
+[68, 19:34:04] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[1, 19:39:05] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Running...
+[1, 19:39:05] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Fetching...
+[1, 19:39:05] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[2, 19:39:10] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Running...
+[2, 19:39:10] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Fetching...
+[2, 19:39:10] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: 5972 row(s) returned
+[3, 19:48:35] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Running...
+[3, 19:48:35] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Fetching...
+[3, 19:48:35] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[4, 19:48:40] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Running...
+[4, 19:48:40] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Fetching...
+[4, 19:48:40] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: 5972 row(s) returned
+[5, 19:53:12] TRUNCATE `generation`.`countries`: Executing 
+[5, 19:53:12] TRUNCATE `generation`.`countries`: Error Code: 1701
+Cannot truncate a table referenced in a foreign key constraint (`generation`.`has_annual_generation`, CONSTRAINT `has_annual_generation_ibfk_1`)
+[1, 19:53:56] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Running...
+[1, 19:53:56] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Fetching...
+[1, 19:53:56] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[2, 19:53:58] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Running...
+[2, 19:53:58] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Fetching...
+[2, 19:53:58] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: 5972 row(s) returned
+[1, 19:54:44] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Running...
+[1, 19:54:44] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Fetching...
+[1, 19:54:44] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: 5972 row(s) returned
+[2, 19:54:46] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Running...
+[2, 19:54:46] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Fetching...
+[2, 19:54:46] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[3, 19:55:07] TRUNCATE `generation`.`has_annual_generation`: Executing 
+[3, 19:55:07] TRUNCATE `generation`.`has_annual_generation`: OK
+[4, 19:55:25] TRUNCATE `generation`.`countries`: Executing 
+[4, 19:55:25] TRUNCATE `generation`.`countries`: Error Code: 1701
+Cannot truncate a table referenced in a foreign key constraint (`generation`.`has_annual_generation`, CONSTRAINT `has_annual_generation_ibfk_1`)
+[5, 19:55:40] USE generation: Running...
+[5, 19:55:40] USE generation: 0 row(s) affected
+[6, 19:55:40] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE has_annual_generation
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[6, 19:55:40] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE has_annual_generation
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 5972 row(s) affected
+Records: 5972  Deleted: 0  Skipped: 0  Warnings: 0
+[1, 19:59:27] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Running...
+[1, 19:59:27] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Fetching...
+[1, 19:59:27] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: 5972 row(s) returned
+[2, 19:59:30] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Running...
+[2, 19:59:30] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Fetching...
+[2, 19:59:30] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[3, 19:59:45] TRUNCATE `generation`.`has_annual_generation`: Executing 
+[3, 19:59:45] TRUNCATE `generation`.`has_annual_generation`: OK
+[4, 19:59:50] TRUNCATE `generation`.`countries`: Executing 
+[4, 19:59:50] TRUNCATE `generation`.`countries`: Error Code: 1701
+Cannot truncate a table referenced in a foreign key constraint (`generation`.`has_annual_generation`, CONSTRAINT `has_annual_generation_ibfk_1`)
+[5, 20:00:04] USE generation: Running...
+[5, 20:00:04] USE generation: 0 row(s) affected
+[6, 20:00:04] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE has_annual_generation
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: Running...
+[6, 20:00:05] LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/annual_generation.csv' INTO TABLE has_annual_generation
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\r\n' IGNORE 1 LINES: 5972 row(s) affected
+Records: 5972  Deleted: 0  Skipped: 0  Warnings: 0
+[1, 12:35:11] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Running...
+[1, 12:35:11] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Fetching...
+[1, 12:35:11] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: 5972 row(s) returned
+[2, 12:35:41] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Running...
+[2, 12:35:41] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: Fetching...
+[2, 12:35:41] SELECT * FROM generation.countries
+LIMIT 0, 10000
+: 237 row(s) returned
+[3, 12:45:24] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Running...
+[3, 12:45:24] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: Fetching...
+[3, 12:45:24] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 10000
+: 5972 row(s) returned
+[4, 13:11:07] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.generation_renewables > AVG(H.generation_renewables) AND H.iso_code = C.iso_code: Running...
+[4, 13:11:07] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.generation_renewables > AVG(H.generation_renewables) AND H.iso_code = C.iso_code: Error Code: 1111. Invalid use of group function
+[5, 13:15:47] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.generation_renewables > AVG(H.generation_renewables) AND H.iso_code = C.iso_code: Running...
+[5, 13:15:47] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.generation_renewables > AVG(H.generation_renewables) AND H.iso_code = C.iso_code: Error Code: 1111. Invalid use of group function
+[6, 13:20:11] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H.generation_renewables)): Running...
+[6, 13:20:11] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H.generation_renewables)): 0 row(s) affected
+[7, 13:20:57] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H.generation_renewables)): Running...
+[7, 13:20:57] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H.generation_renewables)): Error Code: 1050. Table 'CWHRG' already exists
+[8, 13:21:41] DROP VIEW CWHRG: Running...
+[8, 13:21:41] DROP VIEW CWHRG: 0 row(s) affected
+[9, 13:21:41] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H.generation_renewables)): Running...
+[9, 13:21:41] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H.generation_renewables)): 0 row(s) affected
+[10, 13:21:41] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[10, 13:21:41] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[10, 13:21:41] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 0 row(s) returned
+[11, 13:22:54] DROP VIEW CWHRG: Running...
+[11, 13:22:54] DROP VIEW CWHRG: 0 row(s) affected
+[12, 13:22:54] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H.generation_renewables) FROM has_annual_generation H2): Running...
+[12, 13:22:54] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[13, 13:22:54] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[13, 13:22:56] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[13, 13:23:00] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 2592 row(s) returned
+[14, 13:27:59] SELECT AVG(H.generation_renewables)
+    FROM has_annual_generation H
+LIMIT 0, 10000
+: Running...
+[14, 13:27:59] SELECT AVG(H.generation_renewables)
+    FROM has_annual_generation H
+LIMIT 0, 10000
+: Fetching...
+[14, 13:27:59] SELECT AVG(H.generation_renewables)
+    FROM has_annual_generation H
+LIMIT 0, 10000
+: 1 row(s) returned
+[15, 13:29:28] DROP VIEW CWHRG: Running...
+[15, 13:29:28] DROP VIEW CWHRG: 0 row(s) affected
+[16, 13:29:28] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[16, 13:29:28] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[17, 13:29:28] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[17, 13:29:28] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[17, 13:29:28] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 541 row(s) returned
+[18, 13:30:00] SELECT AVG(H.generation_renewables)
+    FROM has_annual_generation H
+LIMIT 0, 10000
+: Running...
+[18, 13:30:00] SELECT AVG(H.generation_renewables)
+    FROM has_annual_generation H
+LIMIT 0, 10000
+: Fetching...
+[18, 13:30:00] SELECT AVG(H.generation_renewables)
+    FROM has_annual_generation H
+LIMIT 0, 10000
+: 1 row(s) returned
+[19, 13:30:00] DROP VIEW CWHRG: Running...
+[19, 13:30:00] DROP VIEW CWHRG: 0 row(s) affected
+[20, 13:30:00] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[20, 13:30:00] CREATE VIEW CWHRG (c_name, c_renewable)
+	AS SELECT C.country_name, H.generation_renewables
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[21, 13:30:00] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[21, 13:30:00] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[21, 13:30:00] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 541 row(s) returned
+[22, 13:58:34] DROP VIEW CWHRG: Running...
+[22, 13:58:34] DROP VIEW CWHRG: 0 row(s) affected
+[23, 13:58:34] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[23, 13:58:34] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[24, 13:58:34] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[24, 13:58:34] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[24, 13:58:34] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 541 row(s) returned
+[25, 13:58:52] DROP VIEW CWHRG: Running...
+[25, 13:58:52] DROP VIEW CWHRG: 0 row(s) affected
+[26, 13:58:52] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[26, 13:58:52] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[27, 13:58:52] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[27, 13:58:52] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[27, 13:58:52] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 541 row(s) returned
+[28, 14:00:12] DROP VIEW CWHRG: Running...
+[28, 14:00:12] DROP VIEW CWHRG: 0 row(s) affected
+[29, 14:00:12] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.date_y = 2022 AND H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[29, 14:00:12] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.date_y = 2022 AND H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[30, 14:00:12] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[30, 14:00:12] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[30, 14:00:12] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 2 row(s) returned
+[31, 14:03:46] DROP VIEW CWHRG: Running...
+[31, 14:03:46] DROP VIEW CWHRG: 0 row(s) affected
+[32, 14:03:46] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2)
+    GROUP BY H.date_y: Running...
+[32, 14:03:46] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2)
+    GROUP BY H.date_y: 0 row(s) affected
+[33, 14:03:46] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[33, 14:03:46] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.c.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[34, 14:15:04] DROP VIEW CWHRG: Running...
+[34, 14:15:04] DROP VIEW CWHRG: 0 row(s) affected
+[35, 14:15:04] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H INNER JOIN countries C ON iso_code
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2)
+    GROUP BY H.date_y: Running...
+[35, 14:15:04] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H INNER JOIN countries C ON iso_code
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2)
+    GROUP BY H.date_y: Error Code: 1052. Column 'iso_code' in on clause is ambiguous
+[36, 14:15:35] DROP VIEW CWHRG: Running...
+[36, 14:15:35] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[37, 14:30:54] DROP VIEW CWHRG: Running...
+[37, 14:30:54] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[38, 14:31:46] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[38, 14:31:46] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[39, 14:31:46] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[39, 14:31:46] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[39, 14:31:46] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 541 row(s) returned
+[40, 14:31:46] DROP VIEW CWHRG: Running...
+[40, 14:31:46] DROP VIEW CWHRG: 0 row(s) affected
+[41, 14:58:30] SELECT AVG(H.generation_renewables)
+FROM has_annual_generation H
+LIMIT 0, 10000
+: Running...
+[41, 14:58:30] SELECT AVG(H.generation_renewables)
+FROM has_annual_generation H
+LIMIT 0, 10000
+: Fetching...
+[41, 14:58:30] SELECT AVG(H.generation_renewables)
+FROM has_annual_generation H
+LIMIT 0, 10000
+: 1 row(s) returned
+[42, 14:59:38] SELECT AVG(H.generation_renewables)
+FROM has_annual_generation H
+GROUP BY H.date_y
+LIMIT 0, 10000
+: Running...
+[42, 14:59:38] SELECT AVG(H.generation_renewables)
+FROM has_annual_generation H
+GROUP BY H.date_y
+LIMIT 0, 10000
+: Fetching...
+[42, 14:59:38] SELECT AVG(H.generation_renewables)
+FROM has_annual_generation H
+GROUP BY H.date_y
+LIMIT 0, 10000
+: 38 row(s) returned
+[43, 15:06:32] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.counrty_name, AVG(H.generation_renewables), C.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Running...
+[43, 15:06:32] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.counrty_name, AVG(H.generation_renewables), C.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Error Code: 1054. Unknown column 'C.counrty_name' in 'field list'
+[44, 15:07:10] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), C.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Running...
+[44, 15:07:10] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), C.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Error Code: 1054. Unknown column 'C.date_y' in 'field list'
+[45, 15:08:26] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), C.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Running...
+[45, 15:08:26] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), C.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Error Code: 1054. Unknown column 'C.date_y' in 'field list'
+[46, 15:08:44] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Running...
+[46, 15:08:44] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: 0 row(s) affected
+[47, 15:08:44] DROP VIEW AGPY: Running...
+[47, 15:08:44] DROP VIEW AGPY: 0 row(s) affected
+[48, 15:09:08] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Running...
+[48, 15:09:08] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: 0 row(s) affected
+[49, 15:09:08] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Running...
+[49, 15:09:08] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.c.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[50, 15:09:28] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Running...
+[50, 15:09:28] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Error Code: 1050. Table 'AGPY' already exists
+[51, 15:09:50] DROP VIEW AGPY: Running...
+[51, 15:09:50] DROP VIEW AGPY: 0 row(s) affected
+[52, 15:10:02] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: Running...
+[52, 15:10:02] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y: 0 row(s) affected
+[53, 15:10:02] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Running...
+[53, 15:10:02] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.c.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[54, 15:13:00] SELECT * 
+FROM countries INNER JOIN has_annual_generation
+ON countries.iso_code = has_annual_generation.iso_code
+
+
+
+/*
+CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y;
+    
+SELECT * FROM AGPY;    
+DROP VIEW AGPY;
+*/
+
+/*
+CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2);
+    
+    
+SELECT * FROM CWHRG;
+DROP VIEW CWHRG;
+*/
+LIMIT 0, 10000
+: Running...
+[54, 15:13:00] SELECT * 
+FROM countries INNER JOIN has_annual_generation
+ON countries.iso_code = has_annual_generation.iso_code
+
+
+
+/*
+CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y;
+    
+SELECT * FROM AGPY;    
+DROP VIEW AGPY;
+*/
+
+/*
+CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2);
+    
+    
+SELECT * FROM CWHRG;
+DROP VIEW CWHRG;
+*/
+LIMIT 0, 10000
+: Fetching...
+[54, 15:13:00] SELECT * 
+FROM countries INNER JOIN has_annual_generation
+ON countries.iso_code = has_annual_generation.iso_code
+
+
+
+/*
+CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+	GROUP BY H.date_y;
+    
+SELECT * FROM AGPY;    
+DROP VIEW AGPY;
+*/
+
+/*
+CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2);
+    
+    
+SELECT * FROM CWHRG;
+DROP VIEW CWHRG;
+*/
+LIMIT 0, 10000
+: 5972 row(s) returned
+[55, 15:17:08] CREATE VIEW UNITED
+	AS SELECT * 
+	FROM countries INNER JOIN has_annual_generation
+	ON countries.iso_code = has_annual_generation.iso_code: Running...
+[55, 15:17:08] CREATE VIEW UNITED
+	AS SELECT * 
+	FROM countries INNER JOIN has_annual_generation
+	ON countries.iso_code = has_annual_generation.iso_code: Error Code: 1060. Duplicate column name 'iso_code'
+[56, 15:20:45] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C: Running...
+[56, 15:20:45] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C: Error Code: 1050. Table 'AGPY' already exists
+[57, 15:21:04] DROP VIEW AGPY: Running...
+[57, 15:21:04] DROP VIEW AGPY: 0 row(s) affected
+[58, 15:21:11] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C: Running...
+[58, 15:21:11] CREATE VIEW AGPY (country_name, average_renewable_generation, year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C: 0 row(s) affected
+[59, 15:21:11] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Running...
+[59, 15:21:11] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Error Code: 1140. In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'generation.c.country_name'; this is incompatible with sql_mode=only_full_group_by
+[60, 15:22:47] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C: Running...
+[60, 15:22:47] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C: Error Code: 1050. Table 'AGPY' already exists
+[61, 15:22:56] DROP VIEW AGPY: Running...
+[61, 15:22:56] DROP VIEW AGPY: 0 row(s) affected
+[62, 15:23:01] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C: Running...
+[62, 15:23:01] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C: 0 row(s) affected
+[63, 15:23:01] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Running...
+[63, 15:23:01] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Error Code: 1140. In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'generation.c.country_name'; this is incompatible with sql_mode=only_full_group_by
+[64, 15:24:00] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: Running...
+[64, 15:24:00] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: Error Code: 1050. Table 'AGPY' already exists
+[65, 15:24:08] DROP VIEW AGPY: Running...
+[65, 15:24:08] DROP VIEW AGPY: 0 row(s) affected
+[66, 15:24:15] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: Running...
+[66, 15:24:15] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: 0 row(s) affected
+[67, 15:24:15] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Running...
+[67, 15:24:15] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.c.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[68, 15:24:39] DROP VIEW AGPY: Running...
+[68, 15:24:39] DROP VIEW AGPY: 0 row(s) affected
+[69, 15:24:45] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: Running...
+[69, 15:24:45] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: 0 row(s) affected
+[70, 15:24:50] DROP VIEW AGPY: Running...
+[70, 15:24:50] DROP VIEW AGPY: 0 row(s) affected
+[71, 15:24:58] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: Running...
+[71, 15:24:58] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: 0 row(s) affected
+[72, 15:24:58] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Running...
+[72, 15:24:58] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.c.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[73, 15:25:28] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: Running...
+[73, 15:25:28] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: Error Code: 1050. Table 'AGPY' already exists
+[74, 15:25:36] DROP VIEW AGPY: Running...
+[74, 15:25:36] DROP VIEW AGPY: 0 row(s) affected
+[75, 15:25:39] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: Running...
+[75, 15:25:39] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.iso_code: 0 row(s) affected
+[76, 15:25:39] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Running...
+[76, 15:25:39] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.c.iso_code' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[77, 15:26:28] DROP VIEW AGPY: Running...
+[77, 15:26:28] DROP VIEW AGPY: 0 row(s) affected
+[78, 15:26:31] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY C.iso_code: Running...
+[78, 15:26:31] CREATE VIEW AGPY (iso_code, average_renewable_generation, g_year)
+	AS SELECT C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY C.iso_code: 0 row(s) affected
+[79, 15:26:31] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Running...
+[79, 15:26:31] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Error Code: 1055. Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.h.date_y' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[80, 15:35:24] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[80, 15:35:24] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[81, 15:35:24] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[81, 15:35:24] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[81, 15:35:24] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 541 row(s) returned
+[82, 15:35:24] DROP VIEW CWHRG: Running...
+[82, 15:35:24] DROP VIEW CWHRG: 0 row(s) affected
+[83, 15:36:43] CREATE VIEW CWHRG (c_name, c_renewable, c_date, average_per_year)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y, AVG(H2.generation_renewables)
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[83, 15:36:43] CREATE VIEW CWHRG (c_name, c_renewable, c_date, average_per_year)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y, AVG(H2.generation_renewables)
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Error Code: 1054. Unknown column 'H2.generation_renewables' in 'field list'
+[84, 15:37:09] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[84, 15:37:09] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[85, 15:37:09] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[85, 15:37:09] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Fetching...
+[85, 15:37:09] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: 541 row(s) returned
+[86, 15:37:09] DROP VIEW CWHRG: Running...
+[86, 15:37:09] DROP VIEW CWHRG: 0 row(s) affected
+[87, 15:39:43] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.date_y = H2.date_y AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 GROUP BY H2.date_y): Running...
+[87, 15:39:43] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.date_y = H2.date_y AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 GROUP BY H2.date_y): Error Code: 1054. Unknown column 'H2.date_y' in 'where clause'
+[88, 15:40:35] DROP VIEW CWHRG: Running...
+[88, 15:40:35] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[89, 15:40:44] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.date_y = H2.date_y AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2)
+    GROUP BY H2.date_y: Running...
+[89, 15:40:44] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.date_y = H2.date_y AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2)
+    GROUP BY H2.date_y: Error Code: 1054. Unknown column 'H2.date_y' in 'where clause'
+[90, 15:41:28] DROP VIEW CWHRG: Running...
+[90, 15:41:28] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[91, 15:41:35] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.date_y = H2.date_y AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2) GROUP BY H2.date_y: Running...
+[91, 15:41:35] CREATE VIEW CWHRG (c_name, c_renewable, c_date)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code AND H.date_y = H2.date_y AND H.generation_renewables > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2) GROUP BY H2.date_y: Error Code: 1054. Unknown column 'H2.date_y' in 'where clause'
+[92, 16:12:33] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE average_renewable_generation = AVG(H.generation_renewables)
+    GROUP BY H.date_y: Running...
+[92, 16:12:33] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE average_renewable_generation = AVG(H.generation_renewables)
+    GROUP BY H.date_y: Error Code: 1054. Unknown column 'average_renewable_generation' in 'where clause'
+[93, 16:14:09] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE average_renewable_generation = (SELECT AVG(H.generation_renewables) FROM has_annual_generation H)
+    GROUP BY H.date_y: Running...
+[93, 16:14:09] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, H.generation_renewables, H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE average_renewable_generation = (SELECT AVG(H.generation_renewables) FROM has_annual_generation H)
+    GROUP BY H.date_y: Error Code: 1054. Unknown column 'average_renewable_generation' in 'where clause'
+[94, 16:15:25] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables) FROM has_annual_generation H, H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.date_y: Running...
+[94, 16:15:25] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables) FROM has_annual_generation H, H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.date_y: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM has_annual_generation H, countries C
+    GROUP BY H.date_y' at line 3
+[95, 16:16:07] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.date_y: Running...
+[95, 16:16:07] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.date_y: Error Code: 1050. Table 'AGPY' already exists
+[96, 16:16:11] DROP VIEW AGPY: Running...
+[96, 16:16:11] DROP VIEW AGPY: 0 row(s) affected
+[97, 16:16:15] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.date_y: Running...
+[97, 16:16:15] CREATE VIEW AGPY (c_name, average_renewable_generation, g_year)
+	AS SELECT C.country_name, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    GROUP BY H.date_y: 0 row(s) affected
+[98, 16:16:15] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Running...
+[98, 16:16:15] SELECT * FROM AGPY
+LIMIT 0, 10000
+: Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.c.country_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[99, 16:42:43] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY C.iscode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[99, 16:42:43] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY C.iscode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Error Code: 1054. Unknown column 'C.iscode' in 'group statement'
+[100, 16:43:12] DROP VIEW CWHRG: Running...
+[100, 16:43:12] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[101, 16:43:14] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY H.iscode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[101, 16:43:14] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY H.iscode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Error Code: 1054. Unknown column 'H.iscode' in 'group statement'
+[102, 16:56:50] DROP VIEW CWHRG: Running...
+[102, 16:56:50] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[103, 16:56:52] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY iscode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[103, 16:56:52] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY iscode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Error Code: 1054. Unknown column 'iscode' in 'group statement'
+[104, 16:57:04] DROP VIEW CWHRG: Running...
+[104, 16:57:04] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[105, 16:57:05] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY isocode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[105, 16:57:05] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY isocode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Error Code: 1054. Unknown column 'isocode' in 'group statement'
+[106, 16:57:20] DROP VIEW CWHRG: Running...
+[106, 16:57:20] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[107, 16:57:22] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY C.isocode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[107, 16:57:22] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, C.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY C.isocode
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Error Code: 1054. Unknown column 'C.isocode' in 'group statement'
+[108, 17:38:02] SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 10000
+: Running...
+[108, 17:38:02] SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 10000
+: Fetching...
+[108, 17:38:02] SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 10000
+: 13 row(s) returned
+[109, 17:45:28] SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 10000
+: Running...
+[109, 17:45:28] SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 10000
+: Fetching...
+[109, 17:45:28] SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 10000
+: 13 row(s) returned
+[110, 17:45:45] SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 10000
+: Running...
+[110, 17:45:45] SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 10000
+: Fetching...
+[110, 17:45:45] SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 10000
+: 13 row(s) returned
+[111, 17:57:25] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY H.iso_code
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): Running...
+[111, 17:57:25] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE H.iso_code = C.iso_code
+    GROUP BY H.iso_code
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2): 0 row(s) affected
+[112, 17:57:25] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[112, 17:57:25] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Error Code: 1055. Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.h.date_y' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[113, 18:02:24] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H2.date_y): Running...
+[113, 18:02:24] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H2.date_y): Error Code: 1050. Table 'CWHRG' already exists
+[114, 18:02:28] DROP VIEW CWHRG: Running...
+[114, 18:02:28] DROP VIEW CWHRG: 0 row(s) affected
+[115, 18:02:30] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H2.date_y): Running...
+[115, 18:02:30] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H2.date_y): 0 row(s) affected
+[116, 18:02:30] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[116, 18:02:30] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Error Code: 1055. Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.h.date_y' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[117, 18:03:27] DROP VIEW CWHRG: Running...
+[117, 18:03:27] DROP VIEW CWHRG: 0 row(s) affected
+[118, 18:03:28] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H.date_y = H2.date_y): Running...
+[118, 18:03:28] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H.date_y = H2.date_y): 0 row(s) affected
+[119, 18:03:28] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Running...
+[119, 18:03:28] SELECT * FROM CWHRG
+LIMIT 0, 10000
+: Error Code: 1055. Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.h.date_y' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[120, 18:04:11] DROP VIEW CWHRG: Running...
+[120, 18:04:11] DROP VIEW CWHRG: 0 row(s) affected
+[121, 18:04:13] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) < (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H.date_y = H2.date_y): Running...
+[121, 18:04:13] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) < (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H.date_y = H2.date_y): 0 row(s) affected
+[122, 18:04:13] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Running...
+[122, 18:04:13] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Error Code: 1055. Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.h.date_y' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[123, 18:04:24] DROP VIEW CWHRG: Running...
+[123, 18:04:24] DROP VIEW CWHRG: 0 row(s) affected
+[124, 18:04:26] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) = (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H.date_y = H2.date_y): Running...
+[124, 18:04:26] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.iso_code
+    HAVING AVG(H.generation_renewables) = (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H.date_y = H2.date_y): 0 row(s) affected
+[125, 18:04:26] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Running...
+[125, 18:04:26] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Error Code: 1055. Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'generation.h.date_y' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[126, 18:07:09] DROP VIEW CWHRG: Running...
+[126, 18:07:09] DROP VIEW CWHRG: 0 row(s) affected
+[127, 18:07:13] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.date_y
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H.date_y): Running...
+[127, 18:07:13] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.date_y
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H.date_y): 0 row(s) affected
+[128, 18:07:13] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Running...
+[128, 18:07:20] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Fetching...
+[128, 18:07:20] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: 544 row(s) returned
+[129, 18:07:20] DROP VIEW CWHRG: Running...
+[129, 18:07:20] DROP VIEW CWHRG: 0 row(s) affected
+[130, 18:07:40] DROP VIEW CWHRG: Running...
+[130, 18:07:40] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[131, 18:07:41] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.date_y
+    HAVING AVG(H.generation_renewables) < (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H.date_y): Running...
+[131, 18:07:41] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.date_y
+    HAVING AVG(H.generation_renewables) < (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H.date_y): 0 row(s) affected
+[132, 18:07:41] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Running...
+[132, 18:07:49] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Fetching...
+[132, 18:07:49] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: 4932 row(s) returned
+[133, 18:07:49] DROP VIEW CWHRG: Running...
+[133, 18:07:49] DROP VIEW CWHRG: 0 row(s) affected
+[134, 18:08:03] DROP VIEW CWHRG: Running...
+[134, 18:08:03] DROP VIEW CWHRG: Error Code: 1051. Unknown table 'generation.cwhrg'
+[135, 18:08:09] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.date_y
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H.date_y): Running...
+[135, 18:08:09] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.date_y
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H.date_y): 0 row(s) affected
+[136, 18:08:09] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Running...
+[136, 18:08:16] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Fetching...
+[136, 18:08:17] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: 544 row(s) returned
+[137, 18:08:17] DROP VIEW CWHRG: Running...
+[137, 18:08:17] DROP VIEW CWHRG: 0 row(s) affected
+[138, 18:21:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[138, 18:21:27] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[139, 18:21:27] SHOW DATABASES: Executing 
+[139, 18:21:27] SHOW DATABASES: OK
+[140, 18:22:16] Apply changes to has_annual_consumption: Applying object changes ...
+[140, 18:23:28] Apply changes to has_annual_consumption: 
+[141, 18:24:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[141, 18:24:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[142, 18:24:03] SHOW DATABASES: Executing 
+[142, 18:24:03] SHOW DATABASES: OK
+[143, 18:24:24] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[143, 18:24:24] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[144, 18:24:24] SHOW TABLES FROM `generation` like 'has_annual_consumption': Executing 
+[144, 18:24:24] SHOW TABLES FROM `generation` like 'has_annual_consumption': OK
+[145, 18:26:27]  CREATE TABLE `generation`.`has_annual_consumption` (`Code` text, `Year` int, `Primary energy consumption (TWh)` double, `Renewables (TWh - equivalent)` double, `Fossil Fuels (TWh - equivalent)` double): Executing 
+[145, 18:26:27]  CREATE TABLE `generation`.`has_annual_consumption` (`Code` text, `Year` int, `Primary energy consumption (TWh)` double, `Renewables (TWh - equivalent)` double, `Fossil Fuels (TWh - equivalent)` double): OK
+[146, 18:26:27] PREPARE stmt FROM 'INSERT INTO `generation`.`has_annual_consumption` (`Code`,`Year`,`Primary energy consumption (TWh)`,`Renewables (TWh - equivalent)`,`Fossil Fuels (TWh - equivalent)`) VALUES(?,?,?,?,?)': Executing 
+[146, 18:26:27] PREPARE stmt FROM 'INSERT INTO `generation`.`has_annual_consumption` (`Code`,`Year`,`Primary energy consumption (TWh)`,`Renewables (TWh - equivalent)`,`Fossil Fuels (TWh - equivalent)`) VALUES(?,?,?,?,?)': OK
+[147, 18:27:08] DEALLOCATE PREPARE stmt: Executing 
+[147, 18:27:08] DEALLOCATE PREPARE stmt: OK
+[148, 18:33:50] Apply changes to has_annual_consumption: Applying object changes ...
+[148, 18:33:55] Apply changes to has_annual_consumption: Selected name conflicts with existing table `has_annual_consumption`.
+[1, 18:36:27] SELECT * FROM generation.has_annual_consumption
+LIMIT 0, 50000
+: Running...
+[1, 18:36:27] SELECT * FROM generation.has_annual_consumption
+LIMIT 0, 50000
+: Fetching...
+[1, 18:36:27] SELECT * FROM generation.has_annual_consumption
+LIMIT 0, 50000
+: 2025 row(s) returned
+[2, 19:08:31] SELECT CO.Year
+FROM has_annual_consumption CO
+WHERE MIN(CO.Year)
+LIMIT 0, 50000
+: Running...
+[2, 19:08:31] SELECT CO.Year
+FROM has_annual_consumption CO
+WHERE MIN(CO.Year)
+LIMIT 0, 50000
+: Error Code: 1111. Invalid use of group function
+[3, 19:08:43] SELECT MIN(CO.Year)
+FROM has_annual_consumption CO
+LIMIT 0, 50000
+: Running...
+[3, 19:08:43] SELECT MIN(CO.Year)
+FROM has_annual_consumption CO
+LIMIT 0, 50000
+: Fetching...
+[3, 19:08:43] SELECT MIN(CO.Year)
+FROM has_annual_consumption CO
+LIMIT 0, 50000
+: 1 row(s) returned
+[4, 19:09:05] SELECT MAX(CO.Year)
+FROM has_annual_consumption CO
+LIMIT 0, 50000
+: Running...
+[4, 19:09:05] SELECT MAX(CO.Year)
+FROM has_annual_consumption CO
+LIMIT 0, 50000
+: Fetching...
+[4, 19:09:05] SELECT MAX(CO.Year)
+FROM has_annual_consumption CO
+LIMIT 0, 50000
+: 1 row(s) returned
+[5, 19:09:21] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 50000
+: Running...
+[5, 19:09:21] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 50000
+: Fetching...
+[5, 19:09:21] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 50000
+: 5972 row(s) returned
+[6, 19:09:54] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 50000
+: Running...
+[6, 19:09:54] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 50000
+: Fetching...
+[6, 19:09:54] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 50000
+: 5972 row(s) returned
+[7, 19:10:31] SELECT MAX(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Running...
+[7, 19:10:31] SELECT MAX(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Fetching...
+[7, 19:10:31] SELECT MAX(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: 1 row(s) returned
+[8, 19:10:39] SELECT MAX(CO.Year)
+FROM has_annual_consumption CO
+LIMIT 0, 50000
+: Running...
+[8, 19:10:39] SELECT MAX(CO.Year)
+FROM has_annual_consumption CO
+LIMIT 0, 50000
+: Fetching...
+[8, 19:10:39] SELECT MAX(CO.Year)
+FROM has_annual_consumption CO
+LIMIT 0, 50000
+: 1 row(s) returned
+[9, 19:19:06] ALTER TABLE has_annual_consumption ADD CONSTRAINT MAX_MIN_value_check CHECK ( YEAR <= 2021 AND YEAR >= 1965): Running...
+[9, 19:19:07] ALTER TABLE has_annual_consumption ADD CONSTRAINT MAX_MIN_value_check CHECK ( YEAR <= 2021 AND YEAR >= 1965): 2025 row(s) affected
+Records: 2025  Duplicates: 0  Warnings: 0
+[10, 19:19:07] INSERT INTO has_annual_consumption (Code, Year, Primary energy consumption (TWh), Renewables (TWh - equivalent), Fossil Fuels (TWh - equivalent) VALUES (DNK, 1964, 2326667,56062226, 4593339): Running...
+[10, 19:19:07] INSERT INTO has_annual_consumption (Code, Year, Primary energy consumption (TWh), Renewables (TWh - equivalent), Fossil Fuels (TWh - equivalent) VALUES (DNK, 1964, 2326667,56062226, 4593339): Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Primary energy consumption (TWh), Renewables (TWh - equivalent), Fossil Fuels (T' at line 1
+[11, 19:20:14] SELECT MIN(H.date_y)
+From has_annual_generation
+LIMIT 0, 50000
+: Running...
+[11, 19:20:14] SELECT MIN(H.date_y)
+From has_annual_generation
+LIMIT 0, 50000
+: Error Code: 1054. Unknown column 'H.date_y' in 'field list'
+[12, 19:20:29] SELECT MIN(H.date_y)
+From has_annual_generation H
+LIMIT 0, 50000
+: Running...
+[12, 19:20:29] SELECT MIN(H.date_y)
+From has_annual_generation H
+LIMIT 0, 50000
+: Fetching...
+[12, 19:20:29] SELECT MIN(H.date_y)
+From has_annual_generation H
+LIMIT 0, 50000
+: 1 row(s) returned
+[13, 19:20:39] SELECT MIN(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Running...
+[13, 19:20:39] SELECT MIN(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Fetching...
+[13, 19:20:39] SELECT MIN(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: 1 row(s) returned
+[14, 19:22:00] ALTER TABLE has_annual_generation ADD CONSTRAINT MAX_MIN_value_check CHECK ( YEAR <= 2022 AND YEAR >= 1985): Running...
+[14, 19:22:00] ALTER TABLE has_annual_generation ADD CONSTRAINT MAX_MIN_value_check CHECK ( YEAR <= 2022 AND YEAR >= 1985): Error Code: 3822. Duplicate check constraint name 'MAX_MIN_value_check'.
+[15, 19:22:44] ALTER TABLE has_annual_generation ADD CONSTRAINT max_min_value_check CHECK ( YEAR <= 2022 AND YEAR >= 1985): Running...
+[15, 19:22:44] ALTER TABLE has_annual_generation ADD CONSTRAINT max_min_value_check CHECK ( YEAR <= 2022 AND YEAR >= 1985): Error Code: 3822. Duplicate check constraint name 'max_min_value_check'.
+[16, 19:23:15] ALTER TABLE has_annual_generation ADD CONSTRAINT max_min_value_check CHECK (( YEAR <= 2022) AND (YEAR >= 1985)): Running...
+[16, 19:23:15] ALTER TABLE has_annual_generation ADD CONSTRAINT max_min_value_check CHECK (( YEAR <= 2022) AND (YEAR >= 1985)): Error Code: 3822. Duplicate check constraint name 'max_min_value_check'.
+[17, 19:25:18] ALTER TABLE has_annual_generation 
+ADD CONSTRAINT max_min_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): Running...
+[17, 19:25:18] ALTER TABLE has_annual_generation 
+ADD CONSTRAINT max_min_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): Error Code: 3822. Duplicate check constraint name 'max_min_value_check'.
+[18, 19:25:26] ALTER TABLE has_annual_generation 
+ADD CONSTRAINT Max_min_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): Running...
+[18, 19:25:26] ALTER TABLE has_annual_generation 
+ADD CONSTRAINT Max_min_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): Error Code: 3822. Duplicate check constraint name 'Max_min_value_check'.
+[19, 19:26:23] ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_min_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): Running...
+[19, 19:26:23] ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_min_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): 5972 row(s) affected
+Records: 5972  Duplicates: 0  Warnings: 0
+[20, 19:26:23] INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES (DNK, 1964, 2326667,56062226, 4593339): Running...
+[20, 19:26:23] INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES (DNK, 1964, 2326667,56062226, 4593339): Error Code: 1054. Unknown column 'DNK' in 'field list'
+[21, 19:27:03] ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_mmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): Running...
+[21, 19:27:03] ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_mmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): 5972 row(s) affected
+Records: 5972  Duplicates: 0  Warnings: 0
+[22, 19:27:03] INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNK', 1964, 2326667,56062226, 4593339): Running...
+[22, 19:27:03] INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNK', 1964, 2326667,56062226, 4593339): Error Code: 3819. Check constraint 'mmax_min_value_check' is violated.
+[23, 20:07:15] CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation 
+FOR EACH ROW
+BEGIN
+    SET NEW.date_y = 
+        CASE 
+            WHEN NEW.date_y > 2022 THEN 2022
+            WHEN NEW.date_y < 1985 THEN 1985
+            ELSE NEW.date_y
+        END CASE: Running...
+[23, 20:07:15] CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation 
+FOR EACH ROW
+BEGIN
+    SET NEW.date_y = 
+        CASE 
+            WHEN NEW.date_y > 2022 THEN 2022
+            WHEN NEW.date_y < 1985 THEN 1985
+            ELSE NEW.date_y
+        END CASE: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CASE' at line 9
+[24, 20:42:01] CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;: Running...
+[24, 20:42:01] CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;: 0 row(s) affected
+[25, 21:47:35] SELECT * 
+FROM has_annual_generation INNER JOIN has_annual_consumption
+ON has_annual_generation.iso_code = has_annual_consumption.iso_code AND has_annual_generation.generation_renewables > has_annual_consumption.Renewables (TWh - equivalent)
+
+
+
+
+
+
+/*
+1C)
+Selecting countries where annual renewable energy generation in 2022 is greater than the fossil fuel energy generation. 
+SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022);
+****************************************************************************************************************************************************
+SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022);
+*/
+
+/*
+2)
+Obtaining the minimum and maximum values for date_y column in has_annual_generation table.
+SELECT MIN(H.has_annual_generation)
+FROM has_annual_generation H;
+
+SELECT MAX(H.has_annual_generation)
+FROM has_annual_generation H;
+****************************************************************
+Checks if the to be insreted value is bigger (smaller) than the existing largest (smallest) value for date_y, if so gives error. 
+ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_mmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985));
+Out of range value insertion trial. 
+INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNK', 1964, 2326667,56062226, 4593339);
+
+Before insert trigger where the date_y value is modified as specified before it is inserted into the table.
+DELIMITER //
+CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;
+
+Before update trigger where the date_y value is modified as specified before it is updated on the table.
+DELIMITER //
+CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER
+*/
+LIMIT 0, 50000
+: Running...
+[25, 21:47:35] SELECT * 
+FROM has_annual_generation INNER JOIN has_annual_consumption
+ON has_annual_generation.iso_code = has_annual_consumption.iso_code AND has_annual_generation.generation_renewables > has_annual_consumption.Renewables (TWh - equivalent)
+
+
+
+
+
+
+/*
+1C)
+Selecting countries where annual renewable energy generation in 2022 is greater than the fossil fuel energy generation. 
+SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022);
+****************************************************************************************************************************************************
+SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022);
+*/
+
+/*
+2)
+Obtaining the minimum and maximum values for date_y column in has_annual_generation table.
+SELECT MIN(H.has_annual_generation)
+FROM has_annual_generation H;
+
+SELECT MAX(H.has_annual_generation)
+FROM has_annual_generation H;
+****************************************************************
+Checks if the to be insreted value is bigger (smaller) than the existing largest (smallest) value for date_y, if so gives error. 
+ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_mmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985));
+Out of range value insertion trial. 
+INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNK', 1964, 2326667,56062226, 4593339);
+
+Before insert trigger where the date_y value is modified as specified before it is inserted into the table.
+DELIMITER //
+CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;
+
+Before update trigger where the date_y value is modified as specified before it is updated on the table.
+DELIMITER //
+CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER
+*/
+LIMIT 0, 50000
+: Error Code: 1054. Unknown column 'has_annual_consumption.iso_code' in 'on clause'
+[26, 21:48:00] SELECT * 
+FROM has_annual_generation INNER JOIN has_annual_consumption
+ON has_annual_generation.iso_code = has_annual_consumption.Code AND has_annual_generation.generation_renewables > has_annual_consumption.Renewables (TWh - equivalent)
+
+
+
+
+
+
+/*
+1C)
+Selecting countries where annual renewable energy generation in 2022 is greater than the fossil fuel energy generation. 
+SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022);
+****************************************************************************************************************************************************
+SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022);
+*/
+
+/*
+2)
+Obtaining the minimum and maximum values for date_y column in has_annual_generation table.
+SELECT MIN(H.has_annual_generation)
+FROM has_annual_generation H;
+
+SELECT MAX(H.has_annual_generation)
+FROM has_annual_generation H;
+****************************************************************
+Checks if the to be insreted value is bigger (smaller) than the existing largest (smallest) value for date_y, if so gives error. 
+ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_mmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985));
+Out of range value insertion trial. 
+INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNK', 1964, 2326667,56062226, 4593339);
+
+Before insert trigger where the date_y value is modified as specified before it is inserted into the table.
+DELIMITER //
+CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;
+
+Before update trigger where the date_y value is modified as specified before it is updated on the table.
+DELIMITER //
+CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER
+*/
+LIMIT 0, 50000
+: Running...
+[26, 21:48:00] SELECT * 
+FROM has_annual_generation INNER JOIN has_annual_consumption
+ON has_annual_generation.iso_code = has_annual_consumption.Code AND has_annual_generation.generation_renewables > has_annual_consumption.Renewables (TWh - equivalent)
+
+
+
+
+
+
+/*
+1C)
+Selecting countries where annual renewable energy generation in 2022 is greater than the fossil fuel energy generation. 
+SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022);
+****************************************************************************************************************************************************
+SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022);
+*/
+
+/*
+2)
+Obtaining the minimum and maximum values for date_y column in has_annual_generation table.
+SELECT MIN(H.has_annual_generation)
+FROM has_annual_generation H;
+
+SELECT MAX(H.has_annual_generation)
+FROM has_annual_generation H;
+****************************************************************
+Checks if the to be insreted value is bigger (smaller) than the existing largest (smallest) value for date_y, if so gives error. 
+ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_mmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985));
+Out of range value insertion trial. 
+INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNK', 1964, 2326667,56062226, 4593339);
+
+Before insert trigger where the date_y value is modified as specified before it is inserted into the table.
+DELIMITER //
+CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;
+
+Before update trigger where the date_y value is modified as specified before it is updated on the table.
+DELIMITER //
+CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER
+*/
+LIMIT 0, 50000
+: Error Code: 1305. FUNCTION has_annual_consumption.Renewables does not exist
+[27, 21:51:58] ALTER TABLE has_annual_consumption RENAME COLUMN "Renewables (TWh - equivalent)" TO "Renewables": Running...
+[27, 21:51:58] ALTER TABLE has_annual_consumption RENAME COLUMN "Renewables (TWh - equivalent)" TO "Renewables": Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"Renewables (TWh - equivalent)" TO "Renewables"' at line 1
+[28, 21:53:13] DESCRIBE has_annual_consumption: Running...
+[28, 21:53:13] DESCRIBE has_annual_consumption: Fetching...
+[28, 21:53:13] DESCRIBE has_annual_consumption: 5 row(s) returned
+[29, 22:07:33] Apply changes to has_annual_consumption: Applying object changes ...
+[29, 22:07:39] Applying changes to has_annual_consumption...: 
+[29, 22:07:39] : Changes applied to has_annual_consumption
+[29, 22:07:41] Apply changes to has_annual_consumption: Changes applied
+[30, 22:08:41] Apply changes to has_annual_consumption: Applying object changes ...
+[30, 22:08:43] Applying changes to has_annual_consumption...: 
+[30, 22:08:43] : Changes applied to has_annual_consumption
+[30, 22:08:45] Apply changes to has_annual_consumption: Changes applied
+[1, 22:13:22] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.date_y
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H.date_y): Running...
+[1, 22:13:22] CREATE VIEW CWHRG (c_name, iso_code, c_renewable, c_date)
+	AS SELECT C.country_name, H.iso_code, AVG(H.generation_renewables), H.date_y
+	FROM has_annual_generation H, countries C
+    WHERE C.iso_code = H.iso_code
+    GROUP BY C.iso_code, H.date_y
+    HAVING AVG(H.generation_renewables) > (SELECT AVG(H2.generation_renewables) FROM has_annual_generation H2 WHERE H2.date_y = H.date_y): 0 row(s) affected
+[2, 22:13:22] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Running...
+[2, 22:13:30] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: Fetching...
+[2, 22:13:30] SELECT * FROM CWHRG
+LIMIT 0, 50000
+: 544 row(s) returned
+[3, 22:13:30] DROP VIEW CWHRG: Running...
+[3, 22:13:30] DROP VIEW CWHRG: 0 row(s) affected
+[4, 22:14:40] SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 50000
+: Running...
+[4, 22:14:40] SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 50000
+: Fetching...
+[4, 22:14:40] SELECT C.country_name
+FROM countries C
+WHERE C.iso_code IN (SELECT H.iso_code FROM has_annual_generation H WHERE H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 50000
+: 13 row(s) returned
+[5, 22:14:40] SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 50000
+: Running...
+[5, 22:14:40] SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 50000
+: Fetching...
+[5, 22:14:40] SELECT C.country_name
+FROM countries C
+WHERE EXISTS (SELECT * 
+FROM has_annual_generation H
+WHERE C.iso_code = H.iso_code AND H.generation_renewables > H.generation_fossil AND H.date_y = 2022)
+LIMIT 0, 50000
+: 13 row(s) returned
+[6, 22:18:39] SELECT MIN(H.has_annual_generation)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Running...
+[6, 22:18:39] SELECT MIN(H.has_annual_generation)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Error Code: 1054. Unknown column 'H.has_annual_generation' in 'field list'
+[7, 22:19:35] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 50000
+: Running...
+[7, 22:19:35] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 50000
+: Fetching...
+[7, 22:19:35] SELECT * FROM generation.has_annual_generation
+LIMIT 0, 50000
+: 5972 row(s) returned
+[8, 22:20:23] SELECT MIN(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Running...
+[8, 22:20:23] SELECT MIN(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Fetching...
+[8, 22:20:23] SELECT MIN(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: 1 row(s) returned
+[9, 22:20:23] SELECT MAX(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Running...
+[9, 22:20:23] SELECT MAX(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: Fetching...
+[9, 22:20:23] SELECT MAX(H.date_y)
+FROM has_annual_generation H
+LIMIT 0, 50000
+: 1 row(s) returned
+[10, 22:21:03] ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_mmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): Running...
+[10, 22:21:03] ALTER TABLE has_annual_generation ADD CONSTRAINT mmax_mmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): Error Code: 3822. Duplicate check constraint name 'mmax_mmin_value_check'.
+[11, 22:21:20] ALTER TABLE has_annual_generation ADD CONSTRAINT mmmax_mmmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): Running...
+[11, 22:21:20] ALTER TABLE has_annual_generation ADD CONSTRAINT mmmax_mmmin_value_check CHECK (( date_y <= 2022) AND (date_y >= 1985)): 5972 row(s) affected
+Records: 5972  Duplicates: 0  Warnings: 0
+[12, 22:21:38] INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNK', 1964, 2326667,56062226, 4593339): Running...
+[12, 22:21:38] INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNK', 1964, 2326667,56062226, 4593339): Error Code: 1062. Duplicate entry 'DNK-1985' for key 'has_annual_generation.PRIMARY'
+[13, 22:22:21] INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNC', 1962, 2326617,54062226, 4599339): Running...
+[13, 22:22:21] INSERT INTO has_annual_generation (iso_code, date_y, generation_fossil, generation_renewables, generation_total) VALUES ('DNC', 1962, 2326617,54062226, 4599339): Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`generation`.`has_annual_generation`, CONSTRAINT `has_annual_generation_ibfk_1` FOREIGN KEY (`iso_code`) REFERENCES `countries` (`iso_code`) ON DELETE CASCADE)
+[14, 22:27:10] CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;
+
+/*
+Before update trigger where the date_y value is modified as specified before it is updated on the table.
+*/
+/*
+DELIMITER //
+CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER
+*/: Running...
+[14, 22:27:10] CREATE TRIGGER triggered BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;
+
+/*
+Before update trigger where the date_y value is modified as specified before it is updated on the table.
+*/
+/*
+DELIMITER //
+CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER
+*/: Error Code: 1359. Trigger already exists
+[15, 22:27:28] CREATE TRIGGER triggered_1 BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;
+
+/*
+Before update trigger where the date_y value is modified as specified before it is updated on the table.
+*/
+/*
+DELIMITER //
+CREATE TRIGGER triggered_3 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER
+*/: Running...
+[15, 22:27:28] CREATE TRIGGER triggered_1 BEFORE INSERT ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER;
+
+/*
+Before update trigger where the date_y value is modified as specified before it is updated on the table.
+*/
+/*
+DELIMITER //
+CREATE TRIGGER triggered_3 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER
+*/: 0 row(s) affected
+[16, 22:27:48] CREATE TRIGGER triggered_3 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER: Running...
+[16, 22:27:48] CREATE TRIGGER triggered_3 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER: 0 row(s) affected
+[17, 22:27:57] CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER: Running...
+[17, 22:27:57] CREATE TRIGGER triggered_2 BEFORE UPDATE ON has_annual_generation
+FOR EACH ROW
+BEGIN
+	IF NEW.date_y > 2022 THEN
+        SET NEW.date_y = 2022;
+	ELSEIF NEW.date_y < 1985 THEN
+        SET NEW.date_y = 1985;
+END IF;
+END
+#DELIMITER: 0 row(s) affected
